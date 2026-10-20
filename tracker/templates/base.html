@@ -8,16 +8,20 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-  <header>
-    <a class="brand" href="{{ url_for('main.states') }}">50 States Tracker</a>
-    <nav>
+  {# On a phone: brand and counter on top, the nav on its own row below.
+     On wider screens the CSS puts all three on one row. #}
+  <header class="site-header">
+    <div class="header-top">
+      <a class="brand" href="{{ url_for('main.states') }}">50 States Tracker</a>
+      <p class="progress">{{ visited_count }} of {{ total_states }}</p>
+    </div>
+    <nav class="site-nav">
       <a href="{{ url_for('main.states') }}">States</a>
       <a href="{{ url_for('main.us_map') }}">Map</a>
       <a href="{{ url_for('main.new_visit') }}">Add visit</a>
       <a href="{{ url_for('main.trips') }}">Trips</a>
       <a href="{{ url_for('main.years') }}">Years</a>
     </nav>
-    <p class="progress">{{ visited_count }} of {{ total_states }}</p>
   </header>
   <main>
     {% block content %}{% endblock %}
