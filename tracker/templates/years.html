@@ -5,6 +5,11 @@
 
 {% block content %}
   <h1>Years</h1>
+  <p class="hint">Drag a trip to another year to move it there, or use its "Move to" menu.</p>
+
+  {% if error %}
+    <ul class="errors"><li>{{ error }}</li></ul>
+  {% endif %}
 
   <div class="years">
     {% for year_plan in plan %}
@@ -14,7 +19,8 @@
 
         {% if year_plan.trips %}
           {% for trip in year_plan.trips %}
-            <article class="trip-card" data-trip-id="{{ trip.id }}">
+            {# draggable="true" lets you pick the card up with the mouse. #}
+            <article class="trip-card" data-trip-id="{{ trip.id }}" draggable="true">
               <strong>{{ trip.name }}</strong>
               <div class="date">{{ trip.start_date }} to {{ trip.end_date }}</div>
               <div>
@@ -23,6 +29,16 @@
                 {% endfor %}
               </div>
               {{ trip_actions(trip, return_to="years") }}
+              <form method="post" action="{{ url_for('main.move_trip', trip_id=trip.id) }}" class="move-form">
+                <label>Move to
+                  <select name="year">
+                    {% for other in plan if other.year != trip.year %}
+                      <option value="{{ other.year }}">{{ other.year }}</option>
+                    {% endfor %}
+                  </select>
+                </label>
+                <button type="submit">Move</button>
+              </form>
             </article>
           {% endfor %}
 
@@ -41,4 +57,6 @@
       </section>
     {% endfor %}
   </div>
+
+  <script src="{{ url_for('static', filename='years.js') }}"></script>
 {% endblock %}

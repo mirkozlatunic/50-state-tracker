@@ -1,4 +1,6 @@
 """Functions that read and write the tracker's data."""
+from datetime import date
+
 from tracker.db import get_db
 
 TOTAL_STATES = 50
@@ -266,3 +268,32 @@ def get_year_plan(today):
             "total_by_end": len(counted),
         })
     return plan
+
+
+def shift_to_year(start_date, end_date, year):
+    """Work out a trip's dates in another year. Returns (new_start, new_end) as dates.
+
+    The start keeps its month and day, and the trip keeps its length, so a
+    Dec 30 to Jan 2 trip still ends in the following year. Feb 29 becomes
+    Feb 28 in a year without a leap day.
+    """
+    start = date.fromisoformat(start_date)
+    end = date.fromisoformat(end_date)
+    # Subtracting two dates gives a "timedelta": a length of time, here in days.
+    length = end - start
+    try:
+        new_start = start.replace(year=year)
+    except ValueError:
+        # replace() fails only for Feb 29 in a year that doesn't have one.
+        new_start = date(year, 2, 28)
+    return new_start, new_start + length
+
+
+def set_trip_dates(trip_id, start_date, end_date):
+    """Change only a trip's dates (used when moving it to another year)."""
+    db = get_db()
+    db.execute(
+        "UPDATE trips SET start_date = ?, end_date = ? WHERE id = ?",
+        (start_date, end_date, trip_id),
+    )
+    db.commit()
