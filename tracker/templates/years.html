@@ -30,6 +30,9 @@
                   <a href="{{ url_for('main.state_detail', code=state.code) }}">{{ state.name }}</a>{{ ", " if not loop.last }}
                 {% endfor %}
               </div>
+              {% if trip.cities %}
+                <div class="hint">{% for city in trip.cities %}{{ city.city }}{{ ", " if not loop.last }}{% endfor %}</div>
+              {% endif %}
               {{ trip_actions(trip, return_to="years") }}
               <form method="post" action="{{ url_for('main.move_trip', trip_id=trip.id) }}" class="move-form">
                 <label>Move to

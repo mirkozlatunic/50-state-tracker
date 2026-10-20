@@ -5,7 +5,9 @@ group into the app inside create_app().
 """
 from datetime import date, timedelta
 
-from flask import Blueprint, abort, redirect, render_template, request, url_for
+from flask import Blueprint, abort, jsonify, redirect, render_template, request, url_for
+
+from tracker.cities import cities_in_state, find_city
 
 from tracker.models import (
     TOTAL_STATES,
@@ -26,7 +28,13 @@ from tracker.models import (
     update_trip,
 )
 from tracker.map_data import MAP_HEIGHT, MAP_WIDTH, STATE_PATHS
-from tracker.validation import STATE_CODES, parse_date, validate_trip, validate_visit
+from tracker.validation import (
+    STATE_CODES,
+    parse_date,
+    validate_trip,
+    validate_trip_cities,
+    validate_visit,
+)
 
 bp = Blueprint("main", __name__)
 
@@ -126,20 +134,39 @@ def new_visit():
             "state": request.form.get("state", ""),
             "visit_date": request.form.get("visit_date", ""),
             "note": request.form.get("note", "").strip(),
+            "city": request.form.get("city", "").strip(),
         }
-        errors = validate_visit(form["state"], form["visit_date"], today)
+        errors = validate_visit(form["state"], form["visit_date"], today, city=form["city"])
         if not errors:
-            # Store the date in one standard format, "YYYY-MM-DD".
+            # Store the date in one standard format, "YYYY-MM-DD", and the
+            # city with its official spelling ("denver" -> "Denver").
             visit_date = parse_date(form["visit_date"]).isoformat()
-            add_visit(form["state"], visit_date, form["note"])
+            city = find_city(form["city"], form["state"]).name if form["city"] else None
+            add_visit(form["state"], visit_date, form["note"], city)
             return redirect(url_for("main.state_detail", code=form["state"]))
 
     # Show the form: empty on GET, or again with errors after a bad POST.
     # 400 ("Bad Request") tells the browser the submitted form had problems.
     status = 400 if errors else 200
+    # The city suggestions start with the chosen state's cities (if a state is chosen).
+    city_options = cities_in_state(form["state"]) if form["state"] in STATE_CODES else ()
     return render_template(
-        "visit_form.html", states=get_states(), form=form, errors=errors, today=today
+        "visit_form.html", states=get_states(), form=form, errors=errors, today=today,
+        city_options=city_options,
     ), status
+
+
+@bp.route("/cities/<code>")
+def city_names(code):
+    """The city names of one state as JSON, e.g. ["Arvada", "Aurora", ...].
+
+    JSON is a text format for data that JavaScript can read directly; the
+    forms' cities.js fetches this to suggest cities while you type.
+    """
+    code = code.upper()
+    if code not in STATE_CODES:
+        abort(404)
+    return jsonify([city.name for city in cities_in_state(code)])
 
 
 @bp.route("/trips")
@@ -156,7 +183,22 @@ def read_trip_form():
         "end_date": request.form.get("end_date", ""),
         # getlist() returns every ticked checkbox with this name, e.g. ["AZ", "UT"].
         "states": request.form.getlist("states"),
+        # And every city row, e.g. ["Denver, CO", "", ""].
+        "cities": request.form.getlist("cities"),
     }
+
+
+def trip_city_fields(form):
+    """The city rows and suggestions for the trip form.
+
+    Shows what's filled in plus empty rows: at least 3 rows, and always one
+    empty row to add another city. Suggestions are the cities of the ticked states.
+    """
+    rows = [value for value in form.get("cities", []) if value.strip()]
+    rows += [""] * max(3 - len(rows), 1)
+    options = [city for code in form.get("states", []) if code in STATE_CODES
+               for city in cities_in_state(code)]
+    return {"city_rows": rows, "trip_city_options": options}
 
 
 def get_return_to(source):
@@ -224,7 +266,7 @@ def new_trip():
     """
     today = date.today()
     tomorrow = today + timedelta(days=1)
-    form = {"states": []}
+    form = {"states": [], "cities": []}
     errors = []
     return_to = get_return_to(request.args) or get_return_to(request.form)
 
@@ -247,11 +289,13 @@ def new_trip():
         errors = validate_trip(
             form["name"], form["start_date"], form["end_date"], form["states"], today
         )
+        city_errors, cities = validate_trip_cities(form["cities"], form["states"])
+        errors += city_errors
         if not errors:
             # Store the dates in one standard format, "YYYY-MM-DD".
             start = parse_date(form["start_date"]).isoformat()
             end = parse_date(form["end_date"]).isoformat()
-            add_trip(form["name"], start, end, form["states"])
+            add_trip(form["name"], start, end, form["states"], cities)
             return redirect_after_trip_change(return_to)
 
     # Show the form: empty on GET, or again with errors after a bad POST.
@@ -268,6 +312,8 @@ def new_trip():
         min_start=min_start,
         max_start=max_start,
         return_to=return_to,
+        # ** passes each key of the dictionary as its own argument.
+        **trip_city_fields(form),
     ), status
 
 
@@ -292,10 +338,12 @@ def edit_trip(trip_id):
             form["name"], form["start_date"], form["end_date"], form["states"], today,
             keep_start=trip["start_date"],
         )
+        city_errors, cities = validate_trip_cities(form["cities"], form["states"])
+        errors += city_errors
         if not errors:
             start = parse_date(form["start_date"]).isoformat()
             end = parse_date(form["end_date"]).isoformat()
-            update_trip(trip_id, form["name"], start, end, form["states"])
+            update_trip(trip_id, form["name"], start, end, form["states"], cities)
             return redirect_after_trip_change(return_to)
 
     status = 400 if errors else 200
@@ -311,6 +359,7 @@ def edit_trip(trip_id):
         min_start=min(today + timedelta(days=1), parse_date(trip["start_date"])),
         max_start=None,
         return_to=return_to,
+        **trip_city_fields(form),
     ), status
 
 

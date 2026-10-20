@@ -453,3 +453,12 @@ fieldset {
     display: flex;
   }
 }
+
+/* City rows on the trip form. */
+.city-rows input {
+  margin-bottom: 0.4rem;
+}
+
+.add-city-row {
+  margin-top: 0.25rem;
+}

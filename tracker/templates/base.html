@@ -33,5 +33,7 @@
     {% block content %}{% endblock %}
   </main>
   <script src="{{ url_for('static', filename='theme.js') }}"></script>
+  {# Pages that need more JavaScript add it here. #}
+  {% block scripts %}{% endblock %}
 </body>
 </html>
