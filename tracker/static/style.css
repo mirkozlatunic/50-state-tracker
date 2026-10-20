@@ -223,3 +223,27 @@ fieldset {
   font-size: 0.85rem;
   white-space: nowrap;
 }
+
+/* Drag and drop on the year page. */
+.trip-card {
+  cursor: grab;
+}
+
+.trip-card.dragging {
+  opacity: 0.4;
+}
+
+.year.drop-target {
+  outline: 2px dashed var(--planned);
+  outline-offset: -2px;
+}
+
+.move-form {
+  margin-top: 0.4rem;
+  font-size: 0.85rem;
+}
+
+.move-form select,
+.move-form button {
+  font: inherit;
+}

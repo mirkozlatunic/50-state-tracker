@@ -21,6 +21,8 @@ from tracker.models import (
     get_upcoming_trips,
     get_visits_for_state,
     get_year_plan,
+    set_trip_dates,
+    shift_to_year,
     update_trip,
 )
 from tracker.map_data import MAP_HEIGHT, MAP_WIDTH, STATE_PATHS
@@ -167,7 +169,40 @@ def redirect_after_trip_change(return_to):
 @bp.route("/years")
 def years():
     """Show one column per year with its trips, new states and running total."""
-    return render_template("years.html", plan=get_year_plan(date.today()))
+    return render_template("years.html", plan=get_year_plan(date.today()), error=None)
+
+
+@bp.route("/trips/<int:trip_id>/move", methods=["POST"])
+def move_trip(trip_id):
+    """Move a trip to another year: same month and day, same length.
+
+    The "Move to" menu on each card submits this form, and so does dropping a
+    card on another year (years.js picks the year and submits the menu). If
+    the move breaks a trip rule, the year page is shown again with the reason.
+    """
+    trip = get_trip(trip_id)
+    if trip is None:
+        abort(404)
+
+    today = date.today()
+    year = request.form.get("year", type=int)
+    if year is None or not today.year <= year <= today.year + 100:
+        error = "Please choose a year from this year on."
+    elif year == int(trip["start_date"][:4]):
+        # Already in that year: nothing to do.
+        return redirect(url_for("main.years"))
+    else:
+        new_start, new_end = shift_to_year(trip["start_date"], trip["end_date"], year)
+        # The same rules as planning a trip, so a move can't put it in the past.
+        errors = validate_trip(
+            trip["name"], new_start.isoformat(), new_end.isoformat(), trip["states"], today
+        )
+        if not errors:
+            set_trip_dates(trip_id, new_start.isoformat(), new_end.isoformat())
+            return redirect(url_for("main.years"))
+        error = errors[0]
+
+    return render_template("years.html", plan=get_year_plan(today), error=error), 400
 
 
 @bp.route("/trips/new", methods=["GET", "POST"])
