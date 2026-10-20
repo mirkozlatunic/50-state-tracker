@@ -26,9 +26,12 @@ Python 3, Flask, SQLite, pytest. No other packages without asking me first.
 
 - The 50 states use their real official names and two-letter codes
   (e.g. California, CA). Washington, D.C. is not included.
-- A visit has: state, visit date, a short note.
-- A planned trip has: a name, start date, end date, and one or more states
-  (I often combine nearby states into one weekend).
+- A visit has: state, visit date, a short note, and optionally a city.
+- A planned trip has: a name, start date, end date, one or more states
+  (I often combine nearby states into one weekend), and optionally cities.
+- Cities come from `tracker/data/us_cities.csv`, built once by
+  `scripts/build_cities.py` from the public-domain US Census Gazetteer files.
+  The app reads it into memory; cities are stored as name + state.
 - Trips can be edited, deleted, or moved to another year.
 - The map outlines in `tracker/map_data.py` come from a CC0 (public domain)
   Wikimedia Commons SVG; the source is noted at the top of that file.
@@ -49,12 +52,20 @@ Python 3, Flask, SQLite, pytest. No other packages without asking me first.
   (Feb 29 becomes Feb 28 in a year without one). The trip rules still apply.
 - Map colors: green = visited, orange = in a trip that hasn't ended,
   grey = neither. Visited wins over planned.
+- Cities don't change the progress: it still counts states. One visit is
+  enough to make a state green.
+- A city must exist in the city list and be in its state. A trip's cities
+  must be in one of the trip's states.
+- City dots: dark green = visited city, blue = city in a trip that hasn't
+  ended. A city that's both shows blue. One dot per city, however many visits.
+- Every city in the city list must land inside its own state's outline.
 
 ## Scope
 
 - Done: states list, add visits, progress counter ("12 of 50"), planned trips,
-  editing and deleting trips, a clickable US map, and a year page where trips
-  can be dragged between years.
+  editing and deleting trips, a clickable US map, a year page where trips
+  can be dragged between years, cities with dots on the map, a light/dark
+  switch, and layouts for phones and tablets.
 - Later, not now: trip costs, logins, putting it online.
 
 ## How to check it works
@@ -64,6 +75,10 @@ Python 3, Flask, SQLite, pytest. No other packages without asking me first.
 - After adding visits to 3 different states, it shows "3 of 50".
 - On `/map`, a visited state is green and a state in an upcoming trip is orange.
 - On `/years`, dragging a trip to another year changes its dates on `/trips` too.
+- A visit with a city puts a dark green dot on `/map`; a city in an upcoming
+  trip puts a blue dot there.
+- The light/dark button switches the theme, and it stays after a reload.
+- Pages fit an iPhone (390px) and an iPad (820px) without sideways scrolling.
 
 ## Folder rules
 
