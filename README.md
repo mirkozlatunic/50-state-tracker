@@ -12,11 +12,12 @@ Private learning project, built with Python, Flask and SQLite.
 ## Features
 
 - **Clickable map:** every state links to its page. Green = visited,
-  orange = in an upcoming trip, grey = not yet. A year filter shows only one
+  orange = in a trip that hasn't ended (including one happening now), grey = not yet. A year filter shows only one
   year's plans.
-- **City dots:** every visited city gets a dark green dot, every city in an
-  upcoming trip a blue one (blue wins if it's both). Hover a dot to see its
-  visit dates and trips; click it to open the state.
+- **City dots:** every visited city gets a dark green dot, every city in a
+  trip that hasn't ended a blue one (blue wins if it's both). Hover a dot to
+  see its visit dates and trips; click it to open the state. On a phone or
+  tablet, tap a dot once for its details and again to open the state.
 - **Light and dark:** a button at the top switches the theme. With no choice
   saved, it follows your device.
 - **Year planner:** one column per year with its trips, the new states it adds,
@@ -38,9 +39,9 @@ all the others.
 
 ![The year planner with trips and their cities](docs/screenshots/years.png)
 
-| Dark mode | On a phone |
-|---|---|
-| ![The map with city dots in dark mode](docs/screenshots/map-dark.png) | ![The map on an iPhone](docs/screenshots/phone-map.png) ![The year page on an iPhone in dark mode](docs/screenshots/phone-years-dark.png) |
+| Dark mode | Phone: map | Phone: years (dark) |
+|---|---|---|
+| ![The map with city dots in dark mode](docs/screenshots/map-dark.png) | ![The map on an iPhone](docs/screenshots/phone-map.png) | ![The year page on an iPhone in dark mode](docs/screenshots/phone-years-dark.png) |
 
 | States list | State page |
 |---|---|
@@ -76,8 +77,8 @@ all the others.
 - Cities are optional. A city must be in the city list and in its state, and
   a trip's cities must be in one of the trip's states. Cities never change the
   progress: one visit is enough to make a state green, and states count once.
-- One dot per city, however many visits. A city that's visited and in an
-  upcoming trip shows the upcoming (blue) dot.
+- One dot per city, however many visits. A city that's visited and in a trip
+  that hasn't ended shows the blue dot.
 
 ## Getting started
 

@@ -112,7 +112,8 @@ def test_dot_sits_at_the_city_and_links_to_its_state(app, client):
     visit(app, "Denver")
     denver = find_city("Denver", "CO")
     page = map_page(client)
-    dot = re.search(r'<a href="/states/CO">\s*<circle class="city-dot visited" data-city="Denver, CO" '
+    # [^>]* allows the link's other attributes (class, data-details, ...).
+    dot = re.search(r'<a href="/states/CO"[^>]*>\s*<circle class="city-dot visited" data-city="Denver, CO" '
                     r'cx="([\d.]+)" cy="([\d.]+)"', page)
     assert dot and (float(dot.group(1)), float(dot.group(2))) == (denver.x, denver.y)
 
@@ -151,3 +152,50 @@ def test_dot_colors_exist_in_every_theme():
         css = f.read()
     for name in ("--dot-visited:", "--dot-upcoming:", "--dot-ring:"):
         assert css.count(name) == 3, name
+
+
+# --- Dot details on touch screens (phones and tablets can't hover) -------------------
+
+def test_each_dot_link_carries_its_details_and_state_name(app, client):
+    """map.js shows these in a box under the map when you tap a dot."""
+    visit(app, "Denver", visit_date="2024-07-04")
+    trip(app, [("Denver", "CO")])
+    page = unescape(map_page(client))
+    details = f"Denver, CO · visited 2024-07-04 · upcoming: Four Corners weekend ({days_from_now(7)})"
+    assert f'<a href="/states/CO" class="dot-link" data-details="{details}" data-state-name="Colorado">' in page
+    # The hover tooltip says the same thing.
+    assert f"<title>{details}</title>" in page
+
+
+def test_map_has_a_hidden_details_box_and_loads_map_js(client):
+    page = map_page(client)
+    assert '<div class="dot-details" id="dot-details" aria-live="polite" hidden>' in page
+    assert 'src="/static/map.js"' in page
+
+
+def test_map_explains_taps_on_touch_screens(client):
+    """The hint is only shown on touch screens; style.css hides it elsewhere."""
+    page = map_page(client)
+    assert 'class="hint touch-dot-hint"' in page
+    assert "Tap a dot once to see its visits and trips, and again to open its state." in page
+    with open("tracker/static/style.css") as f:
+        css = f.read()
+    assert re.search(r"\.touch-dot-hint \{\s*display: none;", css)
+    assert re.search(r"@media \(hover: none\) \{[^@]*\.touch-dot-hint \{\s*display: block;", css)
+
+
+def test_map_script_handles_the_first_tap(client):
+    script = client.get("/static/map.js").get_data(as_text=True)
+    assert "(hover: none)" in script     # only on screens that can't hover
+    assert "preventDefault" in script    # the first tap shows details instead of opening the state
+    assert "dot-details" in script
+
+
+# --- The legend's dot samples look like the dots ------------------------------------
+
+def test_legend_dot_samples_have_a_thin_ring_like_the_dots():
+    """A thin ring, so the sample keeps most of its color, like a dot on the map."""
+    with open("tracker/static/style.css") as f:
+        css = f.read()
+    rule = re.search(r"\.city-swatch \{(.*?)\}", css, re.S).group(1)
+    assert "border: 1px solid var(--dot-ring)" in rule

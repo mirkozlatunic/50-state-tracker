@@ -31,6 +31,7 @@ from tracker.models import (
 from tracker.map_data import MAP_HEIGHT, MAP_WIDTH, STATE_PATHS
 from tracker.validation import (
     STATE_CODES,
+    STATE_NAMES,
     parse_date,
     validate_trip,
     validate_trip_cities,
@@ -90,6 +91,7 @@ def us_map():
         states=get_states(),
         statuses=get_state_statuses(today, year=year),
         city_dots=get_city_dots(today, year=year),
+        state_names=STATE_NAMES,
         paths=STATE_PATHS,
         width=MAP_WIDTH,
         height=MAP_HEIGHT,
