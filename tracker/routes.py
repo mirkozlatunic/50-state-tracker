@@ -14,12 +14,15 @@ from tracker.models import (
     count_visited_states,
     delete_trip,
     get_state,
+    get_state_statuses,
     get_states,
     get_trip,
+    get_trip_years,
     get_upcoming_trips,
     get_visits_for_state,
     update_trip,
 )
+from tracker.map_data import MAP_HEIGHT, MAP_WIDTH, STATE_PATHS
 from tracker.validation import STATE_CODES, parse_date, validate_trip, validate_visit
 
 bp = Blueprint("main", __name__)
@@ -49,6 +52,28 @@ def home():
 def states():
     """Show all 50 states A to Z, with visited ones marked."""
     return render_template("states.html", states=get_states())
+
+
+@bp.route("/map")
+def us_map():
+    """Show the clickable US map: green = visited, orange = in an upcoming trip.
+
+    ?year=2027 in the address only counts trips that start in 2027.
+    request.args.get(..., type=int) turns the text into a number, and gives
+    None if it isn't one, so /map?year=banana just shows the normal map.
+    """
+    today = date.today()
+    year = request.args.get("year", type=int)
+    return render_template(
+        "map.html",
+        states=get_states(),
+        statuses=get_state_statuses(today, year=year),
+        paths=STATE_PATHS,
+        width=MAP_WIDTH,
+        height=MAP_HEIGHT,
+        year=year,
+        trip_years=get_trip_years(today),
+    )
 
 
 @bp.route("/states/<code>")

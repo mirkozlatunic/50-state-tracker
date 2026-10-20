@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}Map · 50 States{% endblock %}
+
+{% block content %}
+  <h1>Map</h1>
+
+  <p class="year-filter">
+    Planned trips:
+    <a href="{{ url_for('main.us_map') }}" class="{{ 'current' if year is none }}">All upcoming trips</a>
+    {% for trip_year in trip_years %}
+      <a href="{{ url_for('main.us_map', year=trip_year) }}" class="{{ 'current' if year == trip_year }}">{{ trip_year }}</a>
+    {% endfor %}
+  </p>
+
+  {# An SVG is a drawing made of shapes. Each state is a <path> wrapped in a link,
+     and its class (visited / planned / unvisited) picks the color in style.css. #}
+  <svg class="us-map" viewBox="0 0 {{ width }} {{ height }}" role="img" aria-label="Map of the 50 states">
+    {% for state in states %}
+      <a href="{{ url_for('main.state_detail', code=state.code) }}">
+        <path id="state-{{ state.code }}" class="state {{ statuses[state.code] }}" d="{{ paths[state.code] }}"><title>{{ state.name }}</title></path>
+      </a>
+    {% endfor %}
+  </svg>
+
+  <ul class="legend">
+    <li><span class="swatch visited"></span> Visited</li>
+    <li><span class="swatch planned"></span> Planned{% if year %} in {{ year }}{% endif %}</li>
+    <li><span class="swatch unvisited"></span> Not visited yet</li>
+  </ul>
+
+  <p class="hint">Tiny states like Rhode Island are easier to pick from the
+    <a href="{{ url_for('main.states') }}">States list</a>.</p>
+{% endblock %}

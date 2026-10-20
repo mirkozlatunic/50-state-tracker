@@ -173,3 +173,48 @@ def get_upcoming_trips(today, state_id=None):
         trip["states"] = get_trip_states(row["id"])
         trips.append(trip)
     return trips
+
+
+def get_state_statuses(today, year=None):
+    """Return each state's map color as {code: "visited" | "planned" | "unvisited"}.
+
+    "visited" means at least one visit. Otherwise "planned" means the state is
+    in a trip that hasn't ended. Visited wins when both are true. With `year`,
+    only trips that start in that year count as planned.
+    """
+    db = get_db()
+    visited = {row[0] for row in db.execute(
+        "SELECT DISTINCT states.code FROM visits JOIN states ON states.id = visits.state_id"
+    )}
+
+    query = """
+        SELECT DISTINCT states.code FROM trip_states
+        JOIN trips ON trips.id = trip_states.trip_id
+        JOIN states ON states.id = trip_states.state_id
+        WHERE trips.end_date >= ?
+    """
+    params = [today.isoformat()]
+    if year is not None:
+        # substr(text, 1, 4) takes the first 4 characters: the year of "2027-03-01".
+        query += " AND substr(trips.start_date, 1, 4) = ?"
+        params.append(str(year))
+    planned = {row[0] for row in db.execute(query, params)}
+
+    statuses = {}
+    for state in get_states():
+        if state["code"] in visited:
+            statuses[state["code"]] = "visited"
+        elif state["code"] in planned:
+            statuses[state["code"]] = "planned"
+        else:
+            statuses[state["code"]] = "unvisited"
+    return statuses
+
+
+def get_trip_years(today):
+    """Return the years that upcoming trips start in, e.g. [2026, 2027], earliest first."""
+    rows = get_db().execute(
+        "SELECT DISTINCT substr(start_date, 1, 4) FROM trips WHERE end_date >= ? ORDER BY 1",
+        (today.isoformat(),),
+    )
+    return [int(row[0]) for row in rows]

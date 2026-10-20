@@ -128,3 +128,58 @@ fieldset {
   font: inherit;
   cursor: pointer;
 }
+
+/* The map. --visited, --planned and --unvisited are "custom properties": named colors we can reuse. */
+:root {
+  --visited: #2e9e4f;
+  --planned: #f28c28;
+  --unvisited: #d9d9d9;
+}
+
+.us-map {
+  width: 100%;
+  height: auto;
+}
+
+.state {
+  stroke: #fff;
+  stroke-width: 1;
+  cursor: pointer;
+}
+
+.state.visited { fill: var(--visited); }
+.state.planned { fill: var(--planned); }
+.state.unvisited { fill: var(--unvisited); }
+
+.state:hover {
+  opacity: 0.75;
+}
+
+.legend {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.swatch {
+  display: inline-block;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 2px;
+  vertical-align: middle;
+}
+
+.swatch.visited { background: var(--visited); }
+.swatch.planned { background: var(--planned); }
+.swatch.unvisited { background: var(--unvisited); }
+
+.year-filter a {
+  margin-left: 0.5rem;
+}
+
+.year-filter a.current {
+  font-weight: bold;
+  color: inherit;
+  text-decoration: none;
+}
