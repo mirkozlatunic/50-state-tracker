@@ -31,6 +31,13 @@ def create_app(test_config=None):
     # Make sure the instance/ folder exists so the database file can be created.
     os.makedirs(app.instance_path, exist_ok=True)
 
+    # Connect the database helpers, then make sure the tables and the 50
+    # states exist. init_db() keeps existing data, so this is safe on every start.
+    from tracker import db
+    db.init_app(app)
+    with app.app_context():
+        db.init_db()
+
     # Plug in the pages defined in routes.py.
     from tracker import routes
     app.register_blueprint(routes.bp)
