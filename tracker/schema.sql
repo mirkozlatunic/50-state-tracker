@@ -7,8 +7,7 @@ CREATE TABLE IF NOT EXISTS states (
     name TEXT UNIQUE NOT NULL   -- e.g. "California"
 );
 
--- Visits are added in slice 2. The table exists now so the progress
--- counter can already count visited states (0 to start with).
+-- One row per visit. A state can have several; progress counts each state once.
 CREATE TABLE IF NOT EXISTS visits (
     id         INTEGER PRIMARY KEY,
     state_id   INTEGER NOT NULL REFERENCES states(id),
