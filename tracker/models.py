@@ -66,19 +66,12 @@ def count_visited_states():
     return get_db().execute("SELECT COUNT(DISTINCT state_id) FROM visits").fetchone()[0]
 
 
-def add_trip(name, start_date, end_date, state_codes):
-    """Save a planned trip and its states. Expects input that passed validate_trip().
+def save_trip_states(db, trip_id, state_codes):
+    """Link a trip to each of its states. Used when adding and when editing a trip.
 
     INSERT OR IGNORE skips a state that's already on the trip, so ticking the
     same state twice saves it once.
     """
-    db = get_db()
-    # cursor.lastrowid is the id SQLite gave the row we just inserted.
-    cursor = db.execute(
-        "INSERT INTO trips (name, start_date, end_date) VALUES (?, ?, ?)",
-        (name, start_date, end_date),
-    )
-    trip_id = cursor.lastrowid
     for code in state_codes:
         db.execute(
             """
@@ -87,6 +80,60 @@ def add_trip(name, start_date, end_date, state_codes):
             """,
             (trip_id, code),
         )
+
+
+def add_trip(name, start_date, end_date, state_codes):
+    """Save a planned trip and its states, and return the new trip's id.
+
+    Expects input that passed validate_trip().
+    """
+    db = get_db()
+    # cursor.lastrowid is the id SQLite gave the row we just inserted.
+    cursor = db.execute(
+        "INSERT INTO trips (name, start_date, end_date) VALUES (?, ?, ?)",
+        (name, start_date, end_date),
+    )
+    trip_id = cursor.lastrowid
+    save_trip_states(db, trip_id, state_codes)
+    db.commit()
+    return trip_id
+
+
+def get_trip(trip_id):
+    """Return one trip as a dictionary with a list of its state codes, or None if it doesn't exist."""
+    row = get_db().execute(
+        "SELECT id, name, start_date, end_date FROM trips WHERE id = ?", (trip_id,)
+    ).fetchone()
+    if row is None:
+        return None
+    trip = dict(row)
+    trip["states"] = [state["code"] for state in get_trip_states(trip_id)]
+    return trip
+
+
+def update_trip(trip_id, name, start_date, end_date, state_codes):
+    """Change a trip's name, dates and states. Expects input that passed validate_trip().
+
+    The simplest way to change the states is to remove them all and add the
+    new list back.
+    """
+    db = get_db()
+    db.execute(
+        "UPDATE trips SET name = ?, start_date = ?, end_date = ? WHERE id = ?",
+        (name, start_date, end_date, trip_id),
+    )
+    db.execute("DELETE FROM trip_states WHERE trip_id = ?", (trip_id,))
+    save_trip_states(db, trip_id, state_codes)
+    db.commit()
+
+
+def delete_trip(trip_id):
+    """Delete a trip. Its trip_states rows go too, thanks to ON DELETE CASCADE in schema.sql.
+
+    Visits live in their own table, so they're never touched.
+    """
+    db = get_db()
+    db.execute("DELETE FROM trips WHERE id = ?", (trip_id,))
     db.commit()
 
 

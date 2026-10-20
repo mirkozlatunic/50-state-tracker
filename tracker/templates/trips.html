@@ -17,6 +17,14 @@
           {% for state in trip.states %}
             <a href="{{ url_for('main.state_detail', code=state.code) }}">{{ state.name }}</a>{{ ", " if not loop.last }}
           {% endfor %}
+          <div class="trip-actions">
+            <a href="{{ url_for('main.edit_trip', trip_id=trip.id) }}">Edit</a>
+            {# confirm() is a built-in browser pop-up; returning false stops the form. #}
+            <form method="post" action="{{ url_for('main.remove_trip', trip_id=trip.id) }}"
+                  onsubmit="return confirm('Delete this trip? This can\'t be undone.');">
+              <button type="submit" class="link-button">Delete</button>
+            </form>
+          </div>
         </li>
       {% endfor %}
     </ul>

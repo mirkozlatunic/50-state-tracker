@@ -106,3 +106,25 @@ nav a {
 fieldset {
   margin-bottom: 1rem;
 }
+
+.trip-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.25rem;
+  font-size: 0.9rem;
+}
+
+.trip-actions form {
+  margin: 0;
+}
+
+/* A button that looks like a link, for Delete. */
+.link-button {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #b00020;
+  text-decoration: underline;
+  font: inherit;
+  cursor: pointer;
+}

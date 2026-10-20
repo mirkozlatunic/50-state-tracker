@@ -44,11 +44,15 @@ def validate_visit(state_code, visit_date, today):
     return errors
 
 
-def validate_trip(name, start_date, end_date, state_codes, today):
-    """Check a new planned trip. Returns a list of error messages; empty means OK.
+def validate_trip(name, start_date, end_date, state_codes, today, keep_start=None):
+    """Check a planned trip. Returns a list of error messages; empty means OK.
 
     `state_codes` is a list like ["AZ", "UT"]. `today` is passed in, like in
     validate_visit(), so tests can pick the day.
+
+    When editing, `keep_start` is the trip's current start date. Keeping that
+    date is allowed even if it has passed, so a trip in progress can still be
+    renamed. `=None` makes it optional: new trips simply leave it out.
     """
     errors = []
 
@@ -62,7 +66,7 @@ def validate_trip(name, start_date, end_date, state_codes, today):
         start = parse_date(start_date)
         if start is None:
             errors.append("Please enter a real start date.")
-        elif start <= today:
+        elif start <= today and start != parse_date(keep_start or ""):
             errors.append("A planned trip must start in the future.")
 
     end = None
