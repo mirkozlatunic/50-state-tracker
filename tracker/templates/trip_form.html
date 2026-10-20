@@ -41,6 +41,23 @@
       </div>
     </fieldset>
 
+    <fieldset>
+      <legend>Cities <span class="hint">(optional, e.g. “Denver, CO”)</span></legend>
+      <div class="city-rows">
+        {% for value in city_rows %}
+          <input type="text" name="cities" value="{{ value }}" list="trip-city-options" autocomplete="off" aria-label="City">
+        {% endfor %}
+      </div>
+      <button type="button" class="add-city-row">Add another city</button>
+      <datalist id="trip-city-options">
+        {% for city in trip_city_options %}<option value="{{ city.name }}, {{ city.state }}">{% endfor %}
+      </datalist>
+    </fieldset>
+
     <button type="submit">{{ button_label }}</button>
   </form>
+{% endblock %}
+
+{% block scripts %}
+  <script src="{{ url_for('static', filename='cities.js') }}"></script>
 {% endblock %}

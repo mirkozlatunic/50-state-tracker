@@ -13,6 +13,7 @@
       {% for visit in visits %}
         <li>
           <span class="date">{{ visit.visit_date }}</span>
+          {% if visit.city %}· {{ visit.city }}{% endif %}
           {% if visit.note %}· {{ visit.note }}{% endif %}
         </li>
       {% endfor %}
@@ -25,7 +26,12 @@
   {% if trips %}
     <ul class="trips">
       {% for trip in trips %}
-        <li>{{ trip.name }} · {{ trip.start_date }} to {{ trip.end_date }}</li>
+        <li>
+          {{ trip.name }} · {{ trip.start_date }} to {{ trip.end_date }}
+          {# Only this state's cities: "selectattr" keeps the items whose code matches. #}
+          {% set here = trip.cities | selectattr("code", "equalto", state.code) | map(attribute="city") | list %}
+          {% if here %}· {{ here | join(", ") }}{% endif %}
+        </li>
       {% endfor %}
     </ul>
   {% else %}

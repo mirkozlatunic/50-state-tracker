@@ -29,13 +29,13 @@ def get_state(code):
 
 
 def get_visits_for_state(state_id):
-    """Return one state's visits, newest first.
+    """Return one state's visits (date, note and city), newest first.
 
     If two visits share a date, the one added later comes first (higher id).
     """
     return get_db().execute(
         """
-        SELECT visit_date, note FROM visits
+        SELECT visit_date, note, city FROM visits
         WHERE state_id = ?
         ORDER BY visit_date DESC, id DESC
         """,
@@ -43,19 +43,20 @@ def get_visits_for_state(state_id):
     ).fetchall()
 
 
-def add_visit(state_code, visit_date, note):
+def add_visit(state_code, visit_date, note, city=None):
     """Save one visit. Expects input that already passed validate_visit().
 
+    `city` is the official city name, or None for a visit without a city.
     The ? marks are placeholders: SQLite fills in the values safely, so text
     typed into the form can never be run as SQL.
     """
     db = get_db()
     db.execute(
         """
-        INSERT INTO visits (state_id, visit_date, note)
-        VALUES ((SELECT id FROM states WHERE code = ?), ?, ?)
+        INSERT INTO visits (state_id, visit_date, note, city)
+        VALUES ((SELECT id FROM states WHERE code = ?), ?, ?, ?)
         """,
-        (state_code, visit_date, note),
+        (state_code, visit_date, note, city),
     )
     db.commit()
 
@@ -84,10 +85,36 @@ def save_trip_states(db, trip_id, state_codes):
         )
 
 
-def add_trip(name, start_date, end_date, state_codes):
-    """Save a planned trip and its states, and return the new trip's id.
+def save_trip_cities(db, trip_id, cities):
+    """Link a trip to its cities, given as (official name, state code) pairs."""
+    for name, code in cities:
+        db.execute(
+            """
+            INSERT OR IGNORE INTO trip_cities (trip_id, state_id, city)
+            VALUES (?, (SELECT id FROM states WHERE code = ?), ?)
+            """,
+            (trip_id, code, name),
+        )
 
-    Expects input that passed validate_trip().
+
+def get_trip_cities(trip_id):
+    """Return a trip's cities as rows with `city` and `code`, A to Z."""
+    return get_db().execute(
+        """
+        SELECT trip_cities.city, states.code FROM trip_cities
+        JOIN states ON states.id = trip_cities.state_id
+        WHERE trip_cities.trip_id = ?
+        ORDER BY trip_cities.city
+        """,
+        (trip_id,),
+    ).fetchall()
+
+
+def add_trip(name, start_date, end_date, state_codes, cities=()):
+    """Save a planned trip, its states and its cities, and return the new trip's id.
+
+    Expects input that passed validate_trip() and validate_trip_cities().
+    `cities` is a list of (official name, state code) pairs; it's optional.
     """
     db = get_db()
     # cursor.lastrowid is the id SQLite gave the row we just inserted.
@@ -97,6 +124,7 @@ def add_trip(name, start_date, end_date, state_codes):
     )
     trip_id = cursor.lastrowid
     save_trip_states(db, trip_id, state_codes)
+    save_trip_cities(db, trip_id, cities)
     db.commit()
     return trip_id
 
@@ -110,14 +138,16 @@ def get_trip(trip_id):
         return None
     trip = dict(row)
     trip["states"] = [state["code"] for state in get_trip_states(trip_id)]
+    # As the form shows them: "Denver, CO".
+    trip["cities"] = [f"{row['city']}, {row['code']}" for row in get_trip_cities(trip_id)]
     return trip
 
 
-def update_trip(trip_id, name, start_date, end_date, state_codes):
-    """Change a trip's name, dates and states. Expects input that passed validate_trip().
+def update_trip(trip_id, name, start_date, end_date, state_codes, cities=()):
+    """Change a trip's name, dates, states and cities. Expects input that passed validation.
 
-    The simplest way to change the states is to remove them all and add the
-    new list back.
+    The simplest way to change the states and cities is to remove them all and
+    add the new lists back.
     """
     db = get_db()
     db.execute(
@@ -126,11 +156,13 @@ def update_trip(trip_id, name, start_date, end_date, state_codes):
     )
     db.execute("DELETE FROM trip_states WHERE trip_id = ?", (trip_id,))
     save_trip_states(db, trip_id, state_codes)
+    db.execute("DELETE FROM trip_cities WHERE trip_id = ?", (trip_id,))
+    save_trip_cities(db, trip_id, cities)
     db.commit()
 
 
 def delete_trip(trip_id):
-    """Delete a trip. Its trip_states rows go too, thanks to ON DELETE CASCADE in schema.sql.
+    """Delete a trip. Its trip_states and trip_cities rows go too (ON DELETE CASCADE in schema.sql).
 
     Visits live in their own table, so they're never touched.
     """
@@ -173,6 +205,7 @@ def get_upcoming_trips(today, state_id=None):
         # dict(row) copies the row into a normal dictionary we can add to.
         trip = dict(row)
         trip["states"] = get_trip_states(row["id"])
+        trip["cities"] = get_trip_cities(row["id"])
         trips.append(trip)
     return trips
 

@@ -18,6 +18,9 @@
           {% for state in trip.states %}
             <a href="{{ url_for('main.state_detail', code=state.code) }}">{{ state.name }}</a>{{ ", " if not loop.last }}
           {% endfor %}
+          {% if trip.cities %}
+            <div class="hint">Cities: {% for city in trip.cities %}{{ city.city }}, {{ city.code }}{{ "; " if not loop.last }}{% endfor %}</div>
+          {% endif %}
           {{ trip_actions(trip) }}
         </li>
       {% endfor %}

@@ -24,6 +24,15 @@
     </label>
 
     <label>
+      City <span class="hint">(optional)</span>
+      {# list= connects the field to the <datalist> below, which the browser shows as suggestions. #}
+      <input type="text" name="city" value="{{ form.city }}" list="city-options" autocomplete="off">
+    </label>
+    <datalist id="city-options">
+      {% for city in city_options %}<option value="{{ city.name }}">{% endfor %}
+    </datalist>
+
+    <label>
       Visit date
       <input type="date" name="visit_date" value="{{ form.visit_date }}" max="{{ today.isoformat() }}" required>
     </label>
@@ -37,4 +46,8 @@
 
     <button type="submit">Save visit</button>
   </form>
+{% endblock %}
+
+{% block scripts %}
+  <script src="{{ url_for('static', filename='cities.js') }}"></script>
 {% endblock %}

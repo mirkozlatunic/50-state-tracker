@@ -5,9 +5,11 @@ anything, which keeps them easy to test on their own.
 """
 from datetime import datetime
 
+from tracker.cities import find_city
 from tracker.states_data import STATES
 
 STATE_CODES = {code for code, name in STATES}
+STATE_NAMES = dict(STATES)  # {"CO": "Colorado", ...}
 
 
 def parse_date(text):
@@ -22,10 +24,11 @@ def parse_date(text):
         return None
 
 
-def validate_visit(state_code, visit_date, today):
+def validate_visit(state_code, visit_date, today, city=""):
     """Check a new visit. Returns a list of error messages; empty means OK.
 
     `today` is passed in instead of looked up here, so tests can pick the day.
+    `city` is optional; if given, it must be a city in the chosen state.
     """
     errors = []
 
@@ -41,7 +44,44 @@ def validate_visit(state_code, visit_date, today):
         elif parsed > today:
             errors.append("The visit date can't be in the future.")
 
+    city = city.strip()
+    if city and state_code in STATE_CODES and find_city(city, state_code) is None:
+        errors.append(f"We couldn't find “{city}” in {STATE_NAMES[state_code]}.")
+
     return errors
+
+
+def validate_trip_cities(lines, state_codes):
+    """Check a trip's city rows, e.g. ["Denver, CO", "Santa Fe, NM", ""].
+
+    Returns (errors, cities): the error messages, and the cities as
+    (official name, state code) pairs. Empty rows are skipped and a city
+    written twice counts once.
+    """
+    errors = []
+    cities = []
+    for line in lines:
+        text = line.strip()
+        if not text:
+            continue
+        # rpartition splits at the last comma: "Winston-Salem, NC" -> "Winston-Salem", ",", "NC".
+        name, comma, code = text.rpartition(",")
+        name, code = name.strip(), code.strip().upper()
+        if not comma or not name or code not in STATE_CODES:
+            message = "Please write each city as “City, ST”, for example “Denver, CO”."
+        else:
+            city = find_city(name, code)
+            if city is None:
+                message = f"We couldn't find “{name}, {code}”."
+            elif code not in state_codes:
+                message = f"{city.name}, {city.state} isn't in this trip's states."
+            else:
+                if (city.name, city.state) not in cities:
+                    cities.append((city.name, city.state))
+                continue
+        if message not in errors:
+            errors.append(message)
+    return errors, cities
 
 
 def validate_trip(name, start_date, end_date, state_codes, today, keep_start=None):

@@ -12,7 +12,8 @@ CREATE TABLE IF NOT EXISTS visits (
     id         INTEGER PRIMARY KEY,
     state_id   INTEGER NOT NULL REFERENCES states(id),
     visit_date TEXT NOT NULL,   -- "YYYY-MM-DD"
-    note       TEXT NOT NULL DEFAULT ''
+    note       TEXT NOT NULL DEFAULT '',
+    city       TEXT             -- optional; official spelling from tracker/data/us_cities.csv
 );
 
 CREATE TABLE IF NOT EXISTS trips (
@@ -30,4 +31,13 @@ CREATE TABLE IF NOT EXISTS trip_states (
     trip_id  INTEGER NOT NULL REFERENCES trips(id) ON DELETE CASCADE,
     state_id INTEGER NOT NULL REFERENCES states(id),
     PRIMARY KEY (trip_id, state_id)
+);
+
+-- The cities on a trip. Like trip_states, one row per (trip, city). A city is
+-- stored as its name plus its state, e.g. ("Denver", Colorado's id).
+CREATE TABLE IF NOT EXISTS trip_cities (
+    trip_id  INTEGER NOT NULL REFERENCES trips(id) ON DELETE CASCADE,
+    state_id INTEGER NOT NULL REFERENCES states(id),
+    city     TEXT NOT NULL,
+    PRIMARY KEY (trip_id, state_id, city)
 );

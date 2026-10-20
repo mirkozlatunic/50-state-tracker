@@ -39,8 +39,20 @@ def init_db():
     db = get_db()
     with current_app.open_resource("schema.sql") as f:
         db.executescript(f.read().decode("utf8"))
+    add_missing_columns(db)
     db.executemany("INSERT OR IGNORE INTO states (code, name) VALUES (?, ?)", STATES)
     db.commit()
+
+
+def add_missing_columns(db):
+    """Bring a database made by an older version of the app up to date (a "migration").
+
+    "CREATE TABLE IF NOT EXISTS" skips tables that already exist, so a new
+    column has to be added separately. PRAGMA table_info lists a table's columns.
+    """
+    visit_columns = {row["name"] for row in db.execute("PRAGMA table_info(visits)")}
+    if "city" not in visit_columns:
+        db.execute("ALTER TABLE visits ADD COLUMN city TEXT")
 
 
 @click.command("init-db")
