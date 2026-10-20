@@ -489,7 +489,11 @@ fieldset {
 /* The legend's round dot samples. */
 .city-swatch {
   border-radius: 50%;
+  /* The same ring as the dots on the map, plus a thin outline so a white ring
+     still shows on a white page. */
+  border: 2px solid var(--dot-ring);
   box-shadow: 0 0 0 1px var(--border);
+  box-sizing: border-box;
 }
 
 .city-swatch.visited { background: var(--dot-visited); }
