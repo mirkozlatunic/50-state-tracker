@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% from "macros.html" import trip_actions %}
+
+{% block title %}Years · 50 States{% endblock %}
+
+{% block content %}
+  <h1>Years</h1>
+
+  <div class="years">
+    {% for year_plan in plan %}
+      <section class="year" data-year="{{ year_plan.year }}">
+        <h2>{{ year_plan.year }}</h2>
+        <p class="year-total">By the end of {{ year_plan.year }}: {{ year_plan.total_by_end }} of {{ total_states }}</p>
+
+        {% if year_plan.trips %}
+          {% for trip in year_plan.trips %}
+            <article class="trip-card" data-trip-id="{{ trip.id }}">
+              <strong>{{ trip.name }}</strong>
+              <div class="date">{{ trip.start_date }} to {{ trip.end_date }}</div>
+              <div>
+                {% for state in trip.states %}
+                  <a href="{{ url_for('main.state_detail', code=state.code) }}">{{ state.name }}</a>{{ ", " if not loop.last }}
+                {% endfor %}
+              </div>
+              {{ trip_actions(trip, return_to="years") }}
+            </article>
+          {% endfor %}
+
+          <p class="hint">
+            {% if year_plan.new_states %}
+              New states: {{ year_plan.new_states | join(", ") }}
+            {% else %}
+              No new states this year.
+            {% endif %}
+          </p>
+        {% else %}
+          <p class="hint">No trips planned this year.</p>
+        {% endif %}
+
+        <p><a href="{{ url_for('main.new_trip', year=year_plan.year) }}">Plan a trip in {{ year_plan.year }}</a></p>
+      </section>
+    {% endfor %}
+  </div>
+{% endblock %}

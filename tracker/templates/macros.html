@@ -1,0 +1,14 @@
+{# A "macro" is like a function for templates: a piece of HTML you can reuse
+   with different values. Pages load it with {% from "macros.html" import ... %}. #}
+
+{% macro trip_actions(trip, return_to="") %}
+  <div class="trip-actions">
+    <a href="{{ url_for('main.edit_trip', trip_id=trip.id, return_to=return_to or None) }}">Edit</a>
+    {# confirm() is a built-in browser pop-up; returning false stops the form. #}
+    <form method="post" action="{{ url_for('main.remove_trip', trip_id=trip.id) }}"
+          onsubmit="return confirm('Delete this trip? This can\'t be undone.');">
+      {% if return_to %}<input type="hidden" name="return_to" value="{{ return_to }}">{% endif %}
+      <button type="submit" class="link-button">Delete</button>
+    </form>
+  </div>
+{% endmacro %}
