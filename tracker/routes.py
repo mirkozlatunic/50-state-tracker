@@ -20,6 +20,7 @@ from tracker.models import (
     get_trip_years,
     get_upcoming_trips,
     get_visits_for_state,
+    get_year_plan,
     update_trip,
 )
 from tracker.map_data import MAP_HEIGHT, MAP_WIDTH, STATE_PATHS
@@ -147,12 +148,55 @@ def read_trip_form():
     }
 
 
+def get_return_to(source):
+    """Read the return_to field from `source` (request.args or request.form).
+
+    Only "years" is allowed; anything else means "go to /trips". Accepting
+    only known values means a link can't send you off to another website.
+    """
+    return "years" if source.get("return_to") == "years" else ""
+
+
+def redirect_after_trip_change(return_to):
+    """After saving or deleting a trip, go back to the page you came from."""
+    if return_to == "years":
+        return redirect(url_for("main.years"))
+    return redirect(url_for("main.trips"))
+
+
+@bp.route("/years")
+def years():
+    """Show one column per year with its trips, new states and running total."""
+    return render_template("years.html", plan=get_year_plan(date.today()))
+
+
 @bp.route("/trips/new", methods=["GET", "POST"])
 def new_trip():
-    """Show the plan-a-trip form (GET) or save the filled-in form (POST)."""
+    """Show the plan-a-trip form (GET) or save the filled-in form (POST).
+
+    With ?year=2027 (from the year page), the start date picker is limited to
+    that year and saving goes back to the year page. The form has no action=,
+    so it posts to the same address, and ?year= is still there on POST.
+    """
     today = date.today()
+    tomorrow = today + timedelta(days=1)
     form = {"states": []}
     errors = []
+    return_to = get_return_to(request.args) or get_return_to(request.form)
+
+    # A year from this year up to 9999 (the largest year Python dates allow).
+    year = request.args.get("year", type=int)
+    if year is not None and not today.year <= year <= 9999:
+        year = None
+    if year is not None:
+        heading = f"Plan a trip in {year}"
+        min_start = max(tomorrow, date(year, 1, 1))
+        max_start = date(year, 12, 31)
+        return_to = "years"
+    else:
+        heading = "Plan a trip"
+        min_start = tomorrow
+        max_start = None
 
     if request.method == "POST":
         form = read_trip_form()
@@ -164,19 +208,22 @@ def new_trip():
             start = parse_date(form["start_date"]).isoformat()
             end = parse_date(form["end_date"]).isoformat()
             add_trip(form["name"], start, end, form["states"])
-            return redirect(url_for("main.trips"))
+            return redirect_after_trip_change(return_to)
 
     # Show the form: empty on GET, or again with errors after a bad POST.
     status = 400 if errors else 200
     return render_template(
         "trip_form.html",
-        heading="Plan a trip",
+        heading=heading,
         button_label="Save trip",
         states=get_states(),
         form=form,
         errors=errors,
-        # The earliest start the date picker offers: trips must start in the future.
-        min_start=today + timedelta(days=1),
+        # The date picker's limits: trips must start in the future (and in
+        # the chosen year, if there is one).
+        min_start=min_start,
+        max_start=max_start,
+        return_to=return_to,
     ), status
 
 
@@ -193,6 +240,7 @@ def edit_trip(trip_id):
     today = date.today()
     form = trip
     errors = []
+    return_to = get_return_to(request.args) or get_return_to(request.form)
 
     if request.method == "POST":
         form = read_trip_form()
@@ -204,7 +252,7 @@ def edit_trip(trip_id):
             start = parse_date(form["start_date"]).isoformat()
             end = parse_date(form["end_date"]).isoformat()
             update_trip(trip_id, form["name"], start, end, form["states"])
-            return redirect(url_for("main.trips"))
+            return redirect_after_trip_change(return_to)
 
     status = 400 if errors else 200
     return render_template(
@@ -217,6 +265,8 @@ def edit_trip(trip_id):
         # Tomorrow, or the trip's own start date if that's earlier (a trip in
         # progress), so the date picker lets you keep it.
         min_start=min(today + timedelta(days=1), parse_date(trip["start_date"])),
+        max_start=None,
+        return_to=return_to,
     ), status
 
 
@@ -226,4 +276,4 @@ def remove_trip(trip_id):
     if get_trip(trip_id) is None:
         abort(404)
     delete_trip(trip_id)
-    return redirect(url_for("main.trips"))
+    return redirect_after_trip_change(get_return_to(request.form))

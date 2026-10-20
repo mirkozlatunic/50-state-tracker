@@ -175,6 +175,13 @@ def get_upcoming_trips(today, state_id=None):
     return trips
 
 
+def get_visited_codes():
+    """Return the codes of every state with at least one visit, as a set like {"CA", "NV"}."""
+    return {row[0] for row in get_db().execute(
+        "SELECT DISTINCT states.code FROM visits JOIN states ON states.id = visits.state_id"
+    )}
+
+
 def get_state_statuses(today, year=None):
     """Return each state's map color as {code: "visited" | "planned" | "unvisited"}.
 
@@ -183,9 +190,7 @@ def get_state_statuses(today, year=None):
     only trips that start in that year count as planned.
     """
     db = get_db()
-    visited = {row[0] for row in db.execute(
-        "SELECT DISTINCT states.code FROM visits JOIN states ON states.id = visits.state_id"
-    )}
+    visited = get_visited_codes()
 
     query = """
         SELECT DISTINCT states.code FROM trip_states
@@ -218,3 +223,46 @@ def get_trip_years(today):
         (today.isoformat(),),
     )
     return [int(row[0]) for row in rows]
+
+
+def get_year_plan(today):
+    """Return one dictionary per year, for the year page, earliest year first.
+
+    Each one looks like:
+    {"year": 2027, "trips": [...], "new_states": ["Colorado", ...], "total_by_end": 15}
+
+    - Years run from this year to the year of the last planned trip, and
+      always include at least this year and the next two.
+    - A trip belongs to the year it starts in. A trip that's still going but
+      started last year (say Dec 30 to Jan 2) shows in this year.
+    - "new_states" are states in that year's trips that you haven't visited
+      and didn't already plan in an earlier year.
+    - "total_by_end" is how many states you'll have by the end of that year:
+      the visited ones plus every planned one so far, each counted once.
+    """
+    trips = get_upcoming_trips(today)
+    for trip in trips:
+        trip["year"] = max(int(trip["start_date"][:4]), today.year)
+
+    # default= is what max() gives back when the list is empty (no trips).
+    last_year = max([trip["year"] for trip in trips], default=today.year)
+    last_year = max(last_year, today.year + 2)
+
+    counted = get_visited_codes()
+    plan = []
+    for year in range(today.year, last_year + 1):
+        year_trips = [trip for trip in trips if trip["year"] == year]
+        new_states = {}
+        for trip in year_trips:
+            for state in trip["states"]:
+                if state["code"] not in counted:
+                    new_states[state["code"]] = state["name"]
+        # "|=" adds everything from the right-hand side into the set.
+        counted |= set(new_states)
+        plan.append({
+            "year": year,
+            "trips": year_trips,
+            "new_states": sorted(new_states.values()),
+            "total_by_end": len(counted),
+        })
+    return plan

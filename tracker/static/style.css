@@ -183,3 +183,43 @@ fieldset {
   color: inherit;
   text-decoration: none;
 }
+
+/* The year page: columns side by side; scroll sideways if there are many years. */
+.years {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+}
+
+/* flex: 1 0 13rem = share the free space, never shrink below 13rem. */
+.year {
+  flex: 1 0 13rem;
+  background: #f6f6f6;
+  border-radius: 6px;
+  padding: 0 0.75rem 0.5rem;
+}
+
+.year h2 {
+  margin-bottom: 0;
+}
+
+.year-total {
+  margin-top: 0.25rem;
+  font-weight: bold;
+  color: var(--visited);
+}
+
+.trip-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-left: 4px solid var(--planned);
+  border-radius: 4px;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.trip-card .date {
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
