@@ -1,4 +1,5 @@
 """Slice 2: adding visits, and the rules a visit must follow."""
+import re
 from datetime import date, timedelta
 from html import unescape
 
@@ -57,8 +58,37 @@ def test_visit_to_an_unknown_state_is_rejected(app):
 # --- The add-visit page ------------------------------------------------------
 
 def test_add_visit_form_lists_all_50_states(client):
+    """Count the options whose value is a two-letter state code.
+
+    re.findall finds every match of a pattern ("regular expression") in text:
+    [A-Z]{2} means "exactly two capital letters".
+    """
     page = client.get("/visits/new").get_data(as_text=True)
-    assert page.count("<option value=") == 50
+    assert len(re.findall(r'<option value="[A-Z]{2}"', page)) == 50
+
+
+def test_state_dropdown_starts_on_a_placeholder(client):
+    """No state is picked for you, so you can't save Alabama by accident."""
+    page = client.get("/visits/new").get_data(as_text=True)
+    assert '<option value="" disabled selected>Choose a state</option>' in page
+    assert re.search(r'<option value="[A-Z]{2}" selected', page) is None
+
+
+def test_visit_without_a_state_is_rejected(app, client):
+    """Submitting the form with the placeholder still chosen saves nothing."""
+    response = client.post("/visits/new", data={"visit_date": "2024-07-04", "note": ""})
+    assert response.status_code == 400
+    assert "Please choose one of the 50 states." in response.get_data(as_text=True)
+    assert count_visits(app) == 0
+
+
+def test_chosen_state_stays_selected_after_an_error(client):
+    tomorrow = (date.today() + timedelta(days=1)).isoformat()
+    page = client.post(
+        "/visits/new", data={"state": "CA", "visit_date": tomorrow, "note": ""}
+    ).get_data(as_text=True)
+    assert '<option value="CA" selected' in page
+    assert '<option value="" disabled selected>' not in page
 
 
 def test_add_visit_form_explains_layovers_dont_count(client):

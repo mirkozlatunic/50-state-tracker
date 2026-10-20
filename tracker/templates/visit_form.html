@@ -15,6 +15,8 @@
     <label>
       State
       <select name="state" required>
+        {# "disabled" means it can't be submitted, so "required" makes you pick a real state. #}
+        <option value="" disabled {{ 'selected' if not form.state }}>Choose a state</option>
         {% for state in states %}
           <option value="{{ state.code }}" {{ 'selected' if form.state == state.code }}>{{ state.name }}</option>
         {% endfor %}
