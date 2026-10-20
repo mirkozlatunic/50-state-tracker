@@ -491,10 +491,40 @@ fieldset {
   border-radius: 50%;
   /* The same ring as the dots on the map, plus a thin outline so a white ring
      still shows on a white page. */
-  border: 2px solid var(--dot-ring);
+  border: 1px solid var(--dot-ring);
   box-shadow: 0 0 0 1px var(--border);
   box-sizing: border-box;
 }
 
 .city-swatch.visited { background: var(--dot-visited); }
 .city-swatch.upcoming { background: var(--dot-upcoming); }
+
+/* Dot details on touch screens: a box under the map, filled in by map.js. */
+.dot-details {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--dot-upcoming);
+  border-radius: 4px;
+  padding: 0.5rem 0.75rem;
+  margin: 0.5rem 0;
+}
+
+.dot-details p {
+  margin: 0 0 0.25rem;
+}
+
+/* The tapped dot gets a thicker ring. */
+.dot-link.selected .city-dot {
+  stroke-width: 3;
+}
+
+.touch-dot-hint {
+  display: none;
+}
+
+/* Screens that can't hover (phones, tablets): show the tap hint. */
+@media (hover: none) {
+  .touch-dot-hint {
+    display: block;
+  }
+}

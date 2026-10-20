@@ -24,11 +24,16 @@
 
     {# The city dots come after the states: in an SVG, later shapes are drawn on top. #}
     {% for dot in city_dots %}
-      <a href="{{ url_for('main.state_detail', code=dot.state) }}">
-        <circle class="city-dot {{ dot.kind }}" data-city="{{ dot.name }}, {{ dot.state }}" cx="{{ dot.x }}" cy="{{ dot.y }}" r="4"><title>{{ dot.name }}, {{ dot.state }}{% if dot.visit_dates %} · visited {{ dot.visit_dates | join(", ") }}{% endif %}{% for trip_name, start in dot.trips %}{{ " · upcoming: " if loop.first else "; " }}{{ trip_name }} ({{ start }}){% endfor %}</title></circle>
+      {# "set ... endset" saves this text once, for the hover tooltip and for map.js (touch screens). #}
+      {% set details %}{{ dot.name }}, {{ dot.state }}{% if dot.visit_dates %} · visited {{ dot.visit_dates | join(", ") }}{% endif %}{% for trip_name, start in dot.trips %}{{ " · upcoming: " if loop.first else "; " }}{{ trip_name }} ({{ start }}){% endfor %}{% endset %}
+      <a href="{{ url_for('main.state_detail', code=dot.state) }}" class="dot-link" data-details="{{ details }}" data-state-name="{{ state_names[dot.state] }}">
+        <circle class="city-dot {{ dot.kind }}" data-city="{{ dot.name }}, {{ dot.state }}" cx="{{ dot.x }}" cy="{{ dot.y }}" r="4"><title>{{ details }}</title></circle>
       </a>
     {% endfor %}
   </svg>
+
+  {# Filled in by map.js when you tap a dot on a phone or tablet. #}
+  <div class="dot-details" id="dot-details" aria-live="polite" hidden></div>
 
   <ul class="legend">
     <li><span class="swatch visited"></span> Visited</li>
@@ -38,6 +43,12 @@
     <li><span class="swatch city-swatch upcoming"></span> Upcoming city{% if year %} in {{ year }}{% endif %}</li>
   </ul>
 
+  <p class="hint touch-dot-hint">Tap a dot once to see its visits and trips, and again to open its state.</p>
+
   <p class="hint">Tiny states like Rhode Island are easier to pick from the
     <a href="{{ url_for('main.states') }}">States list</a>.</p>
+{% endblock %}
+
+{% block scripts %}
+  <script src="{{ url_for('static', filename='map.js') }}"></script>
 {% endblock %}
