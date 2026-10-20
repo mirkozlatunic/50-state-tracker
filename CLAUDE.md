@@ -59,6 +59,9 @@ Python 3, Flask, SQLite, pytest. No other packages without asking me first.
 - City dots: dark green = visited city, blue = city in a trip that hasn't
   ended. A city that's both shows blue. One dot per city, however many visits.
 - Every city in the city list must land inside its own state's outline.
+- On phones (640px wide or less), `/map` shows the next trip and the four
+  Census regions as cards instead of the map. The cards use the same colors
+  and rules as the map (including the year filter). Bigger screens keep the map.
 
 ## Scope
 
@@ -79,6 +82,7 @@ Python 3, Flask, SQLite, pytest. No other packages without asking me first.
   trip puts a blue dot there.
 - The light/dark button switches the theme, and it stays after a reload.
 - Pages fit an iPhone (390px) and an iPad (820px) without sideways scrolling.
+- On an iPhone, `/map` shows the region cards; on a computer, the map.
 
 ## Folder rules
 

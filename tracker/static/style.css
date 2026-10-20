@@ -366,6 +366,12 @@ fieldset {
   display: none;
 }
 
+/* Bigger screens get the map, so the region cards start hidden. This must
+   come before the phone rules below, which show them: later rules win. */
+.region-view {
+  display: none;
+}
+
 /* ---- Tablet: 1024px wide or less (an iPad is 820px) ---- */
 @media (max-width: 1024px) {
   /* Two year columns per row; more years wrap onto the next row. */
@@ -381,6 +387,15 @@ fieldset {
 
 /* ---- Phone: 640px wide or less (an iPhone is about 390px) ---- */
 @media (max-width: 640px) {
+  /* Region cards instead of the map: tiny dots are hard to tap on a phone. */
+  .region-view {
+    display: block;
+  }
+
+  .map-view {
+    display: none;
+  }
+
   /* Brand and counter on the top row, the nav on its own row below. */
   .site-header {
     grid-template-columns: 1fr auto auto;
@@ -527,4 +542,107 @@ fieldset {
   .touch-dot-hint {
     display: block;
   }
+}
+
+/* ---- Region cards (shown on phones instead of the map; see the phone rules) ---- */
+.next-trip {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--dot-upcoming);
+  border-radius: 6px;
+  padding: 0.6rem 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.next-trip p {
+  margin: 0 0 0.25rem;
+}
+
+.next-trip-when {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.next-trip-name {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.region-card {
+  background: var(--column-bg);
+  border-radius: 6px;
+  padding: 0.6rem 0.8rem 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.region-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.region-title h2 {
+  margin: 0.2rem 0;
+  font-size: 1.2rem;
+}
+
+.region-count {
+  font-weight: bold;
+  color: var(--visited-text);
+}
+
+/* The progress bar: a grey track with a green and an orange part. */
+.region-bar {
+  display: flex;
+  height: 0.5rem;
+  background: var(--unvisited);
+  border-radius: 999px;
+  overflow: hidden;
+  margin: 0.4rem 0 0.7rem;
+}
+
+.bar-visited { background: var(--visited); }
+.bar-planned { background: var(--planned); }
+
+.region-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+/* A state as a big, tappable chip, colored like the map. */
+.state-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  min-height: 44px;
+  padding: 0 0.8rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  color: var(--text);
+  text-decoration: none;
+}
+
+.state-chip.visited {
+  background: var(--visited);
+  border-color: var(--visited);
+  color: var(--bg);
+}
+
+.state-chip.planned {
+  background: var(--planned);
+  border-color: var(--planned);
+  color: var(--bg);
+}
+
+/* How many cities you've visited in that state. */
+.chip-count {
+  min-width: 1.3rem;
+  padding: 0 0.3rem;
+  border-radius: 999px;
+  background: var(--dot-visited);
+  color: var(--dot-ring);
+  font-size: 0.8rem;
+  text-align: center;
 }

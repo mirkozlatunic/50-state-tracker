@@ -1,8 +1,10 @@
 """Functions that read and write the tracker's data."""
+from collections import Counter
 from datetime import date
 
 from tracker.cities import find_city
 from tracker.db import get_db
+from tracker.regions_data import REGIONS
 
 TOTAL_STATES = 50
 
@@ -392,3 +394,59 @@ def get_city_dots(today, year=None):
             "trips": info["trips"],
         })
     return dots
+
+
+def get_regions(today, year=None):
+    """Return the four Census regions for the region cards, each as a dictionary:
+
+    {"name": "West", "total": 13, "visited": 6, "planned": 2,
+     "visited_percent": 46.2, "planned_percent": 15.4,
+     "states": [{"code": "AK", "name": "Alaska", "status": "planned", "city_count": 0}, ...]}
+
+    A state's status follows the same rules as the map (get_state_statuses),
+    including the `year` filter. city_count is how many different cities
+    you've visited there.
+    """
+    statuses = get_state_statuses(today, year=year)
+    names = {state["code"]: state["name"] for state in get_states()}
+    # Counter counts things: here, visited cities per state.
+    city_counts = Counter(dot["state"] for dot in get_city_dots(today) if dot["visit_dates"])
+
+    regions = []
+    for region_name, codes in REGIONS:
+        states = sorted(
+            ({"code": code, "name": names[code], "status": statuses[code],
+              "city_count": city_counts[code]} for code in codes),
+            key=lambda state: state["name"],
+        )
+        visited = sum(1 for state in states if state["status"] == "visited")
+        planned = sum(1 for state in states if state["status"] == "planned")
+        regions.append({
+            "name": region_name,
+            "total": len(codes),
+            "visited": visited,
+            "planned": planned,
+            "visited_percent": round(100 * visited / len(codes), 1),
+            "planned_percent": round(100 * planned / len(codes), 1),
+            "states": states,
+        })
+    return regions
+
+
+def get_next_trip(today):
+    """Return the soonest trip that hasn't ended, with a "when" text, or None.
+
+    "when" is "happening now" (already started), "tomorrow", or "in 10 days".
+    """
+    trips = get_upcoming_trips(today)
+    if not trips:
+        return None
+    trip = trips[0]
+    days = (date.fromisoformat(trip["start_date"]) - today).days
+    if days <= 0:
+        trip["when"] = "happening now"
+    elif days == 1:
+        trip["when"] = "tomorrow"
+    else:
+        trip["when"] = f"in {days} days"
+    return trip
