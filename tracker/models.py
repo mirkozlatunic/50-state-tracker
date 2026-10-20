@@ -64,3 +64,65 @@ def count_visited_states():
     COUNT(DISTINCT ...) counts each state once, even with several visits.
     """
     return get_db().execute("SELECT COUNT(DISTINCT state_id) FROM visits").fetchone()[0]
+
+
+def add_trip(name, start_date, end_date, state_codes):
+    """Save a planned trip and its states. Expects input that passed validate_trip().
+
+    INSERT OR IGNORE skips a state that's already on the trip, so ticking the
+    same state twice saves it once.
+    """
+    db = get_db()
+    # cursor.lastrowid is the id SQLite gave the row we just inserted.
+    cursor = db.execute(
+        "INSERT INTO trips (name, start_date, end_date) VALUES (?, ?, ?)",
+        (name, start_date, end_date),
+    )
+    trip_id = cursor.lastrowid
+    for code in state_codes:
+        db.execute(
+            """
+            INSERT OR IGNORE INTO trip_states (trip_id, state_id)
+            VALUES (?, (SELECT id FROM states WHERE code = ?))
+            """,
+            (trip_id, code),
+        )
+    db.commit()
+
+
+def get_trip_states(trip_id):
+    """Return the states on one trip, A to Z."""
+    return get_db().execute(
+        """
+        SELECT states.code, states.name FROM trip_states
+        JOIN states ON states.id = trip_states.state_id
+        WHERE trip_states.trip_id = ?
+        ORDER BY states.name
+        """,
+        (trip_id,),
+    ).fetchall()
+
+
+def get_upcoming_trips(today, state_id=None):
+    """Return trips that haven't ended yet, soonest first, each with its states.
+
+    A trip that's happening right now (end date today or later) still counts.
+    Pass `state_id` to get only the trips that include that state.
+
+    The result is a list of dictionaries, e.g.
+    {"name": "Weekend", "start_date": ..., "end_date": ..., "states": [...]}.
+    """
+    query = "SELECT id, name, start_date, end_date FROM trips WHERE end_date >= ?"
+    params = [today.isoformat()]
+    if state_id is not None:
+        query += " AND id IN (SELECT trip_id FROM trip_states WHERE state_id = ?)"
+        params.append(state_id)
+    query += " ORDER BY start_date, id"
+
+    trips = []
+    for row in get_db().execute(query, params).fetchall():
+        # dict(row) copies the row into a normal dictionary we can add to.
+        trip = dict(row)
+        trip["states"] = get_trip_states(row["id"])
+        trips.append(trip)
+    return trips

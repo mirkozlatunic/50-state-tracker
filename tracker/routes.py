@@ -3,19 +3,21 @@
 A "blueprint" is a group of related routes. We define them here and plug the
 group into the app inside create_app().
 """
-from datetime import date
+from datetime import date, timedelta
 
 from flask import Blueprint, abort, redirect, render_template, request, url_for
 
 from tracker.models import (
     TOTAL_STATES,
+    add_trip,
     add_visit,
     count_visited_states,
     get_state,
     get_states,
+    get_upcoming_trips,
     get_visits_for_state,
 )
-from tracker.validation import STATE_CODES, parse_date, validate_visit
+from tracker.validation import STATE_CODES, parse_date, validate_trip, validate_visit
 
 bp = Blueprint("main", __name__)
 
@@ -58,7 +60,10 @@ def state_detail(code):
         # abort(404) stops here and shows the "Not Found" page.
         abort(404)
     return render_template(
-        "state_detail.html", state=state, visits=get_visits_for_state(state["id"])
+        "state_detail.html",
+        state=state,
+        visits=get_visits_for_state(state["id"]),
+        trips=get_upcoming_trips(date.today(), state_id=state["id"]),
     )
 
 
@@ -94,4 +99,47 @@ def new_visit():
     status = 400 if errors else 200
     return render_template(
         "visit_form.html", states=get_states(), form=form, errors=errors, today=today
+    ), status
+
+
+@bp.route("/trips")
+def trips():
+    """Show the planned trips that haven't ended yet, soonest first."""
+    return render_template("trips.html", trips=get_upcoming_trips(date.today()))
+
+
+@bp.route("/trips/new", methods=["GET", "POST"])
+def new_trip():
+    """Show the plan-a-trip form (GET) or save the filled-in form (POST)."""
+    today = date.today()
+    form = {"states": []}
+    errors = []
+
+    if request.method == "POST":
+        form = {
+            "name": request.form.get("name", "").strip(),
+            "start_date": request.form.get("start_date", ""),
+            "end_date": request.form.get("end_date", ""),
+            # getlist() returns every ticked checkbox with this name, e.g. ["AZ", "UT"].
+            "states": request.form.getlist("states"),
+        }
+        errors = validate_trip(
+            form["name"], form["start_date"], form["end_date"], form["states"], today
+        )
+        if not errors:
+            # Store the dates in one standard format, "YYYY-MM-DD".
+            start = parse_date(form["start_date"]).isoformat()
+            end = parse_date(form["end_date"]).isoformat()
+            add_trip(form["name"], start, end, form["states"])
+            return redirect(url_for("main.trips"))
+
+    # Show the form: empty on GET, or again with errors after a bad POST.
+    status = 400 if errors else 200
+    return render_template(
+        "trip_form.html",
+        states=get_states(),
+        form=form,
+        errors=errors,
+        # The earliest start the date picker offers: trips must start in the future.
+        tomorrow=today + timedelta(days=1),
     ), status

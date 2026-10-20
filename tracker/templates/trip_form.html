@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}Plan a trip · 50 States{% endblock %}
+
+{% block content %}
+  <h1>Plan a trip</h1>
+
+  {% if errors %}
+    <ul class="errors">
+      {% for error in errors %}<li>{{ error }}</li>{% endfor %}
+    </ul>
+  {% endif %}
+
+  <form method="post" class="visit-form">
+    <label>
+      Trip name
+      <input type="text" name="name" value="{{ form.name }}" required>
+    </label>
+
+    <label>
+      Start date
+      <input type="date" name="start_date" value="{{ form.start_date }}" min="{{ tomorrow.isoformat() }}" required>
+    </label>
+
+    <label>
+      End date
+      <input type="date" name="end_date" value="{{ form.end_date }}" required>
+    </label>
+
+    <fieldset>
+      <legend>States <span class="hint">(choose one or more)</span></legend>
+      <div class="state-checkboxes">
+        {% for state in states %}
+          <label class="checkbox">
+            <input type="checkbox" name="states" value="{{ state.code }}" {{ 'checked' if state.code in form.states }}>
+            {{ state.name }}
+          </label>
+        {% endfor %}
+      </div>
+    </fieldset>
+
+    <button type="submit">Save trip</button>
+  </form>
+{% endblock %}

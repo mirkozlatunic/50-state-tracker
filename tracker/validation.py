@@ -42,3 +42,44 @@ def validate_visit(state_code, visit_date, today):
             errors.append("The visit date can't be in the future.")
 
     return errors
+
+
+def validate_trip(name, start_date, end_date, state_codes, today):
+    """Check a new planned trip. Returns a list of error messages; empty means OK.
+
+    `state_codes` is a list like ["AZ", "UT"]. `today` is passed in, like in
+    validate_visit(), so tests can pick the day.
+    """
+    errors = []
+
+    if not name.strip():
+        errors.append("Please enter a trip name.")
+
+    start = None
+    if not start_date:
+        errors.append("Please enter a start date.")
+    else:
+        start = parse_date(start_date)
+        if start is None:
+            errors.append("Please enter a real start date.")
+        elif start <= today:
+            errors.append("A planned trip must start in the future.")
+
+    end = None
+    if not end_date:
+        errors.append("Please enter an end date.")
+    else:
+        end = parse_date(end_date)
+        if end is None:
+            errors.append("Please enter a real end date.")
+
+    # Only compare the dates when both are real dates.
+    if start and end and end < start:
+        errors.append("The end date can't be before the start date.")
+
+    if not state_codes:
+        errors.append("Please choose at least one state.")
+    elif any(code not in STATE_CODES for code in state_codes):
+        errors.append("Please choose only from the 50 states.")
+
+    return errors

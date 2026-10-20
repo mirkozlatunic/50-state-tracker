@@ -80,3 +80,29 @@ nav a {
 .visits .date {
   font-variant-numeric: tabular-nums;
 }
+
+.trips li {
+  margin-bottom: 0.75rem;
+}
+
+.state-checkboxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+  gap: 0.25rem 1rem;
+}
+
+.visit-form .checkbox {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  margin: 0;
+}
+
+.visit-form .checkbox input {
+  display: inline;
+  margin: 0;
+}
+
+fieldset {
+  margin-bottom: 1rem;
+}
