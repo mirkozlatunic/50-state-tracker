@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 
-{% block title %}Plan a trip · 50 States{% endblock %}
+{% block title %}{{ heading }} · 50 States{% endblock %}
 
 {% block content %}
-  <h1>Plan a trip</h1>
+  <h1>{{ heading }}</h1>
 
   {% if errors %}
     <ul class="errors">
@@ -19,7 +19,7 @@
 
     <label>
       Start date
-      <input type="date" name="start_date" value="{{ form.start_date }}" min="{{ tomorrow.isoformat() }}" required>
+      <input type="date" name="start_date" value="{{ form.start_date }}" min="{{ min_start.isoformat() }}" required>
     </label>
 
     <label>
@@ -39,6 +39,6 @@
       </div>
     </fieldset>
 
-    <button type="submit">Save trip</button>
+    <button type="submit">{{ button_label }}</button>
   </form>
 {% endblock %}
