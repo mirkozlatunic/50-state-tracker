@@ -22,6 +22,9 @@
   --planned: #f28c28;
   --unvisited: #d9d9d9;
   --map-stroke: #ffffff;
+  --dot-visited: #14532d;
+  --dot-upcoming: #1d4ed8;
+  --dot-ring: #ffffff;
 }
 
 [data-theme="dark"] {
@@ -40,6 +43,9 @@
   --planned: #f5a04a;
   --unvisited: #4a4f58;
   --map-stroke: #16181d;
+  --dot-visited: #0b2e17;
+  --dot-upcoming: #60a5fa;
+  --dot-ring: #f1f5f9;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -59,6 +65,9 @@
     --planned: #f5a04a;
     --unvisited: #4a4f58;
     --map-stroke: #16181d;
+    --dot-visited: #0b2e17;
+    --dot-upcoming: #60a5fa;
+    --dot-ring: #f1f5f9;
   }
 }
 
@@ -462,3 +471,26 @@ fieldset {
 .add-city-row {
   margin-top: 0.25rem;
 }
+
+/* City dots on the map: a white ring makes them stand out on any state color. */
+.city-dot {
+  stroke: var(--dot-ring);
+  stroke-width: 1.2;
+  cursor: pointer;
+}
+
+.city-dot.visited { fill: var(--dot-visited); }
+.city-dot.upcoming { fill: var(--dot-upcoming); }
+
+.city-dot:hover {
+  stroke-width: 2.5;
+}
+
+/* The legend's round dot samples. */
+.city-swatch {
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px var(--border);
+}
+
+.city-swatch.visited { background: var(--dot-visited); }
+.city-swatch.upcoming { background: var(--dot-upcoming); }

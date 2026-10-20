@@ -1,5 +1,5 @@
 state,name,x,y
-AK,Adak,0.0,562.7
+AK,Adak,10.0,575.3
 AK,Akhiok,95.2,563.3
 AK,Akiachak,71.7,519.5
 AK,Akiak,72.4,519.8
@@ -12,17 +12,17 @@ AK,Aleneva,103.4,554.5
 AK,Allakaket,118.7,478.2
 AK,Ambler,101.0,469.2
 AK,Anaktuvuk Pass,124.2,464.3
-AK,Anchor Point,111.7,540.2
+AK,Anchor Point,112.0,540.1
 AK,Anchorage,124.3,528.9
 AK,Anderson,128.5,500.4
-AK,Angoon,192.5,564.0
+AK,Angoon,192.9,564.0
 AK,Aniak,81.2,516.1
 AK,Anvik,81.2,506.0
 AK,Arctic Village,145.7,466.7
-AK,Atka,0.0,567.0
+AK,Atka,10.0,575.3
 AK,Atmautluak,67.8,518.8
 AK,Atqasuk,110.5,440.0
-AK,Attu Station,0.0,522.7
+AK,Attu Station,20.7,536.2
 AK,Badger,135.9,496.7
 AK,Bear Creek,122.8,537.6
 AK,Beaver,137.7,482.3
@@ -56,17 +56,17 @@ AK,Chitina,146.9,527.4
 AK,Chuathbaluk,82.5,516.5
 AK,Circle,148.9,488.1
 AK,Clam Gulch,113.7,536.3
-AK,Clark's Point,78.8,541.6
+AK,Clark's Point,79.0,541.5
 AK,Coffman Cove,202.1,576.3
 AK,Cohoe,114.3,535.8
-AK,Cold Bay,48.9,567.1
+AK,Cold Bay,49.0,567.3
 AK,Coldfoot,128.5,473.3
 AK,College,134.3,495.9
 AK,Cooper Landing,121.0,534.7
 AK,Copper Center,142.0,523.0
 AK,Cordova,139.8,536.4
 AK,Covenant Life,183.2,546.8
-AK,Craig,201.3,581.1
+AK,Craig,202.0,581.1
 AK,Crooked Creek,87.9,515.9
 AK,Crown Point,123.1,535.6
 AK,Deering,81.3,473.0
@@ -75,16 +75,16 @@ AK,Deltana,143.2,506.6
 AK,Denali Park,129.6,507.3
 AK,Diamond Ridge,112.3,540.8
 AK,Dillingham,79.4,539.6
-AK,Diomede,58.8,467.2
+AK,Diomede,61.8,468.8
 AK,Dot Lake,147.3,508.7
 AK,Dot Lake Village,148.5,508.1
 AK,Dry Creek,146.0,508.3
 AK,Eagle,160.0,498.1
 AK,Eagle Village,160.3,498.5
-AK,Eareckson Station,0.0,526.8
+AK,Eareckson Station,20.7,536.2
 AK,Edna Bay,197.8,577.1
 AK,Eek,66.9,524.8
-AK,Egegik,82.0,548.4
+AK,Egegik,82.4,548.5
 AK,Eielson AFB,137.1,498.0
 AK,Ekwok,84.8,538.3
 AK,Elfin Cove,183.3,558.8
@@ -93,7 +93,7 @@ AK,Emmonak,64.6,499.1
 AK,Ester,133.4,495.7
 AK,Eureka Roadhouse,134.3,522.7
 AK,Evansville,123.6,475.5
-AK,Excursion Inlet,187.6,555.5
+AK,Excursion Inlet,187.8,555.3
 AK,Fairbanks,134.9,496.3
 AK,False Pass,45.1,569.1
 AK,Farm Loop,125.4,524.7
@@ -110,7 +110,7 @@ AK,Fritz Creek,113.5,540.6
 AK,Funny River,116.8,534.2
 AK,Gakona,142.5,519.6
 AK,Galena,99.4,490.9
-AK,Gambell,41.2,478.8
+AK,Gambell,41.9,479.5
 AK,Game Creek,187.0,558.9
 AK,Gateway,125.1,525.3
 AK,Glacier View,131.6,523.5
@@ -122,7 +122,7 @@ AK,Grayling,82.3,503.8
 AK,Gulkana,141.8,521.0
 AK,Gustavus,185.7,555.5
 AK,Haines,186.3,547.8
-AK,Halibut Cove,113.6,542.2
+AK,Halibut Cove,113.6,542.5
 AK,Happy Valley,112.7,539.0
 AK,Harding-Birch Lakes,138.9,500.8
 AK,Healy,128.8,503.7
@@ -132,12 +132,12 @@ AK,Hollis,203.4,580.6
 AK,Holy Cross,81.5,510.4
 AK,Homer,112.4,541.3
 AK,Hoonah,187.4,558.2
-AK,Hooper Bay,54.1,507.4
+AK,Hooper Bay,54.8,507.5
 AK,Hope,122.5,531.3
 AK,Houston,122.6,524.5
 AK,Hughes,111.8,481.5
 AK,Huslia,103.6,482.9
-AK,Hydaburg,203.1,583.5
+AK,Hydaburg,203.3,583.2
 AK,Hyder,216.3,574.5
 AK,Igiugig,92.0,540.5
 AK,Iliamna,97.4,537.2
@@ -159,8 +159,8 @@ AK,Kiana,91.9,467.8
 AK,King Cove,50.8,569.0
 AK,King Salmon,87.8,544.9
 AK,Kipnuk,57.4,524.2
-AK,Kivalina,80.4,456.6
-AK,Klawock,201.4,580.5
+AK,Kivalina,80.9,456.4
+AK,Klawock,201.7,580.3
 AK,Klukwan,184.3,546.7
 AK,Knik River,125.9,526.4
 AK,Knik-Fairview,123.3,525.6
@@ -184,7 +184,7 @@ AK,Lazy Mountain,126.4,524.6
 AK,Levelock,86.8,541.5
 AK,Lime Village,98.9,523.0
 AK,Livengood,132.6,490.1
-AK,Loring,208.7,579.1
+AK,Loring,209.0,579.3
 AK,Lowell Point,122.1,538.7
 AK,Lower Kalskag,77.7,515.7
 AK,Lutak,185.7,546.5
@@ -198,7 +198,7 @@ AK,Mekoryuk,49.5,516.9
 AK,Mendeltna,136.2,521.2
 AK,Mentasta Lake,150.1,514.1
 AK,Mertarvik,58.4,516.0
-AK,Metlakatla,209.8,583.5
+AK,Metlakatla,210.3,583.6
 AK,Mill Bay,105.6,557.2
 AK,Minto,127.7,493.1
 AK,Moose Creek,136.7,497.5
@@ -208,7 +208,7 @@ AK,Mountain Village,65.7,506.1
 AK,Mud Bay,187.0,548.8
 AK,Nabesna,152.2,518.9
 AK,Naknek,86.2,544.0
-AK,Nanwalek,110.0,543.8
+AK,Nanwalek,110.3,544.3
 AK,Napakiak,68.6,520.7
 AK,Napaskiak,69.6,520.9
 AK,Naukati Bay,200.5,577.7
@@ -222,7 +222,7 @@ AK,Nightmute,55.8,518.4
 AK,Nikiski,115.2,531.7
 AK,Nikolaevsk,112.3,539.6
 AK,Nikolai,105.7,508.7
-AK,Nikolski,11.8,574.2
+AK,Nikolski,12.2,574.3
 AK,Ninilchik,113.5,537.6
 AK,Noatak,85.0,459.6
 AK,Nome,66.8,482.9
@@ -237,7 +237,7 @@ AK,Nunam Iqua,62.2,500.8
 AK,Nunapitchuk,67.1,518.4
 AK,Old Harbor,100.0,561.7
 AK,Oscarville,69.5,520.7
-AK,Ouzinkie,105.3,556.1
+AK,Ouzinkie,105.5,556.4
 AK,Palmer,125.6,525.1
 AK,Paxson,141.0,513.9
 AK,Pedro Bay,100.8,537.8
@@ -245,63 +245,63 @@ AK,Pelican,183.7,560.0
 AK,Perryville,68.7,566.4
 AK,Petersburg,201.1,569.4
 AK,Petersville,119.1,516.3
-AK,Pilot Point,79.5,554.1
+AK,Pilot Point,80.0,554.3
 AK,Pilot Station,68.6,508.5
 AK,Pitkas Point,67.2,507.2
-AK,Platinum,64.6,536.2
+AK,Platinum,64.9,536.2
 AK,Pleasant Valley,137.9,496.1
-AK,Point Baker,197.8,573.6
-AK,Point Hope,75.5,448.7
+AK,Point Baker,198.2,573.6
+AK,Point Hope,76.9,448.8
 AK,Point Lay,91.9,441.4
 AK,Point MacKenzie,121.2,526.9
-AK,Point Possession,117.9,530.3
+AK,Point Possession,118.0,530.5
 AK,Pope-Vannoy Landing,98.9,539.5
 AK,Port Alexander,192.7,575.1
 AK,Port Alsworth,100.5,534.3
-AK,Port Clarence,64.0,475.8
-AK,Port Graham,110.4,543.8
-AK,Port Heiden,74.0,558.1
+AK,Port Clarence,65.2,476.2
+AK,Port Graham,110.6,544.1
+AK,Port Heiden,74.3,558.2
 AK,Port Lions,103.3,556.3
-AK,Port Protection,197.9,573.7
+AK,Port Protection,198.2,573.7
 AK,Portage Creek,82.9,542.0
 AK,Primrose,123.3,536.4
 AK,Prudhoe Bay,136.7,445.9
-AK,Quinhagak,66.2,529.1
+AK,Quinhagak,66.6,529.1
 AK,Rampart,126.9,490.0
 AK,Red Devil,90.8,517.0
 AK,Red Dog Mine,86.8,455.7
 AK,Ridgeway,115.7,533.6
 AK,Ruby,104.6,492.3
 AK,Russian Mission,74.2,512.1
-AK,Salamatof,114.7,532.8
+AK,Salamatof,115.0,532.8
 AK,Salcha,137.6,499.3
 AK,Sand Point,60.5,570.0
-AK,Savoonga,45.3,481.8
+AK,Savoonga,45.3,482.3
 AK,Saxman,209.3,581.6
 AK,Scammon Bay,57.3,505.4
 AK,Selawik,92.4,471.5
-AK,Seldovia,111.2,543.0
-AK,Seldovia Village,111.8,542.9
+AK,Seldovia,111.5,543.4
+AK,Seldovia Village,111.9,543.1
 AK,Seward,122.6,538.4
 AK,Shageluk,84.0,506.6
-AK,Shaktoolik,82.1,489.8
-AK,Shishmaref,70.1,467.2
+AK,Shaktoolik,82.7,489.8
+AK,Shishmaref,70.1,467.5
 AK,Shungnak,103.1,471.7
 AK,Silver Springs,142.0,522.8
-AK,Sitka,188.4,566.7
+AK,Sitka,188.8,566.6
 AK,Skagway,187.1,545.9
 AK,Skwentna,117.0,521.2
 AK,Slana,150.4,517.9
 AK,Sleetmute,91.6,518.2
 AK,Soldotna,115.6,534.0
 AK,South Lakes,124.7,525.1
-AK,South Naknek,85.5,544.9
+AK,South Naknek,85.6,545.1
 AK,South Van Horn,134.4,496.4
-AK,St. George,20.8,542.4
+AK,St. George,21.3,542.5
 AK,St. Mary's,67.4,507.0
-AK,St. Michael,75.9,496.4
-AK,St. Paul,20.2,536.0
-AK,Stebbins,75.5,496.1
+AK,St. Michael,75.9,496.7
+AK,St. Paul,20.7,536.2
+AK,Stebbins,75.6,496.8
 AK,Steele Creek,135.8,495.5
 AK,Sterling,116.8,533.7
 AK,Stevens Village,130.7,484.9
@@ -318,7 +318,7 @@ AK,Tanana,118.5,490.8
 AK,Tatitlek,135.5,532.7
 AK,Tazlina,141.7,522.5
 AK,Teller,66.0,475.2
-AK,Tenakee Springs,189.1,561.1
+AK,Tenakee Springs,189.1,560.8
 AK,Tetlin,154.5,512.7
 AK,Thorne Bay,204.1,579.1
 AK,Togiak,70.9,537.3
@@ -329,12 +329,12 @@ AK,Tonsina,142.8,527.4
 AK,Trapper Creek,121.1,516.9
 AK,Tuluksak,74.1,518.5
 AK,Tuntutuliak,64.8,522.2
-AK,Tununak,55.1,516.7
+AK,Tununak,55.2,517.0
 AK,Twin Hills,71.5,537.2
 AK,Two Rivers,137.1,496.0
 AK,Tyonek,115.3,528.2
 AK,Ugashik,83.2,554.0
-AK,Unalakleet,82.3,494.3
+AK,Unalakleet,83.2,494.2
 AK,Unalaska,26.0,571.3
 AK,Upper Kalskag,77.8,515.5
 AK,Utqiaġvik,113.8,433.7
@@ -397,14 +397,14 @@ AL,Beaverton,625.8,388.5
 AL,Belgreen,627.7,376.3
 AL,Belk,628.0,394.6
 AL,Bellamy,626.6,421.2
-AL,Belle Fontaine,630.7,464.7
+AL,Belle Fontaine,630.1,464.4
 AL,Benton,651.2,422.5
 AL,Berlin,648.3,380.9
 AL,Berry,633.8,393.8
 AL,Bessemer,646.0,399.3
 AL,Billingsley,652.4,414.4
 AL,Birmingham,648.9,395.5
-AL,Black,674.1,449.0
+AL,Black,674.1,448.6
 AL,Blountsville,651.5,383.0
 AL,Blue Ridge,662.4,417.1
 AL,Blue Springs,677.0,434.1
@@ -465,7 +465,7 @@ AL,Coffeeville,628.7,436.5
 AL,Coker,633.3,403.3
 AL,Collinsville,664.0,377.5
 AL,Colony,646.1,386.5
-AL,Columbia,685.3,441.4
+AL,Columbia,684.8,441.4
 AL,Columbiana,652.9,402.6
 AL,Concord,644.6,397.4
 AL,Coosada,659.8,417.4
@@ -484,7 +484,7 @@ AL,Cusseta,677.9,409.0
 AL,Dadeville,669.1,409.1
 AL,Daleville,674.0,442.7
 AL,Daphne,634.7,461.3
-AL,Dauphin Island,629.9,470.0
+AL,Dauphin Island,628.8,467.0
 AL,Daviston,671.2,403.7
 AL,Dayton,635.8,422.9
 AL,Deatsville,658.4,415.5
@@ -527,7 +527,7 @@ AL,Evergreen,650.1,442.0
 AL,Excel,643.2,442.8
 AL,Fairfield,646.8,396.9
 AL,Fairford,630.1,449.5
-AL,Fairhope,634.9,463.6
+AL,Fairhope,635.2,463.4
 AL,Fairview,649.5,379.3
 AL,Falkville,645.0,376.9
 AL,Faunsdale,636.5,420.5
@@ -663,7 +663,7 @@ AL,Lester,639.3,363.9
 AL,Level Plains,672.9,442.5
 AL,Lexington,635.5,364.8
 AL,Libertyville,660.2,445.3
-AL,Lillian,643.8,465.1
+AL,Lillian,642.9,465.1
 AL,Lincoln,660.9,393.1
 AL,Linden,633.1,424.2
 AL,Lineville,668.4,398.3
@@ -672,7 +672,7 @@ AL,Lisman,624.3,427.9
 AL,Littleville,630.9,373.4
 AL,Livingston,625.3,418.4
 AL,Loachapoka,672.9,413.5
-AL,Lockhart,662.7,450.1
+AL,Lockhart,662.7,449.8
 AL,Locust Fork,650.8,387.5
 AL,Lookout Mountain,662.6,381.0
 AL,Louisville,675.7,431.7
@@ -791,7 +791,7 @@ AL,Pinson,650.9,391.3
 AL,Pisgah,663.4,368.2
 AL,Pleasant Grove,645.7,396.6
 AL,Pleasant Groves,657.0,367.7
-AL,Point Clear,634.4,464.4
+AL,Point Clear,635.4,463.9
 AL,Pollard,647.3,451.4
 AL,Powell,662.8,371.7
 AL,Prattville,657.6,418.7
@@ -863,7 +863,7 @@ AL,Springville,654.1,390.2
 AL,Spruce Pine,630.2,377.9
 AL,St. Florian,631.2,367.1
 AL,St. Stephens,629.7,440.8
-AL,Standing Rock,678.3,402.3
+AL,Standing Rock,678.0,402.4
 AL,Stapleton,636.1,458.8
 AL,Steele,658.9,385.3
 AL,Sterrett,655.2,396.8
@@ -1225,7 +1225,7 @@ AR,Holly Grove,567.4,377.6
 AR,Hope,524.9,399.9
 AR,Horatio,510.8,394.1
 AR,Horseshoe Bend,556.1,342.1
-AR,Horseshoe Lake,583.0,369.8
+AR,Horseshoe Lake,582.7,369.8
 AR,Hot Springs,534.1,381.4
 AR,Hot Springs Village,535.5,377.6
 AR,Houston,540.1,369.1
@@ -1252,7 +1252,7 @@ AR,Joiner,585.0,356.4
 AR,Jones Mills,536.9,382.3
 AR,Jonesboro,575.2,350.0
 AR,Judsonia,558.7,363.0
-AR,Junction City,541.2,413.8
+AR,Junction City,541.2,413.4
 AR,Keiser,585.8,352.7
 AR,Kensett,558.3,363.9
 AR,Keo,552.8,378.1
@@ -1643,7 +1643,7 @@ AZ,Christopher Creek,210.5,364.5
 AZ,Chuichu,190.8,396.8
 AZ,Cibecue,218.7,372.3
 AZ,Cibola,141.0,373.4
-AZ,Cienega Springs,152.8,357.1
+AZ,Cienega Springs,152.9,357.3
 AZ,Circle City,180.4,370.9
 AZ,Citrus Park,181.8,377.4
 AZ,Clacks Canyon,159.6,335.3
@@ -1664,13 +1664,13 @@ AZ,Corona de Tucson,206.4,417.1
 AZ,Cottonwood,194.6,352.2
 AZ,Cowlic,183.6,416.6
 AZ,Crozier,167.9,332.3
-AZ,Crystal Beach,151.2,348.3
+AZ,Crystal Beach,151.6,348.2
 AZ,Cutter,213.4,386.6
 AZ,Dateland,159.2,389.4
 AZ,Deer Creek,203.4,369.0
 AZ,Del Muerto,244.4,327.7
 AZ,Dennehotso,238.8,312.4
-AZ,Desert Hills,151.4,348.9
+AZ,Desert Hills,151.7,348.8
 AZ,Dewey-Humboldt,189.0,356.5
 AZ,Dilkon,226.4,343.8
 AZ,Dolan Springs,157.4,326.5
@@ -1729,7 +1729,7 @@ AZ,Grand Canyon Village,196.4,323.0
 AZ,Grand Canyon West,167.5,319.1
 AZ,Greasewood,234.8,341.1
 AZ,Green Valley,201.9,418.8
-AZ,Greenehaven,210.3,304.2
+AZ,Greenehaven,210.2,304.6
 AZ,Greer,237.1,375.6
 AZ,Gu Oidak,183.4,414.0
 AZ,Guadalupe,189.9,382.6
@@ -1790,7 +1790,7 @@ AZ,Many Farms,241.4,323.7
 AZ,Marana,201.7,404.8
 AZ,Maricopa,188.0,389.6
 AZ,Maricopa Colony,185.1,381.8
-AZ,Martinez Lake,143.0,382.8
+AZ,Martinez Lake,143.4,382.6
 AZ,Mayer,188.8,358.6
 AZ,McConnico,159.0,336.5
 AZ,McNary,230.4,372.7
@@ -1966,7 +1966,7 @@ AZ,Tonto Basin,203.5,374.1
 AZ,Tonto Village,208.1,364.1
 AZ,Top-of-the-World,207.2,385.9
 AZ,Topawa,186.5,417.0
-AZ,Topock,150.3,344.8
+AZ,Topock,150.5,344.7
 AZ,Toyei,234.0,337.0
 AZ,Truxton,169.6,331.1
 AZ,Tsaile,248.5,325.7
@@ -2041,9 +2041,9 @@ CA,Agua Dulce,81.6,334.8
 CA,Aguanga,102.3,363.5
 CA,Ahwahnee,72.8,267.1
 CA,Airport,53.3,255.8
-CA,Alameda,32.4,247.5
+CA,Alameda,33.1,247.2
 CA,Alamo,37.2,246.3
-CA,Albany,32.3,244.1
+CA,Albany,32.6,243.9
 CA,Albion,17.0,208.7
 CA,Alderpoint,25.3,189.4
 CA,Alhambra,82.7,344.6
@@ -2137,10 +2137,10 @@ CA,Bend,48.4,194.0
 CA,Benicia,36.2,240.9
 CA,Benton,95.9,262.3
 CA,Benton Park,73.7,313.5
-CA,Berkeley,32.5,244.7
+CA,Berkeley,32.7,244.8
 CA,Bermuda Dunes,113.8,359.4
 CA,Berry Creek,57.7,210.9
-CA,Bertsch-Oceanview,26.7,152.9
+CA,Bertsch-Oceanview,27.1,152.9
 CA,Bethel Island,44.6,244.3
 CA,Beverly Hills,78.0,343.6
 CA,Bieber,71.2,179.9
@@ -2148,7 +2148,7 @@ CA,Big Bear City,107.2,346.3
 CA,Big Bear Lake,105.5,346.2
 CA,Big Bend,57.5,179.0
 CA,Big Creek,79.8,272.5
-CA,Big Lagoon,23.5,165.7
+CA,Big Lagoon,23.9,165.9
 CA,Big Pine,95.8,277.3
 CA,Big River,149.9,357.8
 CA,Biggs,51.4,214.3
@@ -2164,7 +2164,7 @@ CA,Blue Lake,23.9,172.3
 CA,Bluewater,151.8,357.4
 CA,Blythe,143.2,367.5
 CA,Bodega,24.4,231.2
-CA,Bodega Bay,23.3,231.3
+CA,Bodega Bay,23.5,231.2
 CA,Bodfish,84.3,310.9
 CA,Bolinas,26.0,241.6
 CA,Bombay Beach,122.1,369.9
@@ -2189,7 +2189,7 @@ CA,Brea,86.7,349.1
 CA,Brentwood,42.6,245.9
 CA,Bret Harte,52.5,256.3
 CA,Bridgeport,86.1,250.0
-CA,Brisbane,30.0,248.4
+CA,Brisbane,29.7,248.4
 CA,Broadmoor,28.4,247.5
 CA,Brookdale,31.1,261.8
 CA,Brooks,40.3,226.7
@@ -2249,7 +2249,7 @@ CA,Caribou,64.2,202.5
 CA,Carlsbad,93.1,368.7
 CA,Carmel Valley Village,33.8,276.6
 CA,Carmel-by-the-Sea,30.9,274.6
-CA,Carmet,22.9,230.1
+CA,Carmet,23.2,230.0
 CA,Carmichael,53.2,232.8
 CA,Carnelian Bay,77.1,225.2
 CA,Carpinteria,60.3,332.2
@@ -2281,7 +2281,7 @@ CA,Ceres,53.1,256.5
 CA,Cerritos,82.8,349.5
 CA,Chalfant,95.9,269.8
 CA,Challenge-Brownsville,59.1,215.2
-CA,Channel Islands Beach,63.9,338.1
+CA,Channel Islands Beach,64.7,337.6
 CA,Charleston View,131.0,312.6
 CA,Charter Oak,87.7,345.3
 CA,Cherokee,55.8,210.0
@@ -2309,7 +2309,7 @@ CA,Clear Creek,67.3,198.0
 CA,Clearlake,33.7,219.7
 CA,Clearlake Oaks,33.7,218.3
 CA,Clearlake Riviera,32.2,219.5
-CA,Cleone,18.4,202.9
+CA,Cleone,18.8,203.2
 CA,Clio,72.1,212.0
 CA,Clipper Mills,61.0,214.1
 CA,Cloverdale,26.4,221.4
@@ -2355,7 +2355,7 @@ CA,Courtland,47.6,238.1
 CA,Covelo,28.9,198.8
 CA,Covina,87.2,345.5
 CA,Cowan,52.6,257.3
-CA,Crescent City,26.3,152.5
+CA,Crescent City,27.1,152.5
 CA,Crescent Mills,68.3,203.0
 CA,Cressey,57.3,261.8
 CA,Crest,99.0,377.5
@@ -2374,7 +2374,7 @@ CA,Cuyama,61.3,320.0
 CA,Cypress,83.1,350.7
 CA,Dales,51.3,193.3
 CA,Daly City,28.6,247.7
-CA,Dana Point,87.5,359.6
+CA,Dana Point,87.7,359.4
 CA,Danville,37.7,247.4
 CA,Daphnedale Park,82.3,174.4
 CA,Darwin,103.3,299.5
@@ -2385,7 +2385,7 @@ CA,Deer Park,33.8,229.6
 CA,Del Aire,77.7,347.2
 CA,Del Dios,95.8,370.6
 CA,Del Mar,92.7,372.4
-CA,Del Monte Forest,30.7,273.8
+CA,Del Monte Forest,30.8,274.1
 CA,Del Rey,71.0,282.8
 CA,Del Rey Oaks,32.7,274.2
 CA,Del Rio,53.3,253.2
@@ -2477,7 +2477,7 @@ CA,El Paso de Robles (Paso Robles),47.2,300.3
 CA,El Portal,73.3,260.1
 CA,El Rancho,77.6,294.5
 CA,El Rio,65.6,336.7
-CA,El Segundo,76.7,347.1
+CA,El Segundo,77.0,347.0
 CA,El Sobrante,93.6,351.9
 CA,El Verano,32.0,234.5
 CA,Eldridge,31.9,233.7
@@ -2535,14 +2535,14 @@ CA,Foresta,74.1,259.7
 CA,Foresthill,63.5,226.9
 CA,Forestville,26.5,228.7
 CA,Fort Bidwell,90.5,168.4
-CA,Fort Bragg,17.7,203.9
+CA,Fort Bragg,18.1,204.2
 CA,Fort Dick,27.5,150.5
 CA,Fort Hunter Liggett,39.3,289.8
 CA,Fort Irwin,114.0,325.2
 CA,Fort Jones,46.7,162.2
 CA,Fort Washington,69.4,277.3
 CA,Fortuna,19.6,177.8
-CA,Foster City,31.5,251.4
+CA,Foster City,31.2,251.8
 CA,Fountain Valley,84.1,353.4
 CA,Fowler,69.5,283.2
 CA,Franklin,49.4,237.8
@@ -2639,9 +2639,9 @@ CA,Healdsburg,27.8,225.8
 CA,Heber,122.8,384.2
 CA,Hemet,101.2,356.8
 CA,Herald,52.7,240.5
-CA,Hercules,33.6,241.4
+CA,Hercules,33.8,241.8
 CA,Herlong,81.2,205.5
-CA,Hermosa Beach,76.8,348.1
+CA,Hermosa Beach,77.2,348.0
 CA,Hesperia,98.8,341.2
 CA,Hickman,56.9,257.1
 CA,Hidden Hills,73.9,340.6
@@ -2695,7 +2695,7 @@ CA,Ione,57.9,240.2
 CA,Iron Horse,73.6,211.8
 CA,Irvine,87.1,354.9
 CA,Irwindale,85.9,344.7
-CA,Isla Vista,54.1,330.0
+CA,Isla Vista,54.3,329.7
 CA,Isleton,45.8,241.6
 CA,Ivanhoe,75.9,290.4
 CA,Jackson,60.7,241.3
@@ -2887,7 +2887,7 @@ CA,Malaga,68.8,281.7
 CA,Malibu,71.4,343.2
 CA,Mammoth Lakes,86.5,264.5
 CA,Manchester,16.5,214.3
-CA,Manhattan Beach,76.7,347.3
+CA,Manhattan Beach,77.0,347.2
 CA,Manila,21.0,172.1
 CA,Manteca,49.9,251.2
 CA,Manton,55.3,191.9
@@ -2963,7 +2963,7 @@ CA,Mono Vista,67.1,250.7
 CA,Monrovia,85.8,343.5
 CA,Monson,74.5,287.5
 CA,Montague,52.3,161.1
-CA,Montalvin Manor,32.8,241.7
+CA,Montalvin Manor,33.1,242.2
 CA,Montara,27.4,250.6
 CA,Montclair,90.4,346.7
 CA,Monte Rio,24.2,228.2
@@ -2983,8 +2983,8 @@ CA,Morgan Hill,39.1,263.5
 CA,Morongo Valley,110.5,351.2
 CA,Morro Bay,42.0,304.9
 CA,Moskowite Corner,37.8,232.8
-CA,Moss Beach,27.0,251.3
-CA,Moss Landing,34.7,269.8
+CA,Moss Beach,27.2,251.4
+CA,Moss Landing,35.0,269.8
 CA,Mount Hebron,60.9,162.2
 CA,Mount Hermon,31.7,263.3
 CA,Mount Laguna,107.3,377.8
@@ -3014,7 +3014,7 @@ CA,Newark,34.8,253.7
 CA,Newcastle,57.7,228.6
 CA,Newell,71.7,162.8
 CA,Newman,50.6,262.4
-CA,Newport Beach,84.6,356.1
+CA,Newport Beach,84.9,355.9
 CA,Nicasio,27.0,238.6
 CA,Nice,31.1,215.1
 CA,Nicolaus,50.7,225.9
@@ -3032,7 +3032,7 @@ CA,North Fork,75.4,270.7
 CA,North Gate,37.8,245.2
 CA,North Highlands,52.7,231.7
 CA,North Lakeport,30.0,215.7
-CA,North Richmond,31.9,242.2
+CA,North Richmond,32.2,242.7
 CA,North San Juan,61.1,217.8
 CA,North Shore,119.5,365.8
 CA,North Tustin,87.1,352.9
@@ -3081,7 +3081,7 @@ CA,Oroville,54.4,213.2
 CA,Oroville East,55.7,213.6
 CA,Oxnard,64.4,337.5
 CA,Pacheco,37.1,243.1
-CA,Pacific Grove,31.3,273.1
+CA,Pacific Grove,31.6,273.9
 CA,Pacifica,28.0,249.4
 CA,Pajaro,36.0,267.9
 CA,Pajaro Dunes,34.8,268.4
@@ -3094,7 +3094,7 @@ CA,Palo Alto,32.3,255.5
 CA,Palo Cedro,49.8,187.2
 CA,Palo Verde,140.3,372.1
 CA,Paloma,60.3,243.2
-CA,Palos Verdes Estates,76.0,350.0
+CA,Palos Verdes Estates,76.3,350.2
 CA,Panorama Heights,83.1,305.3
 CA,Paradise,55.2,207.4
 CA,Paradise Park,31.6,264.3
@@ -3137,7 +3137,7 @@ CA,Pine Hills,20.3,174.6
 CA,Pine Mountain Club,68.5,323.9
 CA,Pine Mountain Lake,67.8,254.4
 CA,Pine Valley,105.6,378.1
-CA,Pinole,33.0,241.7
+CA,Pinole,33.2,242.1
 CA,Pioneer,64.3,240.3
 CA,Piru,72.6,334.8
 CA,Pismo Beach,44.1,310.4
@@ -3155,14 +3155,14 @@ CA,Pleasure Point,32.6,265.6
 CA,Plumas Eureka,70.7,210.6
 CA,Plumas Lake,51.4,224.2
 CA,Plymouth,60.0,238.3
-CA,Point Arena,16.0,215.6
+CA,Point Arena,16.5,215.6
 CA,Point Reyes Station,25.4,237.6
 CA,Pollock Pines,66.0,233.3
 CA,Pomona,89.2,346.7
 CA,Ponderosa,86.2,299.3
 CA,Poplar-Cotton Center,75.4,297.7
 CA,Port Costa,35.5,241.4
-CA,Port Hueneme,64.3,338.3
+CA,Port Hueneme,64.9,337.9
 CA,Porterville,77.4,298.1
 CA,Portola,74.0,210.9
 CA,Portola Valley,30.6,255.7
@@ -3202,7 +3202,7 @@ CA,Red Corral,63.8,240.7
 CA,Redcrest,21.5,182.8
 CA,Redding,47.8,186.5
 CA,Redlands,99.6,349.2
-CA,Redondo Beach,76.8,348.5
+CA,Redondo Beach,77.3,348.4
 CA,Redway,21.7,189.3
 CA,Redwood City,31.8,252.6
 CA,Redwood Valley,26.3,210.4
@@ -3212,7 +3212,7 @@ CA,Rexland Acres,74.0,314.6
 CA,Rialto,96.1,346.9
 CA,Richfield,47.3,200.2
 CA,Richgrove,74.7,303.5
-CA,Richmond,32.0,242.5
+CA,Richmond,32.1,242.7
 CA,Richvale,51.3,212.3
 CA,Ridgecrest,98.8,313.1
 CA,Ridgecrest Heights,98.0,313.5
@@ -3233,7 +3233,7 @@ CA,Riverside,95.1,350.8
 CA,Robbins,48.3,226.0
 CA,Robinson Mill,58.3,214.5
 CA,Rocklin,55.5,229.3
-CA,Rodeo,34.3,241.2
+CA,Rodeo,34.4,241.5
 CA,Rodriguez Camp,74.2,303.1
 CA,Rohnert Park,28.8,232.5
 CA,Rolling Hills,77.3,350.7
@@ -3261,7 +3261,7 @@ CA,Sacramento,50.5,233.5
 CA,Sage,102.0,360.2
 CA,Salida,51.8,253.6
 CA,Salinas,36.6,273.0
-CA,Salmon Creek,22.9,230.8
+CA,Salmon Creek,23.4,230.7
 CA,Salton City,117.6,370.3
 CA,Salton Sea Beach,117.1,368.4
 CA,Salyer,30.5,174.4
@@ -3279,7 +3279,7 @@ CA,San Diego,94.2,376.1
 CA,San Diego Country Estates,101.4,373.3
 CA,San Dimas,88.6,345.4
 CA,San Fernando,78.5,338.9
-CA,San Francisco,19.5,244.1
+CA,San Francisco,24.4,239.8
 CA,San Gabriel,83.4,344.5
 CA,San Geronimo,27.3,239.9
 CA,San Jacinto,101.5,355.4
@@ -3304,7 +3304,7 @@ CA,San Simeon,38.8,298.3
 CA,Sand City,32.6,273.4
 CA,Sanger,71.9,282.1
 CA,Santa Ana,85.4,353.2
-CA,Santa Barbara,56.6,330.9
+CA,Santa Barbara,56.6,330.6
 CA,Santa Clara,35.0,257.0
 CA,Santa Clarita,78.0,335.9
 CA,Santa Cruz,31.5,265.0
@@ -3336,7 +3336,7 @@ CA,Sebastopol,27.0,230.8
 CA,Seeley,120.2,382.4
 CA,Selma,70.2,284.6
 CA,Sequoia Crest,85.1,297.1
-CA,Sereno del Mar,22.9,229.9
+CA,Sereno del Mar,23.1,229.8
 CA,Seville,76.4,288.2
 CA,Shafter,71.4,309.9
 CA,Shandon,52.0,301.0
@@ -3386,7 +3386,7 @@ CA,South Lake Tahoe,77.0,232.2
 CA,South Monrovia Island,85.4,344.3
 CA,South Oroville,54.6,213.6
 CA,South Pasadena,82.5,344.0
-CA,South San Francisco,30.0,248.8
+CA,South San Francisco,29.7,248.8
 CA,South San Gabriel,83.2,345.5
 CA,South San Jose Hills,86.4,347.1
 CA,South Taft,65.1,316.4
@@ -3437,7 +3437,7 @@ CA,Tahoma,75.1,228.8
 CA,Talmage,26.1,213.5
 CA,Tamalpais-Homestead Valley,28.6,243.3
 CA,Tancred,40.3,226.2
-CA,Tara Hills,33.0,241.8
+CA,Tara Hills,33.2,242.1
 CA,Tarina,77.5,313.7
 CA,Tarpey Village,70.0,279.4
 CA,Taylorsville,69.4,204.3
@@ -3461,7 +3461,7 @@ CA,Thousand Palms,113.0,357.6
 CA,Three Rivers,82.0,290.6
 CA,Three Rocks,56.6,282.6
 CA,Tiburon,29.9,243.5
-CA,Timber Cove,20.8,225.7
+CA,Timber Cove,21.1,225.5
 CA,Tipton,72.6,297.0
 CA,Tobin,61.3,204.9
 CA,Tomales,24.8,233.7
@@ -3476,7 +3476,7 @@ CA,Tracy,45.8,251.6
 CA,Tranquillity,59.8,280.2
 CA,Traver,71.8,287.7
 CA,Tres Pinos,42.7,272.3
-CA,Trinidad,22.7,167.8
+CA,Trinidad,23.0,167.9
 CA,Trinity Center,44.9,176.1
 CA,Trinity Village,31.5,174.6
 CA,Trona,105.2,310.3
@@ -4162,7 +4162,7 @@ CT,East Village,852.3,184.9
 CT,Essex Village,864.9,181.8
 CT,Fairfield University,852.2,189.5
 CT,Falls Village,846.4,172.6
-CT,Fenwick,866.0,183.5
+CT,Fenwick,865.9,183.3
 CT,Gales Ferry,869.5,179.1
 CT,Gaylordsville,846.1,179.9
 CT,Georgetown,848.9,188.4
@@ -4193,7 +4193,7 @@ CT,Lakeside Woods,846.5,181.8
 CT,Lakeville,845.0,172.9
 CT,Litchfield,850.2,176.6
 CT,Long Hill,852.1,187.0
-CT,Lordship,854.5,189.0
+CT,Lordship,854.5,188.7
 CT,Madison Center,862.0,184.3
 CT,Mamanasco Lake,847.0,187.1
 CT,Manchester,860.6,173.2
@@ -4231,7 +4231,7 @@ CT,Northwest Harwinton,851.7,175.5
 CT,Norwalk,849.9,191.5
 CT,Norwich,868.7,176.4
 CT,Oakville,852.6,179.6
-CT,Old Greenwich,847.9,193.7
+CT,Old Greenwich,847.7,193.5
 CT,Old Hill,850.3,190.1
 CT,Old Mystic,871.3,179.6
 CT,Old Saybrook Center,865.9,183.2
@@ -4292,7 +4292,7 @@ CT,Terramuggus,862.2,176.2
 CT,Terryville,853.4,177.3
 CT,Thomaston,852.2,177.6
 CT,Thompsonville,858.2,168.9
-CT,Tokeneke,849.5,192.6
+CT,Tokeneke,849.2,192.3
 CT,Topstone,848.4,187.2
 CT,Torrington,850.6,174.4
 CT,Trumbull Center,852.9,187.4
@@ -4317,13 +4317,13 @@ CT,Windsor Locks,857.7,170.5
 CT,Winsted,851.1,172.2
 CT,Witches Woods,866.7,167.8
 CT,Woodbury Center,851.0,181.0
-CT,Woodmont,856.1,187.1
+CT,Woodmont,855.8,186.9
 DE,Arden,822.8,227.0
 DE,Ardencroft,822.9,227.1
 DE,Ardentown,823.0,227.0
 DE,Bear,820.6,231.9
 DE,Bellefonte,822.9,228.0
-DE,Bethany Beach,836.0,253.1
+DE,Bethany Beach,835.7,253.2
 DE,Bethel,826.6,254.4
 DE,Blades,826.6,253.0
 DE,Bowers,827.8,243.0
@@ -4336,7 +4336,7 @@ DE,Clayton,823.0,239.2
 DE,Dagsboro,832.9,253.6
 DE,Delaware City,822.2,232.5
 DE,Delmar,828.3,256.3
-DE,Dewey Beach,835.1,249.7
+DE,Dewey Beach,834.7,249.8
 DE,Dover,825.4,241.3
 DE,Dover Base Housing,826.2,242.1
 DE,Edgemoor,822.8,228.3
@@ -4344,7 +4344,7 @@ DE,Ellendale,828.7,248.5
 DE,Elsmere,821.4,229.0
 DE,Farmington,825.8,247.8
 DE,Felton,825.2,244.7
-DE,Fenwick Island,836.6,254.8
+DE,Fenwick Island,836.2,254.9
 DE,Frankford,833.2,254.1
 DE,Frederica,827.0,244.4
 DE,Georgetown,829.9,251.0
@@ -4380,7 +4380,7 @@ DE,Odessa,821.7,235.3
 DE,Pike Creek,819.7,229.1
 DE,Pike Creek Valley,819.8,229.5
 DE,Port Penn,822.7,233.8
-DE,Rehoboth Beach,834.9,249.3
+DE,Rehoboth Beach,834.6,249.4
 DE,Rising Sun-Lebanon,825.9,242.5
 DE,Riverview,826.1,244.1
 DE,Rodney Village,825.2,242.0
@@ -4388,7 +4388,7 @@ DE,Seaford,826.3,252.5
 DE,Selbyville,833.9,255.3
 DE,Slaughter Beach,830.0,245.8
 DE,Smyrna,823.3,238.7
-DE,South Bethany,836.2,253.6
+DE,South Bethany,835.8,253.7
 DE,St. Georges,821.4,233.1
 DE,Townsend,821.3,236.6
 DE,Viola,825.1,244.0
@@ -4408,7 +4408,7 @@ FL,Altoona,757.6,483.6
 FL,Alturas,760.7,508.1
 FL,Alva,765.5,532.3
 FL,Andrews,732.0,474.3
-FL,Anna Maria,741.2,517.9
+FL,Anna Maria,741.6,517.9
 FL,Apalachicola,691.5,475.5
 FL,Apollo Beach,746.9,511.9
 FL,Apopka,760.7,489.0
@@ -4418,24 +4418,24 @@ FL,Aripeka,739.7,498.2
 FL,Asbury Lake,751.3,460.4
 FL,Astatula,756.8,489.5
 FL,Astor,759.1,479.0
-FL,Atlantic Beach,757.7,453.0
+FL,Atlantic Beach,757.4,453.1
 FL,Atlantis,795.8,530.2
 FL,Auburndale,757.5,502.7
 FL,Aucilla,712.8,456.3
 FL,Avalon,649.6,462.0
 FL,Ave Maria,770.5,540.3
-FL,Aventura,797.5,544.0
+FL,Aventura,797.1,544.0
 FL,Avon Park,764.9,513.1
 FL,Azalea Park,765.7,491.7
 FL,Babson Park,763.7,507.9
 FL,Bagdad,650.6,460.8
-FL,Bal Harbour,798.0,545.4
+FL,Bal Harbour,797.3,545.5
 FL,Baldwin,747.0,455.3
 FL,Balm,749.2,511.8
 FL,Bardmoor,739.8,510.9
 FL,Bartow,757.8,507.6
 FL,Bascom,686.1,449.5
-FL,Bay Harbor Islands,797.8,545.5
+FL,Bay Harbor Islands,797.3,545.6
 FL,Bay Hill,761.8,494.2
 FL,Bay Lake,760.8,496.0
 FL,Bay Pines,739.5,511.8
@@ -4459,7 +4459,7 @@ FL,Berkshire Lakes,765.3,544.7
 FL,Berrydale,650.1,453.9
 FL,Beverly Beach,765.2,470.2
 FL,Beverly Hills,742.3,487.0
-FL,Big Coppitt Key,772.1,578.5
+FL,Big Coppitt Key,771.6,577.7
 FL,Big Pine Key,777.5,575.4
 FL,Biscayne Park,796.9,545.8
 FL,Bithlo,769.5,490.3
@@ -4481,7 +4481,7 @@ FL,Bradley Junction,755.1,510.0
 FL,Brandon,748.4,507.9
 FL,Branford,730.1,465.4
 FL,Brent,646.9,463.6
-FL,Briny Breezes,797.1,531.9
+FL,Briny Breezes,796.5,531.9
 FL,Bristol,690.0,460.2
 FL,Broadview Park,795.5,541.3
 FL,Bronson,737.1,475.9
@@ -4503,7 +4503,7 @@ FL,Callaway,679.9,467.9
 FL,Campbell,763.7,498.4
 FL,Campbellton,680.5,449.4
 FL,Canal Point,784.7,526.1
-FL,Cape Canaveral,779.5,492.9
+FL,Cape Canaveral,779.3,492.9
 FL,Cape Coral,758.4,535.0
 FL,Capitola,706.9,457.8
 FL,Captiva,755.2,538.7
@@ -4512,7 +4512,7 @@ FL,Carrollwood,743.8,505.8
 FL,Caryville,673.4,454.3
 FL,Casselberry,764.8,489.3
 FL,Cedar Grove,678.3,466.9
-FL,Cedar Key,730.4,483.4
+FL,Cedar Key,730.2,483.3
 FL,Celebration,761.6,497.6
 FL,Center Hill,751.7,492.2
 FL,Century,645.6,452.5
@@ -4548,7 +4548,7 @@ FL,Combee Settlement,755.6,504.1
 FL,Connerton,744.0,500.3
 FL,Conway,765.2,492.9
 FL,Cooper City,794.2,542.6
-FL,Coral Gables,796.0,550.4
+FL,Coral Gables,795.2,550.2
 FL,Coral Springs,793.9,537.7
 FL,Coral Terrace,794.9,549.2
 FL,Cortez,742.7,519.1
@@ -4565,7 +4565,7 @@ FL,Crystal Lake,755.8,504.6
 FL,Crystal River,739.5,487.8
 FL,Crystal Springs,750.4,502.1
 FL,Cudjoe Key,774.8,575.9
-FL,Cutler Bay,795.0,552.9
+FL,Cutler Bay,794.6,553.0
 FL,Cypress Gardens,760.0,504.7
 FL,Cypress Lake,760.7,537.0
 FL,Cypress Quarters,779.6,518.4
@@ -4593,7 +4593,7 @@ FL,Dixonville,649.6,452.0
 FL,Doctor Phillips,762.3,494.5
 FL,Doral,793.6,547.8
 FL,Dover,749.6,506.6
-FL,Duck Key,786.3,572.1
+FL,Duck Key,785.1,571.1
 FL,Dundee,761.6,504.1
 FL,Dunedin,738.1,507.3
 FL,Dunnellon,742.4,483.8
@@ -4625,12 +4625,12 @@ FL,Fanning Springs,731.2,473.6
 FL,Feather Sound,740.9,509.5
 FL,Fellsmere,781.8,507.5
 FL,Fern Park,764.4,489.6
-FL,Fernandina Beach,755.6,446.2
+FL,Fernandina Beach,755.3,446.2
 FL,Ferndale,757.9,491.3
 FL,Ferry Pass,648.0,462.4
 FL,Fidelis,650.1,453.2
 FL,Fish Hawk,750.3,509.5
-FL,Fisher Island,798.1,548.3
+FL,Fisher Island,797.6,548.1
 FL,Five Points,734.6,459.0
 FL,Flagler Beach,765.7,471.1
 FL,Flagler Estates,758.9,468.2
@@ -4678,7 +4678,7 @@ FL,Glen Ridge,796.0,528.5
 FL,Glen St. Mary,743.5,456.5
 FL,Glencoe,770.4,480.5
 FL,Glenvar Heights,794.8,550.0
-FL,Golden Beach,797.7,543.9
+FL,Golden Beach,797.1,544.0
 FL,Golden Gate,765.7,544.1
 FL,Golden Glades,796.4,545.2
 FL,Goldenrod,765.6,490.3
@@ -4703,11 +4703,11 @@ FL,Grove City,751.1,530.3
 FL,Groveland,755.3,491.9
 FL,Gulf Breeze,648.6,465.8
 FL,Gulf Gate,746.5,523.2
-FL,Gulf Stream,797.1,532.4
+FL,Gulf Stream,796.5,532.4
 FL,Gulfport,741.0,513.1
 FL,Gun Club Estates,795.4,528.5
 FL,Haines City,761.0,502.1
-FL,Hallandale Beach,797.3,543.5
+FL,Hallandale Beach,797.1,543.5
 FL,Hampton,745.3,465.4
 FL,Harbor Bluffs,738.3,509.9
 FL,Harbour Heights,757.1,527.5
@@ -4727,13 +4727,13 @@ FL,Hialeah,794.5,546.5
 FL,Hialeah Gardens,793.4,546.3
 FL,High Point,742.2,495.2
 FL,High Springs,737.0,468.1
-FL,Highland Beach,797.2,534.0
+FL,Highland Beach,796.5,534.0
 FL,Highland City,756.5,506.1
 FL,Highland Park,762.8,507.4
 FL,Hill 'n Dale,746.7,495.3
 FL,Hillcrest Heights,763.5,508.1
 FL,Hilliard,746.7,446.9
-FL,Hillsboro Beach,797.4,537.0
+FL,Hillsboro Beach,796.6,537.0
 FL,Hillsboro Pines,795.0,536.3
 FL,Hobe Sound,793.3,520.0
 FL,Holden Heights,763.8,492.6
@@ -4749,21 +4749,21 @@ FL,Homestead Base,794.1,554.9
 FL,Homosassa,739.8,490.3
 FL,Homosassa Springs,741.0,489.5
 FL,Horizon West,760.0,495.0
-FL,Horseshoe Beach,724.7,477.7
+FL,Horseshoe Beach,724.7,477.4
 FL,Hosford,693.2,460.3
 FL,Howey-in-the-Hills,755.8,489.7
 FL,Hudson,739.5,499.7
 FL,Hunters Creek,763.7,496.2
 FL,Hurlburt Field,657.1,463.7
 FL,Hutchinson Island South,790.9,515.3
-FL,Hypoluxo,796.9,530.6
+FL,Hypoluxo,796.4,530.6
 FL,Immokalee,770.5,538.1
 FL,Indialantic,781.4,499.5
-FL,Indian Creek,797.8,545.8
+FL,Indian Creek,797.3,545.9
 FL,Indian Harbour Beach,780.5,498.0
 FL,Indian Lake Estates,767.1,508.1
 FL,Indian River Estates,789.2,514.4
-FL,Indian River Shores,786.3,507.0
+FL,Indian River Shores,786.0,507.2
 FL,Indian Rocks Beach,737.9,510.2
 FL,Indian Shores,738.1,511.2
 FL,Indiantown,786.7,521.9
@@ -4774,12 +4774,12 @@ FL,Inverness Highlands North,743.9,487.9
 FL,Inverness Highlands South,744.9,489.2
 FL,Inwood,758.4,504.1
 FL,Iona,759.6,537.7
-FL,"Islamorada, Village of Islands",792.9,566.3
+FL,"Islamorada, Village of Islands",792.2,565.6
 FL,Island Walk,765.4,542.7
 FL,Istachatta,746.6,492.0
 FL,Ives Estates,796.5,544.1
 FL,Jacksonville,752.7,453.8
-FL,Jacksonville Beach,758.1,454.4
+FL,Jacksonville Beach,757.9,454.5
 FL,Jacob City,680.6,451.0
 FL,Jan Phyl Village,757.9,504.7
 FL,Jasmine Estates,739.7,501.1
@@ -4801,11 +4801,11 @@ FL,Kendall West,792.4,550.5
 FL,Kenneth City,740.7,511.6
 FL,Kensington Park,746.4,521.0
 FL,Kenwood Estates,795.4,529.5
-FL,Key Biscayne,797.9,549.9
-FL,Key Colony Beach,784.2,573.5
-FL,Key Largo,795.0,562.9
+FL,Key Biscayne,797.0,549.5
+FL,Key Colony Beach,783.3,572.6
+FL,Key Largo,794.4,562.5
 FL,Key Vista,738.5,503.6
-FL,Key West,769.6,579.2
+FL,Key West,769.6,578.4
 FL,Keystone,741.8,504.6
 FL,Keystone Heights,747.5,466.9
 FL,Kissimmee,764.2,497.4
@@ -4838,7 +4838,7 @@ FL,Lake Park,795.7,525.7
 FL,Lake Placid,768.5,518.9
 FL,Lake Sarasota,747.8,522.2
 FL,Lake Wales,762.0,506.2
-FL,Lake Worth Beach,796.6,529.5
+FL,Lake Worth Beach,796.3,529.6
 FL,Lakeland,754.7,504.3
 FL,Lakeland Highlands,755.1,506.4
 FL,Lakeside,751.4,458.5
@@ -4846,15 +4846,15 @@ FL,Lakewood Park,786.8,510.7
 FL,Lakewood Ranch,748.3,519.2
 FL,Lamont,712.1,458.5
 FL,Land O' Lakes,744.7,502.4
-FL,Lantana,796.8,530.3
+FL,Lantana,796.4,530.4
 FL,Largo,739.4,509.8
 FL,Lauderdale Lakes,795.4,539.8
-FL,Lauderdale-by-the-Sea,797.4,538.9
+FL,Lauderdale-by-the-Sea,796.7,538.9
 FL,Lauderhill,795.0,539.9
 FL,Laurel,747.8,525.3
 FL,Laurel Hill,660.8,451.5
 FL,Lawtey,745.9,461.2
-FL,Layton,788.1,570.6
+FL,Layton,787.7,569.9
 FL,Lazy Lake,796.6,539.8
 FL,Lealman,741.3,511.5
 FL,Lecanto,741.7,489.1
@@ -4866,7 +4866,7 @@ FL,Lely,765.5,545.9
 FL,Lely Resort,766.0,546.0
 FL,Lemon Grove,762.1,513.5
 FL,Liberty Triangle,746.3,482.9
-FL,Lighthouse Point,797.3,537.0
+FL,Lighthouse Point,796.6,537.0
 FL,Limestone,757.9,519.1
 FL,Limestone Creek,793.8,522.8
 FL,Lisbon,755.4,485.8
@@ -4887,12 +4887,12 @@ FL,Madison,719.3,455.5
 FL,Maitland,764.0,490.1
 FL,Malabar,781.4,501.7
 FL,Malone,685.1,448.9
-FL,Manalapan,797.1,530.6
+FL,Manalapan,796.4,530.6
 FL,Manasota Key,750.6,530.0
 FL,Manatee Road,731.6,475.2
 FL,Mango,748.1,506.7
 FL,Mangonia Park,795.7,526.6
-FL,Marathon,784.1,573.3
+FL,Marathon,783.4,572.6
 FL,Marco Island,766.5,549.6
 FL,Marco Shores-Hammock Bay,766.5,548.2
 FL,Margate,795.0,538.0
@@ -4918,7 +4918,7 @@ FL,Memphis,744.6,517.1
 FL,Merritt Island,778.5,495.0
 FL,Mexico Beach,682.9,471.6
 FL,Miami,796.7,548.2
-FL,Miami Beach,797.8,547.3
+FL,Miami Beach,797.5,547.3
 FL,Miami Gardens,795.4,544.6
 FL,Miami Lakes,794.0,545.6
 FL,Miami Shores,797.0,546.1
@@ -4953,8 +4953,8 @@ FL,Naples Park,763.3,542.7
 FL,Naranja,793.4,554.5
 FL,Nassau Village-Ratliff,749.4,450.4
 FL,Navarre,653.9,464.2
-FL,Navarre Beach,653.9,465.1
-FL,Neptune Beach,757.9,453.6
+FL,Navarre Beach,653.8,464.6
+FL,Neptune Beach,757.6,453.7
 FL,New Port Richey,739.3,502.3
 FL,New Port Richey East,739.7,501.8
 FL,New Smyrna Beach,770.6,480.2
@@ -4964,16 +4964,16 @@ FL,Nobleton,746.9,492.4
 FL,Nocatee,758.3,458.6
 FL,Nokomis,748.3,525.9
 FL,Noma,676.5,449.4
-FL,North Bay Village,797.6,546.4
+FL,North Bay Village,797.6,546.6
 FL,North Brooksville,745.7,494.0
 FL,North DeLand,764.0,480.8
 FL,North Fort Myers,761.2,533.0
-FL,North Key Largo,796.3,559.7
+FL,North Key Largo,795.7,559.5
 FL,North Lauderdale,794.9,538.8
 FL,North Merritt Island,777.2,491.8
 FL,North Miami,797.1,545.4
 FL,North Miami Beach,797.0,544.7
-FL,North Palm Beach,795.9,525.2
+FL,North Palm Beach,795.6,525.2
 FL,North Port,753.2,526.6
 FL,North Redington Beach,738.6,511.8
 FL,North River Shores,790.1,517.2
@@ -4989,7 +4989,7 @@ FL,Ocala,747.3,480.5
 FL,Ocala Estates,744.2,480.4
 FL,Ocean Breeze,791.0,516.7
 FL,Ocean City,659.2,463.2
-FL,Ocean Ridge,797.1,531.4
+FL,Ocean Ridge,796.4,531.4
 FL,Ocklawaha,751.8,482.7
 FL,Ocoee,761.1,491.7
 FL,Odessa,742.8,503.2
@@ -5011,7 +5011,7 @@ FL,Oriole Beach,650.0,465.6
 FL,Orlando,767.0,494.6
 FL,Orlovista,762.5,492.3
 FL,Ormond Beach,766.9,474.9
-FL,Ormond-by-the-Sea,767.3,473.7
+FL,Ormond-by-the-Sea,767.1,473.8
 FL,Osprey,747.3,524.6
 FL,Otter Creek,734.9,479.0
 FL,Oviedo,767.4,488.9
@@ -5021,9 +5021,9 @@ FL,Pahokee,784.0,527.2
 FL,Paisley,759.7,483.0
 FL,Palatka,754.8,468.9
 FL,Palm Bay,780.0,502.4
-FL,Palm Beach,796.6,527.9
+FL,Palm Beach,796.0,528.0
 FL,Palm Beach Gardens,793.6,524.9
-FL,Palm Beach Shores,796.5,526.1
+FL,Palm Beach Shores,795.8,526.2
 FL,Palm City,790.1,518.2
 FL,Palm Coast,763.4,470.0
 FL,Palm Harbor,739.1,505.9
@@ -5034,7 +5034,7 @@ FL,Palm Springs North,793.7,545.2
 FL,Palm Valley,758.3,456.0
 FL,Palmer Ranch,747.5,523.8
 FL,Palmetto,744.3,517.6
-FL,Palmetto Bay,795.1,551.9
+FL,Palmetto Bay,794.7,551.8
 FL,Palmetto Estates,794.3,552.0
 FL,Palmona Park,760.3,533.7
 FL,Panacea,702.1,467.6
@@ -5067,7 +5067,7 @@ FL,Pine Level,647.6,454.3
 FL,Pine Manor,761.0,536.2
 FL,Pine Ridge,741.8,486.7
 FL,Pinecraft,746.4,521.7
-FL,Pinecrest,795.2,550.9
+FL,Pinecrest,795.0,550.8
 FL,Pineland,755.4,535.1
 FL,Pinellas Park,740.7,510.7
 FL,Pinewood,796.2,546.2
@@ -5075,7 +5075,7 @@ FL,Pioneer,773.5,530.9
 FL,Pittman,757.4,482.9
 FL,Plant City,751.7,505.6
 FL,Plantation,794.4,540.9
-FL,Plantation Island,773.3,550.4
+FL,Plantation Island,773.4,550.1
 FL,Plantation Mobile Home Park,794.8,528.0
 FL,Poinciana,763.7,501.5
 FL,Point Baker,650.2,458.6
@@ -5131,16 +5131,16 @@ FL,Samoset,745.1,518.5
 FL,Samsula-Spruce Creek,768.5,480.0
 FL,San Antonio,747.5,499.0
 FL,San Carlos Park,762.5,538.1
-FL,San Castle,796.7,530.7
+FL,San Castle,796.4,530.7
 FL,Sanford,765.3,486.4
-FL,Sanibel,756.9,539.5
+FL,Sanibel,757.0,539.3
 FL,Sarasota,745.5,521.5
 FL,Sarasota Springs,746.9,522.0
 FL,Satellite Beach,780.4,497.6
 FL,Sawgrass,758.7,456.1
 FL,Schall Circle,795.1,527.7
 FL,Scottsmoor,773.1,485.6
-FL,Sea Ranch Lakes,797.3,538.7
+FL,Sea Ranch Lakes,796.7,538.7
 FL,Sebastian,784.1,505.7
 FL,Sebring,766.4,515.5
 FL,Seffner,748.7,506.4
@@ -5163,7 +5163,7 @@ FL,Sopchoppy,700.3,467.1
 FL,Sorrento,759.7,486.8
 FL,South Apopka,761.3,489.9
 FL,South Bay,783.1,530.2
-FL,South Beach,787.7,509.8
+FL,South Beach,787.5,509.9
 FL,South Bradenton,744.3,519.0
 FL,South Brooksville,743.9,495.7
 FL,South Daytona,769.2,477.4
@@ -5171,7 +5171,7 @@ FL,South Gate Ridge,746.6,522.6
 FL,South Highpoint,740.5,509.5
 FL,South Miami,795.3,549.9
 FL,South Miami Heights,793.9,552.8
-FL,South Palm Beach,797.1,530.1
+FL,South Palm Beach,796.4,530.2
 FL,South Pasadena,740.4,513.1
 FL,South Patrick Shores,780.1,497.0
 FL,South Sarasota,745.9,522.6
@@ -5186,30 +5186,30 @@ FL,Spring Ridge,734.3,468.0
 FL,Springfield,678.6,467.1
 FL,Springhill,652.5,457.0
 FL,St. Augustine,760.8,462.4
-FL,St. Augustine Beach,761.8,463.5
+FL,St. Augustine Beach,761.5,463.6
 FL,St. Augustine Shores,761.1,464.4
 FL,St. Augustine South,760.9,463.5
 FL,St. Cloud,767.0,498.4
-FL,St. George Island,693.7,477.0
+FL,St. George Island,692.9,474.9
 FL,St. James City,756.7,537.5
 FL,St. Leo,747.9,499.1
 FL,St. Lucie Village,787.8,511.4
 FL,St. Marks,705.2,464.1
 FL,St. Pete Beach,740.5,513.9
-FL,St. Petersburg,742.2,512.6
+FL,St. Petersburg,742.0,512.5
 FL,Stacey Street,795.0,528.1
 FL,Starke,745.5,463.6
 FL,Steinhatchee,722.3,472.6
-FL,Stock Island,770.3,579.1
+FL,Stock Island,770.3,578.4
 FL,Stuart,790.9,517.7
 FL,Sugarmill Woods,741.9,491.0
 FL,Sumatra,690.9,469.0
 FL,Sun City Center,748.0,512.8
 FL,Suncoast Estates,760.7,533.2
-FL,Sunny Isles Beach,797.8,544.4
+FL,Sunny Isles Beach,797.2,544.5
 FL,Sunrise,794.2,539.9
 FL,Sunset,794.1,550.2
-FL,Surfside,798.0,545.7
+FL,Surfside,797.3,545.8
 FL,Sweetwater,793.2,548.6
 FL,Taft,764.8,494.5
 FL,Tallahassee,703.6,457.9
@@ -5220,7 +5220,7 @@ FL,Tangelo Park,763.2,494.1
 FL,Tangerine,758.5,488.1
 FL,Tarpon Springs,738.4,504.6
 FL,Tavares,756.2,488.3
-FL,Tavernier,793.6,565.3
+FL,Tavernier,792.9,564.8
 FL,Taylor Creek,780.1,519.1
 FL,Temple Terrace,746.6,505.8
 FL,Tequesta,794.2,522.3
@@ -5233,7 +5233,7 @@ FL,Thonotosassa,748.1,505.5
 FL,Three Lakes,793.4,551.7
 FL,Three Oaks,762.9,538.1
 FL,Tice,761.9,533.8
-FL,Tierra Verde,741.0,515.0
+FL,Tierra Verde,740.7,515.1
 FL,Tiger Point,650.9,465.3
 FL,Tildenville,759.8,492.7
 FL,Timber Pines,740.9,497.1
@@ -5267,7 +5267,7 @@ FL,Villas,761.3,536.7
 FL,Vineyards,765.1,543.2
 FL,Virginia Gardens,794.8,547.8
 FL,Wabasso,785.0,506.4
-FL,Wabasso Beach,785.8,506.1
+FL,Wabasso Beach,785.4,506.3
 FL,Wacissa,708.6,459.5
 FL,Wahneta,759.4,505.8
 FL,Waldo,745.0,467.1
@@ -5323,7 +5323,7 @@ FL,Wilton Manors,796.7,539.7
 FL,Wimauma,749.0,513.6
 FL,Windermere,761.2,493.4
 FL,Winding Cypress,766.7,546.7
-FL,Windsor,785.4,505.5
+FL,Windsor,785.1,505.7
 FL,Winter Beach,785.5,507.1
 FL,Winter Garden,760.1,492.7
 FL,Winter Haven,759.0,503.9
@@ -5670,7 +5670,7 @@ GA,Jakin,688.2,445.6
 GA,Jasper,689.2,370.1
 GA,Jefferson,705.1,375.5
 GA,Jeffersonville,714.1,406.8
-GA,Jekyll Island,754.8,437.2
+GA,Jekyll Island,754.2,437.0
 GA,Jenkinsburg,699.6,394.5
 GA,Jersey,702.7,385.2
 GA,Jesup,744.2,427.0
@@ -5961,7 +5961,7 @@ GA,Tunnel Hill,677.4,362.8
 GA,Turin,688.7,395.8
 GA,Twin City,736.1,406.0
 GA,Ty Ty,712.0,434.2
-GA,Tybee Island,762.0,414.9
+GA,Tybee Island,761.6,414.9
 GA,Tyrone,689.0,392.3
 GA,Unadilla,708.1,417.2
 GA,Union City,689.3,389.6
@@ -6024,7 +6024,7 @@ GA,Zebulon,694.7,400.2
 HI,Ahuimanu,277.2,527.8
 HI,Aiea,275.4,528.9
 HI,Ainaloa,334.9,570.0
-HI,Anahola,247.5,511.9
+HI,Anahola,247.4,512.1
 HI,Black Sands,335.6,572.4
 HI,Captain Cook,316.4,570.3
 HI,Discovery Harbour,321.8,580.3
@@ -6065,12 +6065,12 @@ HI,Honolulu,277.0,530.2
 HI,Honomu,332.6,562.4
 HI,Iroquois Point,274.3,530.3
 HI,Kaaawa,277.0,525.5
-HI,Kaanapali,300.5,539.1
+HI,Kaanapali,300.7,539.1
 HI,Kahaluu,277.1,527.4
-HI,Kahaluu-Keauhou,315.1,568.7
+HI,Kahaluu-Keauhou,315.6,568.4
 HI,Kahuku,275.2,522.6
 HI,Kahului,305.0,540.5
-HI,Kailua,314.3,567.1
+HI,Kailua,314.6,566.9
 HI,Kaiminani,314.2,564.7
 HI,Kalaeloa,272.5,530.4
 HI,Kalaheo,243.2,516.7
@@ -6102,7 +6102,7 @@ HI,Kurtistown,333.3,568.6
 HI,Lahaina,300.9,540.1
 HI,Laie,275.6,523.3
 HI,Lanai City,295.8,541.3
-HI,Launiupoko,301.4,540.8
+HI,Launiupoko,301.6,540.6
 HI,Laupahoehoe,330.0,560.3
 HI,Lawai,243.6,516.6
 HI,Leilani Estates,336.5,571.2
@@ -6114,7 +6114,7 @@ HI,Makaha,269.5,527.0
 HI,Makaha Valley,270.2,526.7
 HI,Makakilo,272.2,529.4
 HI,Makawao,308.0,541.0
-HI,Makena,305.7,545.8
+HI,Makena,306.2,545.7
 HI,Manele,296.1,543.2
 HI,Mauna Loa Estates,330.2,572.0
 HI,Maunaloa,289.9,534.6
@@ -6129,7 +6129,7 @@ HI,Nanawale Estates,336.6,570.4
 HI,Napili-Honokowai,301.0,538.2
 HI,Ocean Pointe,273.3,530.4
 HI,Olinda,308.6,541.5
-HI,Olowalu,301.9,541.4
+HI,Olowalu,302.2,541.1
 HI,Omao,243.9,516.3
 HI,Orchidlands Estates,334.5,569.2
 HI,Paauilo,327.2,558.8
@@ -6143,7 +6143,7 @@ HI,Pearl City,274.8,528.5
 HI,Pepeekeo,332.6,563.3
 HI,Poipu,244.5,517.4
 HI,Princeville,244.2,510.2
-HI,Puako,317.4,560.4
+HI,Puako,317.9,560.9
 HI,Puhi,245.8,515.8
 HI,Pukalani,307.6,541.3
 HI,Punaluu,276.2,524.7
@@ -6164,10 +6164,10 @@ HI,Waianae,270.2,527.4
 HI,Waihee-Waiehu,304.2,539.3
 HI,Waikapu,303.7,541.2
 HI,Waikele,273.8,528.5
-HI,Waikoloa Beach Resort,316.8,561.0
+HI,Waikoloa Beach Resort,317.3,561.5
 HI,Waikoloa Village,318.3,560.7
-HI,Wailea,305.6,544.6
-HI,Wailua,247.0,513.8
+HI,Wailea,306.0,544.5
+HI,Wailua,246.6,513.6
 HI,Wailua Homesteads,246.1,513.5
 HI,Wailuku,304.3,540.2
 HI,Waimalu,275.3,528.8
@@ -6190,7 +6190,7 @@ IA,Adel,513.3,223.6
 IA,Afton,510.6,236.5
 IA,Agency,541.8,236.3
 IA,Ainsworth,553.9,229.3
-IA,Akron,471.7,196.9
+IA,Akron,472.1,197.0
 IA,Albert City,497.6,197.8
 IA,Albia,533.6,236.0
 IA,Albion,529.7,212.0
@@ -6262,7 +6262,7 @@ IA,Beaver,511.0,214.1
 IA,Beaverdale,560.2,238.8
 IA,Bedford,501.9,244.6
 IA,Belle Plaine,541.5,216.4
-IA,Bellevue,571.1,206.8
+IA,Bellevue,570.6,206.7
 IA,Belmond,519.2,196.0
 IA,Bennett,562.9,218.9
 IA,Bentley,487.0,229.1
@@ -6342,7 +6342,7 @@ IA,Chariton,525.2,236.4
 IA,Charles City,534.1,190.7
 IA,Charlotte,570.9,213.5
 IA,Charter Oak,487.4,213.7
-IA,Chatsworth,472.4,194.9
+IA,Chatsworth,472.6,195.0
 IA,Chelsea,539.5,215.9
 IA,Cherokee,487.9,198.6
 IA,Chester,538.7,181.1
@@ -6354,7 +6354,7 @@ IA,Clarence,561.4,215.7
 IA,Clarinda,496.8,243.2
 IA,Clarion,517.3,198.6
 IA,Clarksville,534.4,197.0
-IA,Clayton,558.7,193.3
+IA,Clayton,558.4,193.4
 IA,Clear Lake,522.8,189.5
 IA,Clearfield,505.9,241.7
 IA,Cleghorn,485.3,197.2
@@ -6569,7 +6569,7 @@ IA,Grundy Center,533.0,206.3
 IA,Gruver,501.4,184.2
 IA,Guernsey,540.6,221.9
 IA,Guthrie Center,505.3,222.2
-IA,Guttenberg,559.5,195.7
+IA,Guttenberg,559.2,195.8
 IA,Halbur,497.5,215.0
 IA,Hamburg,486.5,246.2
 IA,Hamilton,531.8,232.8
@@ -6590,7 +6590,7 @@ IA,Harvey,531.4,229.6
 IA,Hastings,489.1,236.8
 IA,Havelock,501.6,196.6
 IA,Haverhill,530.3,215.7
-IA,Hawarden,473.0,193.0
+IA,Hawarden,473.3,193.1
 IA,Hawkeye,545.8,193.1
 IA,Hayesville,542.5,230.4
 IA,Hayfield,517.6,188.7
@@ -6774,7 +6774,7 @@ IA,Maysville,567.2,220.6
 IA,McCallsburg,523.1,211.0
 IA,McCausland,571.5,218.3
 IA,McClelland,486.0,230.1
-IA,McGregor,558.0,190.5
+IA,McGregor,557.7,190.5
 IA,McIntire,535.0,182.4
 IA,Mechanicsville,558.1,215.4
 IA,Mediapolis,560.6,235.3
@@ -6837,7 +6837,7 @@ IA,Nashua,536.3,193.2
 IA,Nemaha,495.5,203.7
 IA,Neola,487.0,227.4
 IA,Nevada,521.9,214.3
-IA,New Albin,555.8,180.2
+IA,New Albin,555.8,180.6
 IA,New Hampton,539.8,190.7
 IA,New Hartford,535.3,201.7
 IA,New Haven,534.4,185.8
@@ -6999,7 +6999,7 @@ IA,Russell,527.0,237.2
 IA,Ruthven,498.4,190.1
 IA,Rutland,508.2,198.1
 IA,Ryan,553.9,205.7
-IA,Sabula,575.4,210.8
+IA,Sabula,574.9,211.2
 IA,Sac City,497.0,205.8
 IA,Sageville,566.2,200.7
 IA,Salem,553.3,239.1
@@ -7174,7 +7174,7 @@ IA,West Liberty,558.4,222.8
 IA,West Okoboji,494.0,185.3
 IA,West Point,556.2,242.0
 IA,West Union,548.0,192.5
-IA,Westfield,471.0,198.4
+IA,Westfield,471.7,198.6
 IA,Westgate,545.2,196.9
 IA,Weston,484.9,229.8
 IA,Westphalia,490.7,221.4
@@ -7281,7 +7281,7 @@ ID,Filer,181.9,173.3
 ID,Firth,223.2,164.3
 ID,Fort Hall,217.7,169.9
 ID,Franklin,224.4,193.6
-ID,Fruitland,152.3,134.2
+ID,Fruitland,152.6,134.3
 ID,Gannett,192.1,157.5
 ID,Garden City,160.3,143.9
 ID,Garden Valley,167.5,136.0
@@ -7377,7 +7377,7 @@ ID,Parker,232.2,151.1
 ID,Parkline,171.5,63.6
 ID,Parma,150.8,139.1
 ID,Paul,195.1,175.0
-ID,Payette,152.5,132.8
+ID,Payette,152.8,132.9
 ID,Peck,171.5,83.0
 ID,Pierce,180.8,84.5
 ID,Pinehurst,179.3,60.8
@@ -7419,7 +7419,7 @@ ID,St. Charles,231.4,192.5
 ID,St. Maries,173.2,64.5
 ID,Stanley,183.9,136.5
 ID,Star,157.4,142.5
-ID,State Line,168.3,54.6
+ID,State Line,168.7,54.7
 ID,Stites,176.4,92.6
 ID,Sugar City,232.1,153.0
 ID,Sun Valley,190.9,149.8
@@ -7481,9 +7481,9 @@ IL,Andres,614.1,223.6
 IL,Anna,598.1,312.0
 IL,Annapolis,619.4,272.8
 IL,Annawan,581.1,225.4
-IL,Antioch,608.9,199.3
+IL,Antioch,608.9,199.7
 IL,Apple Canyon Lake,575.2,202.7
-IL,Apple River,576.2,201.2
+IL,Apple River,576.2,201.6
 IL,Arbury Hills,614.3,219.9
 IL,Arcola,610.3,261.5
 IL,Arenzville,575.2,259.6
@@ -7560,7 +7560,7 @@ IL,Berwyn,614.6,213.0
 IL,Bethalto,582.1,281.0
 IL,Bethany,603.0,263.0
 IL,Beverly,565.0,262.0
-IL,Big Foot Prairie,600.3,199.7
+IL,Big Foot Prairie,600.3,200.2
 IL,Big Rock,602.8,215.7
 IL,Biggsville,565.8,238.4
 IL,Bingham,595.9,275.3
@@ -7645,7 +7645,7 @@ IL,Camden,568.2,253.9
 IL,Cameron,571.5,237.3
 IL,Camp Point,563.4,256.7
 IL,Campbell Hill,592.0,302.0
-IL,Campbell's Island,572.0,222.8
+IL,Campbell's Island,572.2,222.9
 IL,Campton Hills,604.2,211.5
 IL,Campus,607.7,231.8
 IL,Candlewick Lake,596.2,203.2
@@ -7680,7 +7680,7 @@ IL,Chadwick,580.2,211.8
 IL,Champaign,609.9,251.9
 IL,Chandlerville,578.7,255.6
 IL,Channahon,607.7,222.9
-IL,Channel Lake,607.6,199.3
+IL,Channel Lake,607.6,199.7
 IL,Chapin,574.9,262.1
 IL,Charleston,612.7,265.8
 IL,Chatham,586.9,263.4
@@ -7954,7 +7954,7 @@ IL,Glenview,613.6,207.7
 IL,Glenwood,618.1,219.4
 IL,Godfrey,579.0,280.0
 IL,Godley,608.4,226.8
-IL,Golconda,611.3,313.2
+IL,Golconda,610.8,313.1
 IL,Golden,564.1,255.1
 IL,Golden Gate,614.3,290.7
 IL,Golf,614.3,208.2
@@ -8148,7 +8148,7 @@ IL,Lake Barrington,607.8,205.4
 IL,Lake Bluff,612.8,203.4
 IL,Lake Camelot,584.5,242.2
 IL,Lake Carroll,580.4,208.3
-IL,Lake Catherine,608.0,199.3
+IL,Lake Catherine,608.0,199.7
 IL,Lake City,603.1,260.5
 IL,Lake Forest,612.8,204.4
 IL,Lake Holiday,600.8,219.1
@@ -8578,7 +8578,7 @@ IL,Rochester,588.9,261.7
 IL,Rock City,586.4,202.5
 IL,Rock Falls,583.7,216.9
 IL,Rock Island,569.6,224.5
-IL,Rock Island Arsenal,570.3,223.4
+IL,Rock Island Arsenal,570.6,224.1
 IL,Rockbridge,578.8,273.0
 IL,Rockdale,609.8,220.9
 IL,Rockford,593.2,205.4
@@ -8668,7 +8668,7 @@ IL,Solon Mills,605.6,200.4
 IL,Somonauk,600.4,218.8
 IL,Sorento,589.9,278.2
 IL,South Barrington,608.2,208.0
-IL,South Beloit,593.4,200.4
+IL,South Beloit,593.4,200.6
 IL,South Chicago Heights,617.8,220.7
 IL,South Elgin,605.8,210.4
 IL,South Holland,618.2,218.1
@@ -8815,7 +8815,7 @@ IL,Walshville,589.1,276.8
 IL,Waltonville,600.3,295.0
 IL,Wamac,598.0,289.0
 IL,Wapella,598.3,250.4
-IL,Warren,577.9,201.2
+IL,Warren,577.9,201.5
 IL,Warrensburg,597.1,257.0
 IL,Warrenville,608.2,214.0
 IL,Warsaw,557.0,250.0
@@ -8880,8 +8880,8 @@ IL,Windsor,605.8,267.3
 IL,Winfield,608.7,212.7
 IL,Winnebago,590.5,205.4
 IL,Winnetka,614.9,207.1
-IL,Winslow,581.0,201.1
-IL,Winthrop Harbor,612.8,198.9
+IL,Winslow,581.0,201.4
+IL,Winthrop Harbor,612.8,199.4
 IL,Witt,593.4,272.4
 IL,Wonder Lake,604.5,201.8
 IL,Wood Dale,611.3,210.5
@@ -8959,7 +8959,7 @@ IN,Benton,648.3,217.2
 IN,Berne,663.8,234.5
 IN,Bethany,642.8,261.9
 IN,Bethel Village,651.4,269.6
-IN,Beverly Shores,628.2,215.1
+IN,Beverly Shores,628.3,215.4
 IN,Bicknell,628.8,280.2
 IN,Big Lake,653.3,222.0
 IN,Billtown,629.3,263.7
@@ -9124,7 +9124,7 @@ IN,Dublin,661.8,253.6
 IN,Dubois,638.2,286.7
 IN,Dugger,629.0,273.6
 IN,Dune Acres,626.4,216.2
-IN,Duneland Beach,630.4,213.4
+IN,Duneland Beach,630.7,213.7
 IN,Dunkirk,660.3,241.2
 IN,Dunlap,645.5,214.7
 IN,Dunreith,658.0,254.3
@@ -9174,7 +9174,7 @@ IN,Fishers,648.7,251.7
 IN,Fishersburg,650.2,249.1
 IN,Flat Rock,652.4,264.7
 IN,Flora,638.2,239.8
-IN,Florence,669.2,275.8
+IN,Florence,668.8,275.2
 IN,Floyds Knobs,654.0,287.6
 IN,Folsomville,632.6,294.3
 IN,Fontanet,628.2,262.5
@@ -9305,7 +9305,7 @@ IN,Jamestown,637.8,253.6
 IN,Jasonville,629.8,271.5
 IN,Jasper,635.8,288.1
 IN,Jefferson,637.6,245.8
-IN,Jeffersonville,657.2,287.3
+IN,Jeffersonville,656.7,286.8
 IN,Jerome,648.1,240.7
 IN,Jimmerson Lake,659.3,211.6
 IN,Johnson,622.3,292.0
@@ -9359,7 +9359,7 @@ IN,Lakeshore Resort,665.7,259.9
 IN,Laketon,648.4,229.0
 IN,Lakeville,640.0,217.6
 IN,Lakewood,627.6,266.4
-IN,Lamb,664.8,278.4
+IN,Lamb,664.6,278.1
 IN,Landess,653.9,236.6
 IN,Lanesville,652.6,289.8
 IN,Laotto,658.1,221.0
@@ -9395,7 +9395,7 @@ IN,Livonia,646.8,283.5
 IN,Lizton,639.3,254.4
 IN,Logansport,640.5,235.0
 IN,London,650.4,259.0
-IN,Long Beach,630.2,213.8
+IN,Long Beach,630.4,214.0
 IN,Loogootee,635.7,281.8
 IN,Losantville,661.6,248.9
 IN,Lowell,621.8,224.7
@@ -9573,7 +9573,7 @@ IN,Parker City,660.9,245.3
 IN,Parkers Settlement,623.3,297.0
 IN,Patoka,624.7,289.0
 IN,Patricksburg,633.6,267.7
-IN,Patriot,670.6,274.5
+IN,Patriot,670.4,274.2
 IN,Paxton,626.9,274.9
 IN,Pence,622.1,245.3
 IN,Pendleton,651.9,250.4
@@ -9641,7 +9641,7 @@ IN,Rob Roy,626.8,247.6
 IN,Rochester,642.3,227.8
 IN,Rockfield,637.1,237.7
 IN,Rockford,652.5,273.2
-IN,Rockport,635.0,299.4
+IN,Rockport,634.8,299.3
 IN,Rockville,628.1,258.1
 IN,Rocky Ripple,645.6,254.6
 IN,Roll,656.8,237.6
@@ -9787,7 +9787,7 @@ IN,Uniondale,658.7,231.2
 IN,Universal,624.6,261.6
 IN,Upland,655.3,239.8
 IN,Urbana,649.4,230.7
-IN,Utica,657.9,287.0
+IN,Utica,657.2,286.3
 IN,Vallonia,649.1,276.6
 IN,Valparaiso,627.4,219.9
 IN,Van Bibber Lake,633.2,258.5
@@ -9797,7 +9797,7 @@ IN,Velpen,633.1,289.2
 IN,Vera Cruz,661.6,233.8
 IN,Vernon,657.1,272.7
 IN,Versailles,662.8,270.3
-IN,Vevay,666.6,277.1
+IN,Vevay,666.4,276.9
 IN,Vicksburg,630.0,273.1
 IN,Vincennes,625.6,282.7
 IN,Vistula,648.6,211.8
@@ -9825,8 +9825,8 @@ IN,Waynetown,630.1,250.7
 IN,Webster,666.0,251.2
 IN,Wellsboro,632.1,219.2
 IN,West Baden Springs,641.1,283.7
-IN,West College Corner,668.9,258.2
-IN,West Harrison,669.7,265.1
+IN,West College Corner,668.6,258.2
+IN,West Harrison,669.4,265.1
 IN,West Lafayette,631.7,242.6
 IN,West Lebanon,624.4,247.2
 IN,West Middleton,643.5,241.5
@@ -9894,7 +9894,7 @@ KS,Ames,456.3,269.0
 KS,Andale,452.7,308.5
 KS,Andover,461.3,311.0
 KS,Anthony,445.2,322.5
-KS,Arcadia,504.7,312.0
+KS,Arcadia,504.0,312.0
 KS,Argonia,450.2,320.1
 KS,Arkansas City,462.7,324.7
 KS,Arlington,443.2,306.0
@@ -10060,7 +10060,7 @@ KS,Edwardsville,500.9,280.0
 KS,Effingham,491.0,270.2
 KS,El Dorado,465.9,308.0
 KS,Elbing,461.4,302.8
-KS,Elgin,475.9,326.3
+KS,Elgin,475.9,326.1
 KS,Elk City,482.4,320.0
 KS,Elk Falls,477.5,318.1
 KS,Elkhart,378.0,323.1
@@ -10069,7 +10069,7 @@ KS,Ellis,420.3,282.2
 KS,Ellsworth,442.8,287.4
 KS,Elmdale,469.7,295.8
 KS,Elsmore,495.5,308.7
-KS,Elwood,499.4,265.1
+KS,Elwood,498.5,265.0
 KS,Elyria,452.8,297.4
 KS,Emmett,479.8,275.1
 KS,Emporia,477.5,295.2
@@ -10083,7 +10083,7 @@ KS,Eudora,496.2,283.3
 KS,Eureka,475.8,308.0
 KS,Everest,490.5,266.8
 KS,Fairview,485.3,263.2
-KS,Fairway,504.1,281.2
+KS,Fairway,503.6,281.2
 KS,Fall River,480.3,312.9
 KS,Falun,450.9,288.8
 KS,Farlington,501.2,312.6
@@ -10103,14 +10103,14 @@ KS,Frontenac,503.4,316.0
 KS,Fulton,502.9,303.8
 KS,Furley,459.9,306.7
 KS,Galatia,430.3,289.1
-KS,Galena,504.6,324.6
+KS,Galena,504.1,324.6
 KS,Galesburg,492.0,315.9
 KS,Galva,454.4,295.4
 KS,Garden City,397.2,302.5
 KS,Garden Plain,451.8,311.4
 KS,Gardner,499.0,286.0
 KS,Garfield,425.0,301.5
-KS,Garland,504.6,310.0
+KS,Garland,503.9,310.0
 KS,Garnett,493.8,297.7
 KS,Gas,492.1,305.8
 KS,Gaylord,432.8,266.8
@@ -10240,8 +10240,8 @@ KS,Larned,427.5,299.2
 KS,Latham,469.7,314.4
 KS,Latimer,466.4,287.6
 KS,Lawrence,493.3,282.7
-KS,Leavenworth,499.0,274.6
-KS,Leawood,504.2,283.8
+KS,Leavenworth,498.8,274.7
+KS,Leawood,503.7,283.8
 KS,Lebanon,437.8,263.3
 KS,Lebo,483.2,294.9
 KS,Lecompton,491.1,281.3
@@ -10319,8 +10319,8 @@ KS,Miltonvale,456.2,273.9
 KS,Minneapolis,452.0,278.9
 KS,Minneola,411.2,315.1
 KS,Mission,503.6,281.1
-KS,Mission Hills,504.3,281.4
-KS,Mission Woods,504.4,281.0
+KS,Mission Hills,503.6,281.4
+KS,Mission Woods,503.6,281.0
 KS,Moline,475.6,318.3
 KS,Mont Ida,491.7,299.3
 KS,Montezuma,403.7,311.4
@@ -10335,7 +10335,7 @@ KS,Mound City,501.1,300.9
 KS,Mound Valley,491.2,321.8
 KS,Moundridge,454.8,299.4
 KS,Mount Hope,452.3,306.7
-KS,Mulberry,504.7,313.9
+KS,Mulberry,504.0,313.9
 KS,Mullinville,420.6,312.2
 KS,Mulvane,459.4,315.6
 KS,Munden,455.0,261.4
@@ -10384,7 +10384,7 @@ KS,Olpe,478.0,298.2
 KS,Olsburg,470.4,272.2
 KS,Onaga,477.9,271.0
 KS,Oneida,481.8,262.6
-KS,Opolis,504.7,318.5
+KS,Opolis,504.0,318.5
 KS,Osage City,483.9,290.0
 KS,Osawatomie,498.8,292.9
 KS,Osborne,435.2,271.4
@@ -10429,7 +10429,7 @@ KS,Portis,435.4,268.7
 KS,Potwin,463.3,305.4
 KS,Powhattan,486.9,264.9
 KS,Prairie View,420.8,262.2
-KS,Prairie Village,504.0,282.0
+KS,Prairie Village,503.6,282.0
 KS,Pratt,433.0,310.1
 KS,Prescott,503.3,302.6
 KS,Preston,436.6,308.9
@@ -10458,7 +10458,7 @@ KS,Ringo,502.2,315.0
 KS,Riverton,503.4,324.6
 KS,Robinson,490.7,263.7
 KS,Rock,463.3,316.5
-KS,Roeland Park,503.9,280.9
+KS,Roeland Park,503.6,280.9
 KS,Rolla,382.7,320.8
 KS,Rosalia,470.0,308.2
 KS,Rose Hill,461.1,313.6
@@ -10568,7 +10568,7 @@ KS,Walton,459.2,301.4
 KS,Wamego,475.5,277.3
 KS,Washington,463.2,263.6
 KS,Waterville,468.2,266.5
-KS,Wathena,498.8,264.9
+KS,Wathena,498.5,264.9
 KS,Waverly,487.6,295.3
 KS,Wayside,483.1,323.6
 KS,Webber,446.6,260.7
@@ -10581,12 +10581,12 @@ KS,Weskan,379.2,281.7
 KS,West Mineral,499.5,320.0
 KS,Westmoreland,473.8,273.1
 KS,Westphalia,489.6,300.1
-KS,Westwood,504.3,280.9
-KS,Westwood Hills,504.4,280.9
+KS,Westwood,503.6,280.9
+KS,Westwood Hills,503.6,280.9
 KS,Wetmore,484.0,267.8
 KS,Wheaton,475.4,270.7
 KS,White City,468.3,286.4
-KS,White Cloud,492.5,260.2
+KS,White Cloud,492.2,260.5
 KS,Whitewater,461.1,304.8
 KS,Whiting,487.3,268.8
 KS,Wichita,457.5,310.9
@@ -10607,7 +10607,7 @@ KS,Woodbine,464.5,286.4
 KS,Woodruff,423.3,258.9
 KS,Woodston,428.5,270.9
 KS,Wright,413.6,307.7
-KS,Yale,504.3,315.3
+KS,Yale,504.0,315.3
 KS,Yates Center,485.1,307.1
 KS,Yoder,448.6,305.0
 KS,Zeandale,473.5,278.3
@@ -10625,10 +10625,10 @@ KY,Anthoston,627.1,303.1
 KY,Arjay,696.6,316.8
 KY,Arlington,603.1,326.6
 KY,Artemus,693.1,316.5
-KY,Ashland,708.7,278.0
+KY,Ashland,708.4,278.2
 KY,Auburn,643.1,321.5
 KY,Audubon Park,657.0,290.1
-KY,Augusta,684.9,274.2
+KY,Augusta,684.9,274.7
 KY,Auxier,708.9,294.3
 KY,Bancroft,658.8,288.1
 KY,Bandana,603.8,318.7
@@ -10647,7 +10647,7 @@ KY,Belfry,717.8,295.6
 KY,Bellefonte,707.8,277.2
 KY,Bellemeade,659.2,288.9
 KY,Belleview,670.3,271.3
-KY,Bellevue,675.9,267.9
+KY,Bellevue,675.6,268.5
 KY,Bellewood,658.0,288.8
 KY,Benham,708.1,311.7
 KY,Benton,614.4,324.5
@@ -10688,7 +10688,7 @@ KY,Burnside,678.7,314.6
 KY,Butler,678.5,274.6
 KY,Cadiz,623.9,323.4
 KY,Calhoun,632.2,307.5
-KY,California,680.0,271.5
+KY,California,679.6,271.8
 KY,Calvert City,613.4,320.1
 KY,Camargo,689.0,291.0
 KY,Cambridge,658.8,289.6
@@ -10700,7 +10700,7 @@ KY,Cannonsburg,708.1,279.9
 KY,Carlisle,685.6,284.3
 KY,Carrollton,665.4,278.6
 KY,Carrsville,613.2,312.3
-KY,Catlettsburg,709.6,278.8
+KY,Catlettsburg,708.9,279.2
 KY,Cave City,655.5,314.1
 KY,Cawood,703.8,316.1
 KY,Cayce,603.1,331.8
@@ -10723,7 +10723,7 @@ KY,Coldstream,660.2,287.3
 KY,Columbia,666.9,313.7
 KY,Columbus,601.6,327.4
 KY,Combs,702.6,305.6
-KY,Concord,693.7,274.9
+KY,Concord,693.6,275.2
 KY,Corbin,688.3,315.0
 KY,Corinth,675.3,281.5
 KY,Corydon,624.1,303.8
@@ -10745,13 +10745,13 @@ KY,Curdsville,630.5,303.3
 KY,Cynthiana,680.8,283.4
 KY,Danville,674.7,300.8
 KY,Dawson Springs,625.5,316.3
-KY,Dayton,676.1,267.6
+KY,Dayton,675.7,268.5
 KY,Dexter,615.7,326.8
 KY,Diablock,703.5,306.4
 KY,Dixon,624.8,308.7
 KY,Doe Valley,651.0,295.9
 KY,Douglass Hills,659.9,289.1
-KY,Dover,686.8,274.3
+KY,Dover,686.8,274.5
 KY,Drakesboro,636.5,314.3
 KY,Druid Hills,658.0,288.7
 KY,Dry Ridge,674.9,277.3
@@ -10786,7 +10786,7 @@ KY,Farmington,611.8,328.7
 KY,Ferguson,679.3,313.2
 KY,Fincastle,659.9,287.5
 KY,Flat Lick,694.5,316.4
-KY,Flatwoods,707.3,276.8
+KY,Flatwoods,707.2,277.1
 KY,Fleming-Neon,711.7,305.9
 KY,Flemingsburg,690.3,281.3
 KY,Florence,673.3,270.6
@@ -10795,11 +10795,11 @@ KY,Forest Hills,659.4,289.6
 KY,Fort Campbell North,630.2,327.3
 KY,Fort Knox,653.6,297.5
 KY,Fort Mitchell,674.7,269.3
-KY,Fort Thomas,676.3,268.3
+KY,Fort Thomas,676.1,268.7
 KY,Fort Wright,675.0,269.2
 KY,Fountain Run,656.6,323.3
 KY,Fox Chase,658.0,293.6
-KY,Francisville,671.7,268.3
+KY,Francisville,671.7,269.1
 KY,Frankfort,671.7,288.7
 KY,Franklin,646.1,324.5
 KY,Fredonia,618.9,316.1
@@ -10826,7 +10826,7 @@ KY,Graymoor-Devondale,658.7,288.4
 KY,Grayson,704.2,281.5
 KY,Green Spring,658.6,287.5
 KY,Greensburg,663.3,310.6
-KY,Greenup,705.3,276.0
+KY,Greenup,705.2,276.3
 KY,Greenville,634.3,314.7
 KY,Guthrie,635.5,327.0
 KY,Hanson,628.6,310.5
@@ -10908,13 +10908,13 @@ KY,Livermore,634.4,308.3
 KY,Livingston,685.3,307.2
 KY,London,688.2,311.0
 KY,Loretto,664.1,302.0
-KY,Louisa,710.3,285.6
+KY,Louisa,710.0,286.0
 KY,Louisville,658.5,290.9
 KY,Louisville/Jefferson County,658.5,290.9
 KY,Lovelaceville,606.0,322.5
 KY,Lowes,607.3,324.2
 KY,Loyall,701.6,315.1
-KY,Ludlow,674.7,268.3
+KY,Ludlow,674.8,268.6
 KY,Lynch,708.8,311.6
 KY,Lyndon,659.2,288.6
 KY,Lynnview,657.3,290.7
@@ -10936,7 +10936,7 @@ KY,Mayking,710.7,307.5
 KY,Mays Lick,688.2,279.4
 KY,Maysville,688.7,276.4
 KY,Maytown,709.0,298.8
-KY,McCarr,719.5,295.4
+KY,McCarr,719.1,295.8
 KY,McDowell,710.5,300.2
 KY,McHenry,638.3,310.5
 KY,McKee,688.9,303.8
@@ -10945,14 +10945,14 @@ KY,McRoberts,712.2,305.3
 KY,Meadow Vale,659.4,288.1
 KY,Meadowbrook Farm,659.4,288.2
 KY,Meadowview Estates,658.5,289.6
-KY,Melbourne,677.9,269.2
-KY,Mentor,680.3,272.1
+KY,Melbourne,677.8,269.4
+KY,Mentor,680.0,272.3
 KY,Middlesborough,695.8,321.2
 KY,Middletown,660.4,288.9
 KY,Midway,674.9,289.4
 KY,Millersburg,683.7,284.8
 KY,Millstone,711.0,306.8
-KY,Milton,661.6,278.1
+KY,Milton,662.0,278.2
 KY,Mockingbird Valley,657.6,288.6
 KY,Monterey,671.0,283.6
 KY,Monticello,675.5,318.6
@@ -10974,7 +10974,7 @@ KY,Nebo,625.9,311.6
 KY,New Castle,665.9,284.0
 KY,New Haven,660.7,302.0
 KY,New Hope,662.2,302.5
-KY,Newport,675.8,268.3
+KY,Newport,675.7,268.5
 KY,Nicholasville,677.6,294.8
 KY,Norbourne Estates,658.3,289.1
 KY,North Corbin,688.3,314.3
@@ -11028,8 +11028,8 @@ KY,Princeton,622.2,318.1
 KY,Prospect,658.7,286.8
 KY,Providence,623.9,311.4
 KY,Pryorsburg,608.6,328.4
-KY,Rabbit Hash,670.0,272.5
-KY,Raceland,706.9,276.5
+KY,Rabbit Hash,670.5,272.1
+KY,Raceland,706.7,277.0
 KY,Radcliff,654.3,299.0
 KY,Ravenna,688.8,298.0
 KY,Raywick,663.6,303.8
@@ -11046,7 +11046,7 @@ KY,Rockport,637.3,311.5
 KY,Rolling Fields,657.8,288.6
 KY,Rolling Hills,659.3,288.1
 KY,Rosine,641.4,308.5
-KY,Russell,707.7,276.9
+KY,Russell,707.5,277.3
 KY,Russell Springs,671.0,314.4
 KY,Russellville,640.0,322.4
 KY,Ryland Heights,677.0,270.5
@@ -11081,7 +11081,7 @@ KY,South Carrollton,634.7,311.8
 KY,South Park View,657.3,292.0
 KY,South Shore,702.5,273.0
 KY,South Wallins,700.8,316.1
-KY,South Williamson,717.4,294.7
+KY,South Williamson,717.4,295.1
 KY,Southgate,676.1,268.7
 KY,Sparta,669.7,277.7
 KY,Spottsville,628.8,300.8
@@ -11127,7 +11127,7 @@ KY,Vine Grove,653.5,299.3
 KY,Virgie,713.4,302.7
 KY,Wallins Creek,700.5,315.7
 KY,Walton,674.2,273.5
-KY,Warfield,714.5,291.1
+KY,Warfield,714.2,291.4
 KY,Warsaw,669.7,275.8
 KY,Water Valley,607.0,331.3
 KY,Watterson Park,657.8,290.3
@@ -11139,7 +11139,7 @@ KY,West Liberty,699.8,291.4
 KY,West Louisville,631.4,304.0
 KY,West Point,653.6,295.4
 KY,West Van Lear,708.4,293.3
-KY,Westport,660.6,283.3
+KY,Westport,660.8,283.5
 KY,Westwood,708.1,277.7
 KY,Wheatcroft,621.9,309.5
 KY,Wheelwright,711.0,302.9
@@ -11160,12 +11160,12 @@ KY,Wingo,608.1,329.6
 KY,Woodburn,646.3,321.7
 KY,Woodbury,643.7,314.4
 KY,Woodland Hills,660.3,289.0
-KY,Woodlawn,676.0,268.1
+KY,Woodlawn,675.8,268.6
 KY,Woodlawn Park,658.5,288.7
-KY,Worthington,706.9,276.2
+KY,Worthington,706.6,276.9
 KY,Worthington Hills,660.2,287.5
 KY,Worthville,667.2,279.9
-KY,Wurtland,706.2,276.3
+KY,Wurtland,706.0,276.7
 KY,Yelvington,636.4,300.2
 LA,Abbeville,555.0,480.7
 LA,Abita Springs,594.5,467.6
@@ -11276,7 +11276,7 @@ LA,Darrow,576.6,476.5
 LA,Delacroix,599.9,483.0
 LA,Delcambre,557.6,481.1
 LA,Delhi,564.5,425.4
-LA,Delta,574.5,427.8
+LA,Delta,572.9,427.8
 LA,Denham Springs,576.7,468.7
 LA,DeQuincy,529.5,471.1
 LA,DeRidder,532.1,462.3
@@ -11349,7 +11349,7 @@ LA,Grambling,541.9,424.7
 LA,Gramercy,582.2,477.5
 LA,Grand Cane,521.7,435.1
 LA,Grand Coteau,556.2,470.8
-LA,Grand Isle,596.1,495.4
+LA,Grand Isle,595.8,495.1
 LA,Grand Point,581.2,477.8
 LA,Gray,581.0,486.0
 LA,Grayson,553.4,434.9
@@ -11412,7 +11412,7 @@ LA,Lafitte,594.1,484.5
 LA,Lafourche Crossing,581.2,484.0
 LA,Lake Arthur,544.4,478.8
 LA,Lake Charles,534.1,476.5
-LA,Lake Providence,569.9,417.4
+LA,Lake Providence,568.9,417.6
 LA,Lakeshore,554.3,424.1
 LA,Lakeview,521.1,425.4
 LA,Laplace,586.4,477.0
@@ -11465,7 +11465,7 @@ LA,Midland,547.7,476.4
 LA,Midway,553.1,443.2
 LA,Milton,556.0,477.6
 LA,Minden,531.4,423.0
-LA,Minorca,565.4,444.9
+LA,Minorca,564.8,444.6
 LA,Monroe,553.6,424.5
 LA,Montegut,585.6,491.0
 LA,Monterey,561.3,447.9
@@ -11481,7 +11481,7 @@ LA,Morganza,564.4,463.4
 LA,Morrow,555.0,461.8
 LA,Morse,547.8,477.7
 LA,Moss Bluff,534.1,474.0
-LA,Mound,573.2,427.7
+LA,Mound,572.9,427.7
 LA,Mount Lebanon,535.6,425.4
 LA,Napoleonville,576.0,480.5
 LA,Natalbany,585.5,466.5
@@ -11594,7 +11594,7 @@ LA,Springhill,527.6,414.6
 LA,St. Francisville,568.4,462.2
 LA,St. Gabriel,574.3,473.6
 LA,St. James,579.3,478.6
-LA,St. Joseph,569.7,437.0
+LA,St. Joseph,569.5,436.8
 LA,St. Martinville,560.5,477.1
 LA,St. Maurice,538.2,441.8
 LA,St. Rose,589.7,479.2
@@ -11625,7 +11625,7 @@ LA,Urania,550.2,439.1
 LA,Varnado,597.4,458.1
 LA,Venice,608.8,492.9
 LA,Ventress,567.5,464.6
-LA,Vidalia,566.4,445.0
+LA,Vidalia,564.9,444.3
 LA,Vienna,542.9,422.9
 LA,Vienna Bend,536.4,442.3
 LA,Village St. George,574.8,471.3
@@ -11728,7 +11728,7 @@ MA,Gardner,864.5,153.8
 MA,Gloucester,884.6,147.4
 MA,Granby,857.8,162.8
 MA,Great Barrington,845.1,167.6
-MA,Green Harbor,888.5,159.3
+MA,Green Harbor,888.3,159.3
 MA,Greenfield,854.8,155.5
 MA,Groton,871.0,151.5
 MA,Hanscom AFB,876.3,153.6
@@ -11745,7 +11745,7 @@ MA,Hopedale,874.1,161.8
 MA,Hopkinton,873.8,159.6
 MA,Housatonic,844.9,166.5
 MA,Hudson,872.2,156.2
-MA,Hull,883.2,154.5
+MA,Hull,882.9,155.5
 MA,Huntington,852.2,164.7
 MA,Ipswich,882.2,147.0
 MA,Kingston,887.8,161.1
@@ -11764,7 +11764,7 @@ MA,Lynnfield,879.7,150.9
 MA,Madaket,900.5,174.1
 MA,Malden,879.9,153.3
 MA,Mansfield Center,879.8,162.7
-MA,Marblehead,883.0,150.9
+MA,Marblehead,882.7,151.0
 MA,Marion Center,889.0,167.7
 MA,Marlborough,872.8,157.0
 MA,Marshfield,887.6,158.7
@@ -11784,7 +11784,7 @@ MA,Milton,880.7,157.4
 MA,Monomoscoy Island,893.7,169.2
 MA,Monson Center,862.4,165.5
 MA,Monument Beach,891.3,166.5
-MA,Nahant,882.0,153.0
+MA,Nahant,882.0,152.8
 MA,Nantucket,901.9,173.9
 MA,Needham,877.9,157.2
 MA,New Bedford,886.3,169.2
@@ -11944,7 +11944,7 @@ MD,Bensville,803.2,258.4
 MD,Berlin,834.5,258.2
 MD,Berwyn Heights,803.0,249.8
 MD,Bethesda,799.7,250.6
-MD,Betterton,815.3,238.7
+MD,Betterton,815.3,239.0
 MD,Bier,768.1,243.8
 MD,Big Pool,782.0,239.6
 MD,Big Spring,783.3,239.3
@@ -12077,7 +12077,7 @@ MD,Elkridge,805.0,244.8
 MD,Elkton,818.3,232.7
 MD,Ellerslie,769.1,240.0
 MD,Ellicott City,803.1,243.3
-MD,Elliott,821.3,261.6
+MD,Elliott,821.9,261.8
 MD,Emmitsburg,793.1,235.6
 MD,Ernstville,781.8,239.5
 MD,Essex,809.4,241.5
@@ -12116,7 +12116,7 @@ MD,Fulton,802.4,246.3
 MD,Funkstown,787.2,239.0
 MD,Gaithersburg,797.7,247.3
 MD,Galena,818.6,238.6
-MD,Galestown,825.0,255.0
+MD,Galestown,824.7,255.1
 MD,Galesville,809.7,251.9
 MD,Gambrills,807.0,246.7
 MD,Gapland,788.9,243.3
@@ -12184,7 +12184,7 @@ MD,Kent Narrows,814.3,247.8
 MD,Kettering,805.6,251.6
 MD,Kingstown,816.5,242.1
 MD,Kingsville,809.0,238.1
-MD,Kitzmiller,763.6,248.3
+MD,Kitzmiller,763.2,248.0
 MD,Klondike,766.4,242.8
 MD,Konterra,802.9,247.8
 MD,La Plata,804.1,259.8
@@ -12226,7 +12226,7 @@ MD,Marlboro Village,806.2,252.7
 MD,Marlow Heights,803.3,253.6
 MD,Marlton,806.2,254.4
 MD,Martin's Additions,800.5,250.6
-MD,Marydel,821.8,243.1
+MD,Marydel,821.4,243.2
 MD,Maryland City,804.4,247.0
 MD,Maryland Park,803.6,252.0
 MD,Maugansville,786.2,237.2
@@ -12277,7 +12277,7 @@ MD,North Laurel,803.5,246.6
 MD,North Potomac,797.2,248.6
 MD,Oakland,759.8,248.3
 MD,Ocean,766.7,243.0
-MD,Ocean City,836.6,256.3
+MD,Ocean City,836.2,256.3
 MD,Ocean Pines,835.4,256.8
 MD,Odenton,806.4,247.4
 MD,Oldtown,772.4,243.2
@@ -12358,7 +12358,7 @@ MD,Severna Park,808.4,246.5
 MD,Shady Side,810.3,252.0
 MD,Shaft,766.7,242.5
 MD,Sharpsburg,787.1,242.4
-MD,Sharptown,825.1,255.5
+MD,Sharptown,824.8,255.6
 MD,Silver Hill,803.3,253.2
 MD,Silver Spring,801.2,249.9
 MD,Smith Island,822.5,268.8
@@ -12372,7 +12372,7 @@ MD,Spencerville,801.3,247.2
 MD,Spring Gap,770.8,243.0
 MD,Spring Ridge,794.1,242.2
 MD,Springdale,804.5,250.8
-MD,St. George Island,814.3,267.4
+MD,St. George Island,814.4,267.1
 MD,St. James,786.6,239.9
 MD,St. Leonard,812.3,259.8
 MD,St. Michaels,815.5,251.9
@@ -12445,7 +12445,7 @@ ME,Bangor,900.2,92.4
 ME,Bar Harbor,911.8,99.3
 ME,Bath,889.8,116.0
 ME,Belfast,899.2,102.0
-ME,Berwick,878.1,134.5
+ME,Berwick,878.3,134.2
 ME,Bethel,872.7,109.9
 ME,Biddeford,884.4,128.9
 ME,Bingham,882.6,92.2
@@ -12464,7 +12464,7 @@ ME,Camden,899.9,106.7
 ME,Cape Neddick,882.4,135.6
 ME,Caribou,900.1,46.3
 ME,Casco,878.9,117.5
-ME,Castine,902.7,101.7
+ME,Castine,903.1,101.6
 ME,Chisholm,881.1,105.6
 ME,Clinton,890.9,99.4
 ME,Corinna,892.5,92.5
@@ -12503,7 +12503,7 @@ ME,Hartland,889.7,94.2
 ME,Houlton,906.2,60.9
 ME,Howland,899.4,82.5
 ME,Island Falls,900.6,65.2
-ME,Jonesport,919.8,93.3
+ME,Jonesport,919.6,93.1
 ME,Kennebunk,882.4,130.7
 ME,Kennebunkport,883.8,130.8
 ME,Kezar Falls,874.8,123.0
@@ -12709,7 +12709,7 @@ MI,Caro,681.0,169.0
 MI,Carp Lake,653.8,123.3
 MI,Carson City,659.0,178.6
 MI,Carsonville,692.7,168.8
-MI,Caseville,681.6,158.8
+MI,Caseville,681.8,158.9
 MI,Casnovia,643.8,179.2
 MI,Caspian,593.7,121.0
 MI,Cass City,684.2,166.1
@@ -12749,10 +12749,10 @@ MI,Conway,652.7,129.8
 MI,Coopersville,641.9,183.1
 MI,Copemish,638.7,152.0
 MI,Copper City,595.2,94.1
-MI,Copper Harbor,602.6,89.4
+MI,Copper Harbor,602.6,89.8
 MI,Corunna,671.1,181.6
 MI,Covington,594.1,110.6
-MI,Cross Village,649.7,125.0
+MI,Cross Village,649.9,125.2
 MI,Croswell,694.1,172.1
 MI,Crystal,657.4,177.1
 MI,Crystal Downs Country Club,633.4,147.6
@@ -12785,7 +12785,7 @@ MI,Dryden,687.0,180.4
 MI,Dundee,681.2,203.1
 MI,Durand,673.3,182.9
 MI,Eagle,660.8,186.7
-MI,Eagle Harbor,598.4,90.1
+MI,Eagle Harbor,598.5,90.4
 MI,Eagle River,596.8,91.3
 MI,East Grand Rapids,647.4,185.2
 MI,East Jordan,649.4,135.9
@@ -12802,7 +12802,7 @@ MI,Edgemont Park,664.1,187.7
 MI,Edmore,655.3,174.0
 MI,Edwardsburg,642.5,211.4
 MI,Elberta,633.5,149.4
-MI,Elk Rapids,645.8,141.9
+MI,Elk Rapids,646.1,141.9
 MI,Elkton,683.5,161.3
 MI,Ellsworth,647.6,135.8
 MI,Elm Hall,658.7,174.8
@@ -12860,11 +12860,11 @@ MI,Gladwin,662.5,160.3
 MI,Glen Arbor,636.7,143.0
 MI,Gobles,644.5,198.6
 MI,Goodrich,680.9,182.0
-MI,Grand Beach,631.1,213.0
+MI,Grand Beach,631.3,213.0
 MI,Grand Blanc,679.2,181.7
 MI,Grand Haven,637.4,183.8
 MI,Grand Ledge,661.7,187.9
-MI,Grand Marais,632.9,104.0
+MI,Grand Marais,632.9,104.3
 MI,Grand Rapids,646.6,185.0
 MI,Grandville,645.2,186.5
 MI,Grant,643.2,177.0
@@ -12893,7 +12893,7 @@ MI,Harrisville,679.2,143.2
 MI,Hart,633.6,169.9
 MI,Hartford,640.2,202.5
 MI,Hartland,678.0,187.9
-MI,Harvey,612.3,110.2
+MI,Harvey,612.3,110.4
 MI,Haslett,667.3,187.2
 MI,Hastings,653.3,191.2
 MI,Hazel Park,688.9,190.9
@@ -13003,7 +13003,7 @@ MI,Lupton,668.5,149.7
 MI,Luther,643.6,161.3
 MI,Lyons,657.9,183.1
 MI,Mackinac Island,655.3,119.5
-MI,Mackinaw City,653.5,121.4
+MI,Mackinaw City,653.5,121.9
 MI,Madison Heights,688.7,190.0
 MI,Mancelona,651.1,141.2
 MI,Manchester,674.8,199.8
@@ -13041,7 +13041,7 @@ MI,Menominee,610.9,140.5
 MI,Merrill,666.5,172.7
 MI,Mesick,642.1,153.3
 MI,Metamora,684.3,180.7
-MI,Michiana,630.7,213.3
+MI,Michiana,631.1,213.1
 MI,Michigamme,602.0,110.1
 MI,Michigan Center,669.9,198.6
 MI,Middletown,670.7,181.6
@@ -13093,7 +13093,7 @@ MI,Northview,647.2,183.1
 MI,Northville,682.7,192.3
 MI,Norton Shores,636.9,181.3
 MI,Norway,605.1,126.0
-MI,Norwood,645.3,134.6
+MI,Norwood,645.6,134.6
 MI,Novi,682.6,191.4
 MI,Nunica,639.6,182.9
 MI,Oak Hill,633.4,158.3
@@ -13102,7 +13102,7 @@ MI,Oakley,669.8,178.2
 MI,Oden,653.4,129.4
 MI,Okemos,667.1,188.2
 MI,Olivet,659.5,195.1
-MI,Omena,642.4,138.7
+MI,Omena,643.5,141.5
 MI,Omer,672.2,157.7
 MI,Onaway,662.8,129.7
 MI,Onekama,634.6,155.0
@@ -13136,7 +13136,7 @@ MI,Pentwater,632.4,168.2
 MI,Perrinton,661.6,178.4
 MI,Perry,669.8,185.1
 MI,Petersburg,680.6,204.6
-MI,Petoskey,650.7,131.0
+MI,Petoskey,650.8,131.3
 MI,Pewamo,659.4,182.6
 MI,Pierson,648.2,176.8
 MI,Pigeon,682.1,161.3
@@ -13352,7 +13352,7 @@ MN,Altura,544.8,168.2
 MN,Alvarado,465.8,78.6
 MN,Amboy,509.9,173.1
 MN,Andover,522.0,142.7
-MN,Angle Inlet,494.1,53.5
+MN,Angle Inlet,494.1,53.9
 MN,Annandale,509.8,142.8
 MN,Anoka,521.2,143.6
 MN,Apple Valley,524.5,153.8
@@ -13383,7 +13383,7 @@ MN,Barry,472.0,136.5
 MN,Battle Lake,484.9,120.5
 MN,Baudette,501.3,67.2
 MN,Baxter,507.0,119.0
-MN,Bayport,530.9,147.7
+MN,Bayport,530.5,147.9
 MN,Beardsley,469.6,136.5
 MN,Beaulieu,483.4,97.5
 MN,Beaver Bay,551.3,97.5
@@ -13426,7 +13426,7 @@ MN,Boyd,482.2,152.1
 MN,Braham,524.3,132.3
 MN,Brainerd,508.2,118.7
 MN,Brandon,486.9,127.5
-MN,Breckenridge,471.7,120.9
+MN,Breckenridge,472.0,120.9
 MN,Breezy Point,507.9,113.2
 MN,Brewster,489.2,177.6
 MN,Bricelyn,515.5,180.2
@@ -13439,7 +13439,7 @@ MN,Brooten,494.3,137.7
 MN,Browerville,498.1,124.9
 MN,Browns Valley,467.8,135.7
 MN,Brownsdale,530.4,175.9
-MN,Brownsville,555.6,175.7
+MN,Brownsville,555.4,175.7
 MN,Brownton,506.5,154.5
 MN,Bruno,531.6,119.7
 MN,Buckman,510.0,128.8
@@ -13521,7 +13521,7 @@ MN,Crystal,521.8,147.4
 MN,Currie,486.0,169.3
 MN,Cuyuna,512.3,115.3
 MN,Cyrus,484.7,135.3
-MN,Dakota,554.2,171.1
+MN,Dakota,554.0,171.3
 MN,Dalton,481.9,123.0
 MN,Danube,494.7,153.4
 MN,Danvers,484.4,142.6
@@ -13725,7 +13725,7 @@ MN,Holland,477.5,168.9
 MN,Hollandale,525.1,175.6
 MN,Holloway,482.1,143.5
 MN,Holt,477.7,76.5
-MN,Homer,550.9,169.1
+MN,Homer,550.8,169.5
 MN,Hopkins,521.2,149.9
 MN,Houston,551.0,174.7
 MN,Howard Lake,510.9,147.3
@@ -13737,7 +13737,7 @@ MN,Hutchinson,506.0,151.1
 MN,Ihlen,474.8,172.8
 MN,Independence,516.2,148.0
 MN,Inger,510.9,92.2
-MN,International Falls,518.9,69.6
+MN,International Falls,519.0,69.8
 MN,Inver Grove Heights,526.6,151.9
 MN,Iona,484.1,172.8
 MN,Iron Junction,531.6,94.8
@@ -13762,7 +13762,7 @@ MN,Kellogg,543.7,162.8
 MN,Kennedy,467.2,68.8
 MN,Kenneth,479.5,176.3
 MN,Kensington,485.3,131.7
-MN,Kent,470.2,117.1
+MN,Kent,470.6,116.9
 MN,Kenyon,528.2,164.2
 MN,Kerkhoven,491.3,144.6
 MN,Kerrick,532.8,118.4
@@ -13887,9 +13887,9 @@ MN,Millville,539.1,164.4
 MN,Milroy,487.7,161.7
 MN,Miltona,491.5,125.7
 MN,Minneapolis,523.3,149.0
-MN,Minneiska,545.7,165.2
+MN,Minneiska,544.9,165.3
 MN,Minneota,480.9,158.5
-MN,Minnesota City,547.8,167.4
+MN,Minnesota City,547.9,167.5
 MN,Minnesota Lake,515.1,174.0
 MN,Minnetonka,520.4,149.8
 MN,Minnetonka Beach,518.3,149.7
@@ -13949,7 +13949,7 @@ MN,Northrop,505.5,176.6
 MN,Norwood Young America,513.3,153.5
 MN,Nowthen,520.2,140.7
 MN,Oak Grove,522.1,140.6
-MN,Oak Park Heights,530.4,147.3
+MN,Oak Park Heights,530.5,147.5
 MN,Oakdale,528.0,148.4
 MN,Odessa,475.5,143.0
 MN,Odin,500.6,173.7
@@ -14010,7 +14010,7 @@ MN,Racine,536.6,174.9
 MN,Ramsey,520.2,142.6
 MN,Randall,503.6,124.7
 MN,Randolph,527.5,158.6
-MN,Ranier,519.6,69.2
+MN,Ranier,519.7,69.5
 MN,Raymond,492.6,148.4
 MN,Red Lake,495.5,85.7
 MN,Red Lake Falls,476.5,85.5
@@ -14138,7 +14138,7 @@ MN,Taconite,520.0,97.3
 MN,Tamarack,524.4,111.8
 MN,Taopi,534.2,179.8
 MN,Taunton,479.7,157.8
-MN,Taylors Falls,532.2,139.0
+MN,Taylors Falls,531.6,139.1
 MN,Tenstrike,500.3,90.3
 MN,The Lakes,485.9,168.6
 MN,The Ranch,485.2,97.8
@@ -14174,7 +14174,7 @@ MN,Villard,491.9,133.1
 MN,Vineland,514.6,122.5
 MN,Vining,487.7,121.1
 MN,Virginia,532.9,92.3
-MN,Wabasha,542.9,161.4
+MN,Wabasha,542.8,161.6
 MN,Wabasso,492.4,162.0
 MN,Waconia,515.2,151.9
 MN,Wadena,494.0,116.9
@@ -14223,12 +14223,12 @@ MN,Wilton,495.6,93.6
 MN,Windom,494.7,173.7
 MN,Winger,480.8,93.1
 MN,Winnebago,509.7,175.8
-MN,Winona,549.2,168.3
+MN,Winona,549.1,168.5
 MN,Winsted,511.1,149.4
 MN,Winthrop,506.4,158.7
 MN,Winton,543.2,83.1
 MN,Wolf Lake,490.5,109.0
-MN,Wolverton,469.4,114.4
+MN,Wolverton,469.6,114.3
 MN,Wood Lake,487.9,156.5
 MN,Woodbury,528.7,150.1
 MN,Woodland,519.3,149.4
@@ -14336,7 +14336,7 @@ MO,Black Jack,578.5,283.5
 MO,Blackburn,523.5,279.0
 MO,Blackwater,531.9,281.6
 MO,Blairstown,515.7,291.4
-MO,Blanchard,493.9,246.8
+MO,Blanchard,493.9,247.0
 MO,Bland,555.7,295.8
 MO,Blodgett,593.8,322.5
 MO,Bloomfield,587.0,325.5
@@ -14440,7 +14440,7 @@ MO,Clark,542.4,274.5
 MO,Clarksburg,537.7,288.5
 MO,Clarksdale,505.1,263.6
 MO,Clarkson Valley,573.1,287.6
-MO,Clarksville,566.9,271.4
+MO,Clarksville,566.6,271.7
 MO,Clarkton,586.9,335.3
 MO,Claycomo,506.6,277.3
 MO,Clayton,577.6,287.0
@@ -14457,7 +14457,7 @@ MO,Coffey,514.1,257.0
 MO,Cole Camp,528.7,293.2
 MO,Collins,521.9,306.1
 MO,Columbia,543.3,281.9
-MO,Commerce,595.0,318.9
+MO,Commerce,594.6,319.1
 MO,Conception,502.8,254.2
 MO,Conception Junction,502.6,253.5
 MO,Concord,577.4,289.9
@@ -14482,7 +14482,7 @@ MO,Crestwood,576.9,289.0
 MO,Creve Coeur,575.6,286.7
 MO,Crocker,545.2,304.1
 MO,Cross Timbers,528.5,302.9
-MO,Crystal City,577.3,296.4
+MO,Crystal City,577.1,296.4
 MO,Crystal Lake Park,575.9,287.6
 MO,Crystal Lakes,511.5,273.6
 MO,Cuba,559.9,300.8
@@ -14621,7 +14621,7 @@ MO,Gilman City,516.3,256.4
 MO,Ginger Blue,507.9,335.3
 MO,Gladstone,505.2,277.0
 MO,Glasgow,534.4,275.9
-MO,Glasgow Village,579.7,284.3
+MO,Glasgow Village,579.5,284.1
 MO,Glen Allen,584.6,316.1
 MO,Glen Echo Park,578.1,285.7
 MO,Glenaire,507.0,276.8
@@ -14759,7 +14759,7 @@ MO,Kennett,585.8,340.0
 MO,Keytesville,532.5,271.5
 MO,Kidder,512.7,264.2
 MO,Kimberling City,526.0,333.6
-MO,Kimmswick,577.4,293.2
+MO,Kimmswick,577.1,293.1
 MO,King City,505.5,258.3
 MO,Kingdom City,549.9,281.6
 MO,Kingston,513.8,267.3
@@ -14971,7 +14971,7 @@ MO,Oak Ridge,589.5,311.8
 MO,Oakland,576.7,288.5
 MO,Oaks,505.0,277.3
 MO,Oakview,505.0,277.1
-MO,Oakville,578.1,291.3
+MO,Oakville,577.8,291.2
 MO,Oakwood,505.0,277.3
 MO,Oakwood Park,505.0,277.2
 MO,Odessa,515.4,281.6
@@ -15090,7 +15090,7 @@ MO,Risco,589.4,332.9
 MO,Ritchey,512.6,327.3
 MO,River Bend,508.1,277.7
 MO,Riverside,504.0,277.9
-MO,Riverview,579.5,284.6
+MO,Riverview,579.3,284.4
 MO,Riverview Estates,506.0,287.3
 MO,Rives,586.7,343.2
 MO,Rocheport,539.2,281.3
@@ -15147,7 +15147,7 @@ MO,South Fork,551.8,333.0
 MO,South Gifford,536.3,258.1
 MO,South Gorin,547.0,250.3
 MO,South Greenfield,518.4,317.6
-MO,South Lineville,521.9,246.3
+MO,South Lineville,521.9,246.6
 MO,Southwest City,505.3,337.0
 MO,Spanish Lake,579.5,283.6
 MO,Sparta,531.8,325.6
@@ -15168,7 +15168,7 @@ MO,St. John,577.2,285.4
 MO,St. Joseph,500.6,264.9
 MO,St. Louis,579.1,287.1
 MO,St. Martins,543.4,289.6
-MO,St. Mary,585.2,303.7
+MO,St. Mary,585.1,303.9
 MO,St. Paul,570.3,282.8
 MO,St. Peters,572.7,284.2
 MO,St. Robert,547.3,306.7
@@ -15176,7 +15176,7 @@ MO,St. Thomas,545.7,294.7
 MO,Stanberry,505.2,254.7
 MO,Stanton,564.8,296.0
 MO,Stark City,512.6,329.2
-MO,Ste. Genevieve,583.3,301.5
+MO,Ste. Genevieve,582.8,302.0
 MO,Steele,589.3,343.1
 MO,Steelville,560.9,302.9
 MO,Stella,512.5,331.4
@@ -15344,7 +15344,7 @@ MS,Bassfield,598.2,444.8
 MS,Batesville,590.8,382.5
 MS,Baxterville,601.8,453.5
 MS,Bay Springs,606.1,433.5
-MS,Bay St. Louis,607.3,470.1
+MS,Bay St. Louis,606.8,470.1
 MS,Beaumont,614.0,450.9
 MS,Beauregard,585.8,440.6
 MS,Beechwood,577.2,427.4
@@ -15461,7 +15461,7 @@ MS,Foxworth,596.0,450.6
 MS,French Camp,601.9,404.6
 MS,Friars Point,577.8,382.2
 MS,Fulton,618.3,381.8
-MS,Gattman,622.0,389.9
+MS,Gattman,621.6,389.9
 MS,Gautier,620.4,467.3
 MS,Georgetown,589.8,437.0
 MS,Glen,617.0,368.6
@@ -15488,7 +15488,7 @@ MS,Hattiesburg,606.5,448.4
 MS,Hazlehurst,585.6,437.4
 MS,Heidelberg,611.7,435.1
 MS,Helena,623.2,465.3
-MS,Henderson Point,608.7,470.2
+MS,Henderson Point,608.5,469.5
 MS,Hermanville,577.1,435.8
 MS,Hernando,588.8,370.8
 MS,Hickory,610.4,425.7
@@ -15532,7 +15532,7 @@ MS,Leland,574.4,403.8
 MS,Lena,599.3,420.3
 MS,Lexington,590.2,409.3
 MS,Liberty,578.9,453.3
-MS,Long Beach,610.9,469.2
+MS,Long Beach,610.8,468.8
 MS,Longview,610.2,401.6
 MS,Louin,606.1,431.4
 MS,Louise,580.5,412.9
@@ -15601,7 +15601,7 @@ MS,Oakland,591.3,388.3
 MS,Ocean Springs,617.9,467.6
 MS,Okolona,612.5,388.0
 MS,Olive Branch,591.3,368.3
-MS,Osyka,585.2,456.4
+MS,Osyka,585.2,456.1
 MS,Ovett,611.7,444.0
 MS,Oxford,597.7,381.4
 MS,Pace,574.5,395.2
@@ -15610,7 +15610,7 @@ MS,Paden,620.2,372.8
 MS,Panther Burn,575.2,411.3
 MS,Paris,599.5,385.2
 MS,Pascagoula,622.4,468.2
-MS,Pass Christian,609.5,470.1
+MS,Pass Christian,609.2,469.3
 MS,Pattison,576.4,437.3
 MS,Pearl,590.6,428.0
 MS,Pearl River,605.5,415.4
@@ -16181,7 +16181,7 @@ MT,Sunnybrook Colony,262.6,62.5
 MT,Superior,197.3,72.2
 MT,Surprise Creek Colony,265.0,84.7
 MT,Swan Lake,216.7,59.5
-MT,Sweet Grass,247.4,41.6
+MT,Sweet Grass,247.4,41.8
 MT,Sylvanite,189.8,37.0
 MT,Terry,339.5,102.4
 MT,The Silos,243.7,98.5
@@ -16217,7 +16217,7 @@ MT,West Glendive,348.6,96.4
 MT,West Havre,278.4,56.3
 MT,West Kootenai,200.4,33.5
 MT,West Yellowstone,244.9,137.5
-MT,Westby,362.3,58.9
+MT,Westby,362.1,58.9
 MT,Wheatland,242.3,108.0
 MT,White Haven,193.4,45.7
 MT,White Sulphur Springs,254.5,97.0
@@ -16271,7 +16271,7 @@ NC,Ashley Heights,777.2,343.0
 NC,Askewville,815.4,312.7
 NC,Atkinson,800.8,351.5
 NC,Atlantic,831.4,337.3
-NC,Atlantic Beach,825.2,342.7
+NC,Atlantic Beach,825.2,342.4
 NC,Aulander,811.9,310.8
 NC,Aurora,821.7,329.8
 NC,Autryville,790.5,342.8
@@ -16281,7 +16281,7 @@ NC,Ayden,810.0,328.3
 NC,Badin,762.9,338.4
 NC,Bailey,796.5,323.9
 NC,Bakersville,724.9,330.6
-NC,Bald Head Island,806.9,365.2
+NC,Bald Head Island,806.6,365.1
 NC,Balfour,721.3,346.0
 NC,Banner Elk,729.6,326.7
 NC,Barbecue,782.2,336.9
@@ -16369,7 +16369,7 @@ NC,Casar,736.1,340.3
 NC,Cashiers,711.2,352.9
 NC,Castalia,796.2,317.1
 NC,Castle Hayne,806.1,354.3
-NC,Caswell Beach,805.5,364.6
+NC,Caswell Beach,805.7,364.4
 NC,Catawba,745.1,334.5
 NC,Cedar Point,819.3,344.3
 NC,Cedar Rock,737.4,330.4
@@ -16579,7 +16579,7 @@ NC,Hillsborough,778.1,320.6
 NC,Hobgood,808.0,316.1
 NC,Hobucken,825.7,330.1
 NC,Hoffman,774.3,344.9
-NC,Holden Beach,800.6,365.4
+NC,Holden Beach,800.4,365.1
 NC,Hollister,797.6,312.9
 NC,Holly Ridge,811.6,350.1
 NC,Holly Springs,784.3,329.0
@@ -16591,7 +16591,7 @@ NC,Hot Springs,713.6,335.0
 NC,Hudson,737.3,332.5
 NC,Huntersville,749.7,340.5
 NC,Icard,738.2,335.2
-NC,Indian Beach,822.6,343.6
+NC,Indian Beach,822.5,343.4
 NC,Indian Trail,754.7,347.3
 NC,Ingold,796.3,345.5
 NC,Iron Station,744.5,340.3
@@ -16622,7 +16622,7 @@ NC,Kinston,807.7,333.2
 NC,Kittrell,789.0,315.3
 NC,Kitty Hawk,836.8,309.2
 NC,Knightdale,789.8,324.9
-NC,Kure Beach,807.6,362.1
+NC,Kure Beach,807.4,362.1
 NC,La Grange,804.2,333.2
 NC,Lake Junaluska,712.2,343.3
 NC,Lake Lure,726.0,343.2
@@ -16673,7 +16673,7 @@ NC,Magnolia,801.3,343.0
 NC,Maiden,742.6,337.5
 NC,Mamers,783.6,334.6
 NC,Manns Harbor,836.5,313.1
-NC,Manteo,838.8,312.6
+NC,Manteo,838.5,312.8
 NC,Mar-Mac,799.4,333.5
 NC,Marble,696.3,353.3
 NC,Marietta,784.4,358.1
@@ -16690,7 +16690,7 @@ NC,Mayodan,761.7,315.7
 NC,Maysville,815.7,340.0
 NC,McAdenville,746.4,344.2
 NC,McDonald,782.8,354.2
-NC,McFarlan,767.6,350.9
+NC,McFarlan,767.6,350.7
 NC,McLeansville,768.4,321.8
 NC,Mebane,775.0,321.0
 NC,Mesic,824.7,331.4
@@ -16702,7 +16702,7 @@ NC,Midway,759.0,326.2
 NC,Millers Creek,740.5,324.3
 NC,Millingport,759.6,339.6
 NC,Mills River,719.4,345.7
-NC,Milton,774.4,310.8
+NC,Milton,774.5,311.1
 NC,Milwaukee,809.1,307.4
 NC,Mineral Springs,754.5,350.2
 NC,Minnesott Beach,822.5,336.8
@@ -16754,7 +16754,7 @@ NC,Northlakes,739.6,333.7
 NC,Northwest,802.1,356.0
 NC,Norwood,763.7,342.2
 NC,Oak City,809.8,317.2
-NC,Oak Island,804.2,364.7
+NC,Oak Island,804.2,364.2
 NC,Oak Ridge,762.2,321.2
 NC,Oakboro,759.7,342.9
 NC,Ocean Isle Beach,798.2,366.4
@@ -16775,7 +16775,7 @@ NC,Peletier,819.3,343.3
 NC,Pembroke,782.0,351.5
 NC,Pikeville,799.9,329.7
 NC,Pilot Mountain,753.0,318.0
-NC,Pine Knoll Shores,823.7,343.1
+NC,Pine Knoll Shores,823.6,342.9
 NC,Pine Level,795.3,330.4
 NC,Pinebluff,775.4,342.9
 NC,Pinehurst,775.1,341.1
@@ -17016,7 +17016,7 @@ NC,Woodfin,718.5,339.8
 NC,Woodland,809.7,308.9
 NC,Woodlawn,774.5,320.3
 NC,Wrightsboro,806.0,355.9
-NC,Wrightsville Beach,808.7,357.1
+NC,Wrightsville Beach,808.4,357.0
 NC,Yadkin College,756.5,328.9
 NC,Yadkinville,750.7,324.0
 NC,Yanceyville,772.8,314.0
@@ -17329,7 +17329,7 @@ ND,Pingree,436.7,100.5
 ND,Pisek,455.2,75.9
 ND,Plaza,391.9,79.6
 ND,Porcupine,402.6,119.8
-ND,Portal,384.6,57.9
+ND,Portal,384.6,58.2
 ND,Portland,460.0,93.7
 ND,Powers Lake,382.5,67.2
 ND,Prairie Rose,467.9,108.8
@@ -17508,7 +17508,7 @@ NE,Broadwater,368.5,220.1
 NE,Brock,481.4,249.0
 NE,Broken Bow,420.9,227.3
 NE,Brownlee,405.7,207.0
-NE,Brownville,486.4,250.8
+NE,Brownville,486.1,251.0
 NE,Brule,383.6,232.3
 NE,Bruning,454.6,252.0
 NE,Bruno,464.9,231.1
@@ -17520,7 +17520,7 @@ NE,Burton,423.0,193.9
 NE,Burwell,429.5,219.2
 NE,Bushnell,350.9,226.8
 NE,Butte,434.9,194.3
-NE,Byron,451.1,259.3
+NE,Byron,451.1,259.1
 NE,Cairo,437.8,236.7
 NE,Callaway,416.2,229.6
 NE,Cambridge,411.2,251.8
@@ -17581,7 +17581,7 @@ NE,David City,462.2,231.7
 NE,Dawson,483.6,256.7
 NE,Daykin,459.1,252.3
 NE,De Witt,465.4,250.8
-NE,Decatur,476.7,215.1
+NE,Decatur,476.3,215.3
 NE,Denton,466.7,243.2
 NE,Deshler,451.9,256.3
 NE,Deweese,445.1,251.4
@@ -17897,7 +17897,7 @@ NE,Rulo,490.3,258.5
 NE,Rushville,376.5,195.8
 NE,Ruskin,449.5,256.1
 NE,Salem,485.3,257.9
-NE,Santee,450.9,196.3
+NE,Santee,451.1,196.5
 NE,Sarben,393.3,231.3
 NE,Sargent,425.6,222.2
 NE,Saronville,448.5,245.9
@@ -17917,7 +17917,7 @@ NE,Silver Creek,453.3,230.2
 NE,Smithfield,418.6,245.7
 NE,Snyder,467.9,221.7
 NE,South Bend,476.6,237.3
-NE,South Sioux City,474.0,204.9
+NE,South Sioux City,473.7,205.0
 NE,Spalding,442.1,221.6
 NE,Spencer,437.3,195.2
 NE,Sprague,468.4,245.7
@@ -18130,7 +18130,7 @@ NJ,Allentown,835.7,215.8
 NJ,Allenwood,843.9,214.8
 NJ,Alloway,826.4,231.9
 NJ,Alpha,824.1,207.4
-NJ,Alpine,842.6,196.1
+NJ,Alpine,842.3,196.1
 NJ,Ampere North,839.2,201.3
 NJ,Anderson,827.4,204.4
 NJ,Andover,829.2,198.8
@@ -18151,12 +18151,12 @@ NJ,Avon-by-the-Sea,845.0,213.3
 NJ,Barclay,830.4,223.3
 NJ,Bargaintown,839.7,233.3
 NJ,Barnegat,843.9,223.6
-NJ,Barnegat Light,845.8,223.2
+NJ,Barnegat Light,844.9,223.5
 NJ,Barrington,829.7,224.2
 NJ,Basking Ridge,833.6,204.2
 NJ,Bay Head,845.1,216.1
-NJ,Bayonne,841.1,203.5
-NJ,Beach Haven,844.3,227.5
+NJ,Bayonne,841.0,203.3
+NJ,Beach Haven,843.5,227.0
 NJ,Beach Haven West,844.1,225.4
 NJ,Beachwood,843.3,219.7
 NJ,Beattystown,828.2,202.8
@@ -18217,7 +18217,7 @@ NJ,Cape May Point,835.7,244.1
 NJ,Carlls Corner,829.2,233.5
 NJ,Carlstadt,841.0,199.8
 NJ,Carneys Point,823.7,229.2
-NJ,Carteret,839.6,205.6
+NJ,Carteret,839.2,205.5
 NJ,Cedar Glen Lakes,839.9,219.9
 NJ,Cedar Glen West,841.4,217.7
 NJ,Cedar Knolls,834.7,201.4
@@ -18240,7 +18240,7 @@ NJ,Collings Lakes,833.7,229.5
 NJ,Collingswood,829.0,223.3
 NJ,Cologne,838.8,230.7
 NJ,Colonia,838.2,205.8
-NJ,Columbia,823.8,201.4
+NJ,Columbia,824.0,201.2
 NJ,Concordia,837.3,212.3
 NJ,Connecticut Farms,838.3,203.4
 NJ,Cookstown,837.1,218.5
@@ -18283,7 +18283,7 @@ NJ,East Rutherford,840.7,200.0
 NJ,East Vineland,834.0,232.2
 NJ,Eatontown,843.9,211.3
 NJ,Echelon,830.8,224.4
-NJ,Edgewater,842.4,199.5
+NJ,Edgewater,842.0,199.5
 NJ,Egg Harbor City,838.7,229.1
 NJ,Elizabeth,839.7,203.7
 NJ,Ellisburg,830.1,222.9
@@ -18293,7 +18293,7 @@ NJ,Elwood,836.8,229.4
 NJ,Emerson,840.9,196.4
 NJ,Encore at Monroe,837.0,212.2
 NJ,Englewood,842.1,198.0
-NJ,Englewood Cliffs,842.6,198.0
+NJ,Englewood Cliffs,842.1,198.0
 NJ,English Creek,838.7,233.3
 NJ,Englishtown,838.9,212.3
 NJ,Erma,836.6,242.6
@@ -18319,7 +18319,7 @@ NJ,Fords,838.4,207.0
 NJ,Forked River,844.2,221.9
 NJ,Forsgate,836.8,211.6
 NJ,Fort Dix,836.2,219.6
-NJ,Fort Lee,842.3,198.9
+NJ,Fort Lee,842.1,198.9
 NJ,Fortescue,830.8,238.3
 NJ,Franklin,831.1,195.6
 NJ,Franklin Center,834.7,207.9
@@ -18370,7 +18370,7 @@ NJ,Harmony,824.0,205.3
 NJ,Harrington Park,841.5,195.9
 NJ,Harrison,840.0,201.9
 NJ,Harrisonville,826.9,229.0
-NJ,Harvey Cedars,845.5,224.4
+NJ,Harvey Cedars,844.9,224.4
 NJ,Hasbrouck Heights,840.6,199.0
 NJ,Haworth,841.3,196.6
 NJ,Hawthorne,838.8,197.3
@@ -18545,13 +18545,13 @@ NJ,Newport,830.6,237.1
 NJ,Newton,828.7,197.4
 NJ,Newtonville,834.4,230.1
 NJ,North Arlington,840.2,200.9
-NJ,North Beach Haven,844.8,226.9
+NJ,North Beach Haven,843.8,226.3
 NJ,North Caldwell,837.6,199.7
 NJ,North Cape May,835.7,243.1
 NJ,North Haledon,838.3,197.2
 NJ,North Middletown,842.1,208.3
 NJ,North Plainfield,835.9,205.6
-NJ,North Wildwood,838.1,242.0
+NJ,North Wildwood,837.9,241.9
 NJ,Northfield,840.3,233.1
 NJ,Northvale,841.9,195.3
 NJ,Norwood,841.9,195.7
@@ -18593,7 +18593,7 @@ NJ,Pemberton Heights,835.4,220.9
 NJ,Pennington,831.7,213.3
 NJ,Penns Grove,823.5,228.8
 NJ,Pennsville,823.4,230.6
-NJ,Perth Amboy,839.2,207.2
+NJ,Perth Amboy,841.0,208.0
 NJ,Phillipsburg,823.6,206.8
 NJ,Pine Beach,843.8,219.4
 NJ,Pine Brook,836.2,199.9
@@ -18619,7 +18619,7 @@ NJ,Port Monmouth,842.4,208.4
 NJ,Port Morris,830.6,200.3
 NJ,Port Murray,827.2,203.7
 NJ,Port Norris,832.8,237.3
-NJ,Port Reading,839.4,206.0
+NJ,Port Reading,839.1,205.9
 NJ,Port Republic,840.8,229.3
 NJ,Pottersville,830.8,204.7
 NJ,Preakness,837.8,197.9
@@ -18681,12 +18681,12 @@ NJ,Seaside Park,845.3,219.3
 NJ,Seaville,838.5,237.3
 NJ,Secaucus,841.1,200.7
 NJ,Seeley,828.5,233.2
-NJ,Sewaren,839.3,206.5
+NJ,Sewaren,838.9,206.3
 NJ,Sewell,828.7,226.7
 NJ,Shark River Hills,844.5,213.4
 NJ,Sheppards Mill,827.6,235.0
 NJ,Shiloh,827.7,233.9
-NJ,Ship Bottom,845.1,225.8
+NJ,Ship Bottom,844.4,225.4
 NJ,Short Hills,837.2,202.6
 NJ,Shrewsbury,843.6,210.6
 NJ,Sicklerville,831.3,226.7
@@ -18725,7 +18725,7 @@ NJ,Strathmore,840.6,209.5
 NJ,Succasunna,831.2,201.4
 NJ,Summit,836.7,203.3
 NJ,Sunset Lake,828.7,233.9
-NJ,Surf City,845.1,225.3
+NJ,Surf City,844.6,225.0
 NJ,Sussex,830.3,193.5
 NJ,Swedesboro,826.0,227.8
 NJ,Sweetwater,837.5,228.2
@@ -19038,7 +19038,7 @@ NM,La Mesilla,302.9,340.4
 NM,La Plata,268.0,315.0
 NM,La Puebla,304.1,339.5
 NM,La Tierra,303.0,344.8
-NM,La Union,282.5,427.3
+NM,La Union,282.3,427.3
 NM,La Villita,303.4,336.9
 NM,Laguna,277.0,357.5
 NM,Lake Arthur,327.2,408.5
@@ -19264,7 +19264,7 @@ NM,Springer,329.6,333.6
 NM,Stanley,302.6,358.0
 NM,Stoneridge,265.2,350.4
 NM,Sundance,256.3,344.5
-NM,Sunland Park,283.4,430.2
+NM,Sunland Park,283.2,430.3
 NM,Sunlit Hills,304.6,348.4
 NM,Sunshine,262.2,420.8
 NM,Tajique,295.9,366.1
@@ -19278,7 +19278,7 @@ NM,Tecolote,315.6,352.5
 NM,Tecolotito,317.3,357.8
 NM,Tesuque,305.0,345.0
 NM,Tesuque Pueblo,304.2,343.6
-NM,Texico,353.5,379.7
+NM,Texico,352.8,379.6
 NM,Thoreau,263.9,347.5
 NM,Thunder Mountain,298.1,358.7
 NM,Tierra Amarilla,296.0,322.6
@@ -19352,7 +19352,7 @@ NV,Carson City,82.1,228.4
 NV,Carter Springs,82.3,235.1
 NV,Cold Springs,81.3,215.8
 NV,Crescent Valley,140.5,213.3
-NV,Crystal Bay,78.4,225.7
+NV,Crystal Bay,78.7,225.8
 NV,Dayton,86.1,226.7
 NV,Denio,115.2,171.7
 NV,Double Spring,82.3,237.0
@@ -19444,7 +19444,7 @@ NV,Sparks,85.0,219.4
 NV,Spring Creek,157.9,209.7
 NV,Spring Valley,142.6,312.1
 NV,Stagecoach,89.3,225.3
-NV,Stateline,77.9,231.5
+NV,Stateline,78.3,231.4
 NV,Summerlin South,141.5,311.2
 NV,Sun Valley,84.2,218.4
 NV,Sunrise Manor,146.7,311.0
@@ -19508,7 +19508,7 @@ NY,Arlington,839.1,180.3
 NY,Armonk,844.9,191.8
 NY,Asharoken,851.3,194.7
 NY,Athens,837.5,167.6
-NY,Atlantic Beach,847.7,203.7
+NY,Atlantic Beach,847.7,203.4
 NY,Attica,764.2,169.7
 NY,Au Sable Forks,828.5,120.0
 NY,Auburn,790.9,162.9
@@ -19696,7 +19696,7 @@ NY,Copake,842.5,170.2
 NY,Copake Falls,842.9,169.8
 NY,Copake Lake,841.6,169.5
 NY,Copenhagen,800.4,139.1
-NY,Copiague,852.6,200.6
+NY,Copiague,852.5,200.4
 NY,Coram,857.7,194.5
 NY,Corfu,761.9,168.0
 NY,Corinth,832.2,146.6
@@ -19736,7 +19736,7 @@ NY,Delhi,820.1,171.5
 NY,Depauville,793.5,135.0
 NY,Depew,757.3,169.9
 NY,Deposit,813.1,177.9
-NY,Dering Harbor,867.2,187.3
+NY,Dering Harbor,867.4,187.4
 NY,DeRuyter,802.4,164.4
 NY,Dexter,794.1,137.8
 NY,Dix Hills,852.8,197.5
@@ -19753,7 +19753,7 @@ NY,Dunkirk,749.0,181.1
 NY,Durhamville,804.2,155.8
 NY,Eagle Bay,814.3,138.9
 NY,Earlville,807.9,163.7
-NY,East Atlantic Beach,847.9,203.6
+NY,East Atlantic Beach,845.1,204.7
 NY,East Aurora,759.3,172.8
 NY,East Avon,773.0,166.9
 NY,East Durham,832.6,166.6
@@ -19823,7 +19823,7 @@ NY,Farnham,752.6,177.9
 NY,Fayetteville,799.4,158.9
 NY,Felts Mills,798.4,136.9
 NY,Fillmore,768.5,177.9
-NY,Fire Island,855.8,200.5
+NY,Fire Island,855.1,200.8
 NY,Firthcliffe,838.3,186.3
 NY,Fishers Island,871.8,182.1
 NY,Fishers Landing,793.4,131.9
@@ -19965,7 +19965,7 @@ NY,Hicksville,850.0,199.0
 NY,High Falls,835.0,178.4
 NY,Highland,838.0,180.0
 NY,Highland Falls,839.7,187.8
-NY,Highland-on-the-Lake,753.7,175.3
+NY,Highland-on-the-Lake,753.9,175.5
 NY,Hillburn,837.7,193.7
 NY,Hillcrest,839.9,193.1
 NY,Hillside,835.9,176.0
@@ -20069,7 +20069,7 @@ NY,Leicester,770.6,170.6
 NY,Levittown,850.4,199.9
 NY,Lewiston,750.9,165.2
 NY,Liberty,825.2,181.3
-NY,Lido Beach,849.6,203.1
+NY,Lido Beach,849.5,202.9
 NY,Lima,774.6,166.8
 NY,Lime Lake,762.7,179.7
 NY,Limestone,762.1,189.2
@@ -20084,7 +20084,7 @@ NY,Liverpool,795.7,158.0
 NY,Livingston Manor,823.5,179.6
 NY,Livonia,774.0,168.8
 NY,Livonia Center,774.5,168.7
-NY,Lloyd Harbor,850.5,195.3
+NY,Lloyd Harbor,850.4,195.5
 NY,Loch Sheldrake,826.6,181.4
 NY,Lockport,756.4,164.3
 NY,Locust Valley,848.3,196.8
@@ -20222,7 +20222,7 @@ NY,New Hyde Park,847.5,200.4
 NY,New Paltz,836.0,179.8
 NY,New Rochelle,845.0,196.6
 NY,New Square,839.9,192.8
-NY,New Suffolk,865.6,189.9
+NY,New Suffolk,865.5,189.7
 NY,New Windsor,838.2,185.7
 NY,New York,843.8,202.8
 NY,New York Mills,810.1,155.0
@@ -20282,7 +20282,7 @@ NY,Nyack,842.0,193.4
 NY,Oak Beach,854.6,200.8
 NY,Oakdale,856.4,198.1
 NY,Oakfield,763.5,165.3
-NY,Ocean Beach,856.5,200.2
+NY,Ocean Beach,855.7,198.8
 NY,Oceanside,848.8,202.3
 NY,Odessa,790.1,176.6
 NY,Ogdensburg,799.8,120.8
@@ -20300,7 +20300,7 @@ NY,Ontario,778.4,159.0
 NY,Orange Lake,836.8,184.5
 NY,Orangeburg,841.8,194.5
 NY,Orchard Park,757.3,173.3
-NY,Orient,868.4,185.7
+NY,Orient,868.3,185.5
 NY,Oriskany,809.2,153.9
 NY,Oriskany Falls,808.2,159.1
 NY,Ossining,842.4,192.0
@@ -20363,12 +20363,12 @@ NY,Pleasant Valley,840.0,179.0
 NY,Pleasantville,843.9,192.0
 NY,Plessis,795.8,131.5
 NY,Poestenkill,839.4,157.5
-NY,Point Lookout,850.0,203.0
+NY,Point Lookout,849.9,202.7
 NY,Poland,813.1,151.5
 NY,Pomona,839.3,191.9
 NY,Poquott,856.0,193.3
 NY,Port Byron,789.5,160.8
-NY,Port Chester,846.4,194.4
+NY,Port Chester,846.2,194.5
 NY,Port Dickinson,805.2,178.0
 NY,Port Ewen,836.8,176.1
 NY,Port Gibson,781.2,162.6
@@ -20444,8 +20444,8 @@ NY,Ruby,835.8,173.9
 NY,Rushford,766.6,180.0
 NY,Rushville,781.3,168.7
 NY,Russell Gardens,846.7,199.5
-NY,Rye,846.4,195.8
-NY,Rye Brook,846.0,193.9
+NY,Rye,846.0,195.6
+NY,Rye Brook,845.8,194.0
 NY,Sackets Harbor,793.4,139.6
 NY,Saddle Rock,846.2,199.3
 NY,Saddle Rock Estates,846.3,199.2
@@ -20457,7 +20457,7 @@ NY,Salisbury,849.5,199.6
 NY,Salisbury Center,818.0,152.3
 NY,Salisbury Mills,837.2,186.8
 NY,Salt Point,840.3,177.5
-NY,Saltaire,856.0,200.5
+NY,Saltaire,856.0,198.9
 NY,Sanborn,753.6,165.3
 NY,Sand Ridge,794.7,154.8
 NY,Sands Point,846.6,197.8
@@ -20574,7 +20574,7 @@ NY,Stottville,838.2,166.9
 NY,Strykersville,762.2,173.6
 NY,Suffern,838.3,193.9
 NY,Sunset Bay,751.9,178.8
-NY,SUNY Oswego,788.9,151.5
+NY,SUNY Oswego,789.1,151.7
 NY,Swan Lake,824.7,182.2
 NY,Sylvan Beach,802.9,154.2
 NY,Syosset,850.1,197.8
@@ -20650,7 +20650,7 @@ NY,Walton,817.2,174.6
 NY,Walton Park,835.9,189.8
 NY,Walworth,778.8,160.7
 NY,Wampsville,803.7,156.9
-NY,Wanakah,754.8,174.2
+NY,Wanakah,755.0,174.4
 NY,Wantagh,850.7,201.1
 NY,Wappingers Falls,839.4,182.5
 NY,Warrensburg,831.8,140.7
@@ -20675,18 +20675,18 @@ NY,Websters Crossing,775.2,172.1
 NY,Weedsport,790.4,160.4
 NY,Wells,824.2,145.2
 NY,Wells Bridge,814.4,170.6
-NY,Wellsburg,792.5,183.4
+NY,Wellsburg,792.5,183.2
 NY,Wellsville,772.6,184.9
 NY,Wesley Hills,839.0,192.7
 NY,West Babylon,852.9,199.5
-NY,West Bay Shore,854.6,199.4
+NY,West Bay Shore,854.4,199.2
 NY,West Carthage,800.8,137.2
 NY,West Chazy,829.0,111.7
 NY,West Danby,794.2,176.0
 NY,West Elmira,790.3,182.2
 NY,West End,816.3,167.8
 NY,West Glens Falls,834.0,144.9
-NY,West Hampton Dunes,863.1,195.5
+NY,West Hampton Dunes,863.1,195.1
 NY,West Haverstraw,840.3,191.3
 NY,West Hempstead,848.3,201.0
 NY,West Hills,851.1,197.5
@@ -20723,7 +20723,7 @@ NY,Williston Park,848.0,199.6
 NY,Willsboro,833.2,121.0
 NY,Willsboro Point,833.0,119.7
 NY,Wilmington,826.6,122.0
-NY,Wilson,753.7,161.5
+NY,Wilson,753.8,161.7
 NY,Windham,830.4,168.3
 NY,Windsor,809.5,178.4
 NY,Wingdale,844.7,180.4
@@ -20788,7 +20788,7 @@ OH,Ashland,706.6,224.2
 OH,Ashley,697.5,235.8
 OH,Ashtabula,727.8,198.2
 OH,Ashville,699.6,250.9
-OH,Athalia,714.3,276.1
+OH,Athalia,714.0,276.1
 OH,Athens,715.1,257.6
 OH,Attica,696.6,221.2
 OH,Atwater,725.0,217.8
@@ -20811,7 +20811,7 @@ OH,Bascom,689.9,220.7
 OH,Bass Lake,722.0,206.4
 OH,Batavia,681.0,267.9
 OH,Batesville,726.8,242.6
-OH,Bay View,696.4,212.1
+OH,Bay View,696.6,212.6
 OH,Bay Village,710.9,209.7
 OH,Beach City,719.3,227.1
 OH,Beachwood,717.8,208.9
@@ -20845,7 +20845,7 @@ OH,Berlin Heights,702.3,214.6
 OH,Bethel,682.9,270.1
 OH,Bethesda,729.9,239.8
 OH,Bettsville,690.4,218.0
-OH,Beulah Beach,702.8,213.0
+OH,Beulah Beach,703.0,213.3
 OH,Beverly,722.1,251.5
 OH,Bexley,699.2,245.5
 OH,Bidwell,713.3,267.0
@@ -20907,7 +20907,7 @@ OH,Buford,686.7,267.2
 OH,Burbank,711.4,220.8
 OH,Burgoon,690.0,217.5
 OH,Burkettsville,669.7,240.6
-OH,Burlington,710.9,278.8
+OH,Burlington,710.8,278.5
 OH,Burton,723.6,208.1
 OH,Butler,705.7,230.6
 OH,Butlerville,681.8,262.7
@@ -20951,7 +20951,7 @@ OH,Chatfield,696.0,223.8
 OH,Chauncey,714.4,256.0
 OH,Cherry Fork,691.1,270.8
 OH,Cherry Grove,678.6,268.0
-OH,Chesapeake,712.0,278.3
+OH,Chesapeake,711.9,278.0
 OH,Cheshire,716.1,265.9
 OH,Chesterhill,718.5,253.3
 OH,Chesterland,720.0,207.4
@@ -21012,7 +21012,7 @@ OH,Cridersville,677.2,233.0
 OH,Crooksville,713.8,247.9
 OH,Crown City,714.2,274.3
 OH,Crystal Lakes,681.3,249.6
-OH,Crystal Rock,696.1,212.7
+OH,Crystal Rock,696.3,212.9
 OH,Cumberland,720.7,244.9
 OH,Curtice,687.0,210.1
 OH,Custar,680.3,218.4
@@ -21128,7 +21128,7 @@ OH,Fredericktown,704.0,233.3
 OH,Freeport,726.0,236.1
 OH,Fremont,692.0,215.4
 OH,Fresno,717.8,234.6
-OH,Friendship,700.3,273.8
+OH,Friendship,700.2,273.6
 OH,Fruit Hill,677.8,268.4
 OH,Fulton,699.4,234.3
 OH,Fultonham,712.7,246.0
@@ -21199,7 +21199,7 @@ OH,Hannibal,734.4,246.9
 OH,Hanover,709.7,241.4
 OH,Hanoverton,729.6,223.3
 OH,Harbor Hills,707.6,244.9
-OH,Harbor View,685.6,208.6
+OH,Harbor View,685.4,208.8
 OH,Harpster,691.6,229.2
 OH,Harrisburg,724.3,221.1
 OH,Harrison,670.3,265.1
@@ -21231,7 +21231,7 @@ OH,Hills and Dales,721.0,222.9
 OH,Hillsboro,690.1,263.6
 OH,Hilltop,731.3,213.8
 OH,Hiram,724.2,211.6
-OH,Hockingport,721.6,259.6
+OH,Hockingport,721.4,259.5
 OH,Holgate,675.7,219.8
 OH,Holiday City,668.0,212.4
 OH,Holiday Lakes,699.0,220.2
@@ -21253,7 +21253,7 @@ OH,Hudson,719.6,213.9
 OH,Hunter,678.0,258.8
 OH,Hunting Valley,719.2,208.5
 OH,Huntsville,683.4,236.9
-OH,Huron,700.8,213.1
+OH,Huron,700.6,213.4
 OH,Iberia,698.7,229.5
 OH,Independence,716.0,211.3
 OH,Irondale,733.6,226.7
@@ -21276,9 +21276,9 @@ OH,Jewett,729.8,231.9
 OH,Johnstown,702.7,240.9
 OH,Junction City,710.5,249.4
 OH,Kalida,675.4,225.7
-OH,Kanauga,715.9,268.4
+OH,Kanauga,715.6,268.4
 OH,Kansas,689.6,218.1
-OH,Kelleys Island,697.9,209.0
+OH,Kelleys Island,697.9,210.7
 OH,Kent,721.2,215.7
 OH,Kenton,686.0,232.0
 OH,Kenwood,677.3,265.3
@@ -21314,7 +21314,7 @@ OH,Lake Tomahawk,735.1,222.2
 OH,Lake Waynoka,688.1,270.0
 OH,Lakeline,718.0,204.7
 OH,Lakemore,720.6,218.6
-OH,Lakeside,697.3,210.4
+OH,Lakeside,697.3,210.7
 OH,Lakeview,681.2,236.2
 OH,Lakewood,712.9,209.4
 OH,Lancaster,705.4,250.0
@@ -21389,7 +21389,7 @@ OH,Maple Ridge,727.2,220.1
 OH,Maplewood Park,734.0,213.9
 OH,Marathon,683.7,265.9
 OH,Marble Cliff,697.0,245.3
-OH,Marblehead,697.8,210.5
+OH,Marblehead,698.0,210.6
 OH,Marengo,699.9,235.6
 OH,Maria Stein,672.3,239.2
 OH,Mariemont,677.4,266.8
@@ -21438,7 +21438,7 @@ OH,Middle Point,671.6,229.1
 OH,Middlebranch,722.6,221.2
 OH,Middleburg Heights,713.1,212.0
 OH,Middlefield,724.9,208.1
-OH,Middleport,716.8,264.8
+OH,Middleport,716.6,264.7
 OH,Middletown,676.7,258.8
 OH,Midland,684.8,262.2
 OH,Midvale,723.5,231.4
@@ -21462,9 +21462,9 @@ OH,Mineral Ridge,731.1,214.4
 OH,Minerva,726.9,224.2
 OH,Minerva Park,698.7,243.1
 OH,Minford,704.0,269.6
-OH,Mingo Junction,736.3,231.8
+OH,Mingo Junction,736.1,231.9
 OH,Minster,674.0,239.1
-OH,Mitiwanga,702.5,213.3
+OH,Mitiwanga,702.5,213.6
 OH,Mogadore,720.8,217.9
 OH,Monfort Heights,673.5,266.4
 OH,Monroe,676.8,260.1
@@ -21674,7 +21674,7 @@ OH,Powhatan Point,734.8,242.5
 OH,Proctorville,713.3,277.8
 OH,Prospect,693.6,235.3
 OH,Pulaski,668.8,214.8
-OH,Put-in-Bay,695.9,208.1
+OH,Put-in-Bay,695.3,209.9
 OH,Quaker City,726.3,241.4
 OH,Quincy,681.1,240.5
 OH,Racine,719.5,265.0
@@ -21759,7 +21759,7 @@ OH,Senecaville,723.8,242.6
 OH,Seven Hills,715.3,211.4
 OH,Seven Mile,673.6,259.6
 OH,Seville,713.4,219.8
-OH,Shadyside,735.4,240.0
+OH,Shadyside,735.1,240.0
 OH,Shaker Heights,717.1,209.0
 OH,Sharon Center,715.2,217.8
 OH,Sharonville,676.6,263.8
@@ -21823,7 +21823,7 @@ OH,Stony Ridge,685.1,212.8
 OH,Stoutsville,702.2,253.2
 OH,Stow,719.9,215.3
 OH,Strasburg,720.3,228.2
-OH,Stratton,735.4,227.5
+OH,Stratton,735.5,227.7
 OH,Streetsboro,721.2,213.7
 OH,Strongsville,713.0,213.3
 OH,Struthers,734.1,215.9
@@ -21860,7 +21860,7 @@ OH,Tippecanoe,725.6,234.7
 OH,Tiro,699.0,224.4
 OH,Toledo,683.5,209.5
 OH,Tontogany,681.6,215.2
-OH,Toronto,736.0,228.9
+OH,Toronto,735.8,228.9
 OH,Tremont City,684.0,246.4
 OH,Trenton,675.0,259.5
 OH,Trimble,714.9,254.0
@@ -21956,7 +21956,7 @@ OH,Wheelersburg,704.5,272.3
 OH,White Oak,673.4,265.7
 OH,Whitehall,700.0,245.3
 OH,Whitehouse,680.4,213.1
-OH,Whites Landing,695.3,213.2
+OH,Whites Landing,695.6,213.5
 OH,Wickliffe,717.9,205.9
 OH,Wightmans Grove,692.9,213.6
 OH,Wilberforce,684.1,253.1
@@ -21996,7 +21996,7 @@ OH,Xenia,683.3,253.9
 OH,Yankee Lake,733.7,211.0
 OH,Yellow Springs,683.8,251.3
 OH,Yorkshire,672.3,240.9
-OH,Yorkville,735.5,235.8
+OH,Yorkville,735.3,235.7
 OH,Youngstown,733.1,214.9
 OH,Zaleski,710.4,259.3
 OH,Zanesfield,685.8,238.9
@@ -22028,7 +22028,7 @@ OK,Apache,438.5,372.7
 OK,Arapaho,428.2,357.2
 OK,Arcadia,457.3,355.9
 OK,Ardmore,460.4,388.6
-OK,Arkoma,508.6,363.3
+OK,Arkoma,508.4,363.3
 OK,Armstrong,474.6,391.9
 OK,Arnett,414.2,344.3
 OK,Arpelar,481.8,372.4
@@ -22137,7 +22137,7 @@ OK,Cashion,451.1,352.8
 OK,Castle,473.9,360.4
 OK,Catoosa,484.9,344.6
 OK,Cave Spring,502.9,354.5
-OK,Cayuga,504.5,334.3
+OK,Cayuga,504.2,334.3
 OK,Cedar Crest,495.5,345.8
 OK,Cedar Lake,441.8,360.9
 OK,Cedar Valley,454.3,351.2
@@ -22218,7 +22218,7 @@ OK,Dickson,462.8,388.7
 OK,Dill City,424.9,363.7
 OK,Disney,498.1,338.0
 OK,Dixon,471.6,367.3
-OK,Dodge,504.8,335.6
+OK,Dodge,504.3,335.6
 OK,Dotyville,499.9,329.6
 OK,Dougherty,461.9,384.1
 OK,Douglas,451.5,342.6
@@ -22470,7 +22470,7 @@ OK,Lyons Switch,504.2,353.2
 OK,Macomb,462.8,367.5
 OK,Madill,466.8,391.1
 OK,Mallard Bay,493.9,351.6
-OK,Manchester,445.3,326.1
+OK,Manchester,445.3,326.4
 OK,Mangum,418.0,372.4
 OK,Manitou,427.1,380.9
 OK,Mannford,475.0,345.7
@@ -22742,7 +22742,7 @@ OK,Teresita,498.9,345.8
 OK,Terlton,472.2,344.4
 OK,Terral,445.7,395.0
 OK,Texanna,489.6,362.9
-OK,Texhoma,379.2,334.3
+OK,Texhoma,379.2,334.0
 OK,Texola,409.5,364.4
 OK,Thackerville,460.2,397.7
 OK,The Village,453.1,357.9
@@ -22796,7 +22796,7 @@ OK,Washington,454.2,369.4
 OK,Washita,439.0,368.0
 OK,Watonga,438.3,351.5
 OK,Watova,486.8,334.8
-OK,Watts,506.1,346.1
+OK,Watts,505.8,346.1
 OK,Wauhillau,502.9,351.6
 OK,Waukomis,447.3,341.9
 OK,Waurika,444.2,388.6
@@ -22851,22 +22851,22 @@ OR,Alpine,55.6,102.0
 OR,Alsea,52.4,99.8
 OR,Altamont,67.8,154.6
 OR,Amity,62.9,86.1
-OR,Annex,152.2,129.3
+OR,Annex,152.1,129.6
 OR,Antelope,98.9,100.8
 OR,Arlington,111.5,85.6
 OR,Ashland,52.5,150.4
-OR,Astoria,60.5,60.7
+OR,Astoria,60.8,61.1
 OR,Athena,137.3,90.1
 OR,Aumsville,66.2,93.2
 OR,Aurora,70.2,85.6
 OR,Baker City,142.0,114.7
-OR,Bandon,31.8,122.9
+OR,Bandon,32.1,123.1
 OR,Banks,67.4,75.9
 OR,Barlow,70.9,85.3
 OR,Barnesdale,56.5,71.9
-OR,Barview,35.0,118.5
+OR,Barview,35.3,118.7
 OR,Bay City,55.3,74.5
-OR,Bayshore,45.4,96.4
+OR,Bayshore,45.8,96.6
 OR,Bayside Gardens,56.0,70.3
 OR,Beatty,76.3,151.3
 OR,Beaver,54.6,79.9
@@ -22876,7 +22876,7 @@ OR,Beaverton,70.9,80.1
 OR,Bellfountain,55.9,101.3
 OR,Bend,85.1,116.7
 OR,Bethany,71.1,78.2
-OR,Biggs Junction,101.4,84.3
+OR,Biggs Junction,101.5,84.8
 OR,Black Butte Ranch,81.4,108.6
 OR,Blodgett,54.9,95.6
 OR,Bly,79.6,153.4
@@ -22884,7 +22884,7 @@ OR,Boardman,119.5,85.1
 OR,Bonanza,72.8,155.9
 OR,Boring,77.2,83.0
 OR,Brogan,144.2,127.1
-OR,Brookings,26.7,145.5
+OR,Brookings,27.0,145.4
 OR,Brooks,66.1,88.5
 OR,Brownsville,61.7,102.4
 OR,Bull Mountain,70.2,81.4
@@ -22897,7 +22897,7 @@ OR,Canby,71.5,85.1
 OR,Cannon Beach,56.5,66.4
 OR,Canyon City,123.0,118.8
 OR,Canyonville,48.1,132.1
-OR,Cape Meares,54.3,74.1
+OR,Cape Meares,54.7,74.2
 OR,Carlton,64.4,82.4
 OR,Cascade Locks,86.2,79.9
 OR,Cascadia,69.0,104.4
@@ -22936,7 +22936,7 @@ OR,Days Creek,50.1,131.7
 OR,Dayton,65.4,84.4
 OR,Dayville,114.5,115.0
 OR,Deer Island,73.2,70.3
-OR,Depoe Bay,48.1,88.7
+OR,Depoe Bay,48.9,89.1
 OR,Deschutes River Woods,83.9,117.9
 OR,Detroit,76.3,98.7
 OR,Dexter,61.2,113.0
@@ -22975,14 +22975,14 @@ OR,Gardiner,40.5,111.3
 OR,Garibaldi,55.1,73.5
 OR,Gaston,65.7,79.6
 OR,Gates,72.4,97.1
-OR,Gearhart,58.0,63.6
+OR,Gearhart,58.4,63.6
 OR,Gervais,67.4,87.6
 OR,Gilchrist,75.8,127.4
 OR,Gladstone,73.6,83.0
 OR,Glasgow,37.3,117.1
 OR,Glendale,44.6,135.5
 OR,Glide,53.5,125.3
-OR,Gold Beach,27.1,137.7
+OR,Gold Beach,27.3,137.8
 OR,Gold Hill,48.5,143.6
 OR,Gopher Flats,133.1,92.4
 OR,Government Camp,85.7,88.3
@@ -23018,7 +23018,7 @@ OR,Idaville,55.5,74.8
 OR,Imbler,143.5,99.5
 OR,Independence,61.4,91.5
 OR,Ione,115.8,91.7
-OR,Irrigon,122.9,84.6
+OR,Irrigon,122.8,84.8
 OR,Island City,141.6,101.9
 OR,Jacksonville,49.0,146.6
 OR,Jasper,60.2,111.2
@@ -23039,7 +23039,7 @@ OR,King City,70.5,81.7
 OR,Kings Valley,56.9,93.9
 OR,Kirkpatrick,134.3,92.3
 OR,Klamath Falls,67.1,153.9
-OR,Knappa,63.9,62.1
+OR,Knappa,64.1,62.3
 OR,La Grande,140.9,102.0
 OR,La Pine,80.3,123.8
 OR,Labish Village,65.7,89.1
@@ -23051,8 +23051,8 @@ OR,Lakeview,89.3,160.5
 OR,Langlois,30.0,126.7
 OR,Lebanon,63.7,99.7
 OR,Lexington,117.5,93.5
-OR,Lincoln Beach,49.0,87.5
-OR,Lincoln City,50.0,85.4
+OR,Lincoln Beach,49.5,87.7
+OR,Lincoln City,50.4,85.6
 OR,Lonerock,112.6,100.3
 OR,Long Creek,122.3,111.3
 OR,Lookingglass,46.3,125.7
@@ -23100,8 +23100,8 @@ OR,Myrtle Point,35.8,125.3
 OR,Neahkahnie,55.8,69.8
 OR,Nehalem,56.4,70.3
 OR,Neotsu,50.6,85.1
-OR,Nesika Beach,28.0,135.8
-OR,Neskowin,51.4,82.5
+OR,Nesika Beach,28.2,136.1
+OR,Neskowin,51.6,82.6
 OR,Netarts,54.0,76.1
 OR,New Hope,43.3,143.6
 OR,New Pine Creek,89.0,164.8
@@ -23117,7 +23117,7 @@ OR,Oak Hills,70.9,78.6
 OR,Oakland,50.9,121.5
 OR,Oakridge,65.6,118.4
 OR,Oatfield,73.8,82.4
-OR,Oceanside,53.7,75.5
+OR,Oceanside,54.2,75.7
 OR,Ochoco West,93.0,110.9
 OR,Odell,90.6,82.1
 OR,Ontario,151.4,133.8
@@ -23159,7 +23159,7 @@ OR,River Point,60.4,61.7
 OR,River Road,57.5,108.2
 OR,Rivergrove,71.5,82.4
 OR,Riverside,133.0,92.1
-OR,Rockaway Beach,55.1,72.2
+OR,Rockaway Beach,55.4,72.3
 OR,Rockcreek,70.5,78.2
 OR,Rocky Point,63.0,147.8
 OR,Rogue River,46.7,143.1
@@ -23171,7 +23171,7 @@ OR,Ruch,47.4,148.0
 OR,Rufus,103.0,84.2
 OR,Running Y Ranch,65.9,152.3
 OR,Salem,64.4,90.9
-OR,San Marine,44.7,98.2
+OR,San Marine,45.0,98.3
 OR,Sandy,78.6,84.1
 OR,Santa Clara,57.7,107.6
 OR,Saunders Lake,37.5,115.3
@@ -23231,7 +23231,7 @@ OR,Tutuilla,133.1,93.5
 OR,Tygh Valley,94.1,92.0
 OR,Ukiah,127.2,103.0
 OR,Umapine,138.0,86.5
-OR,Umatilla,125.3,84.7
+OR,Umatilla,125.2,85.3
 OR,Union,143.7,105.2
 OR,Unity,135.0,120.4
 OR,Vale,147.2,133.8
@@ -23253,18 +23253,18 @@ OR,West Scio,65.2,96.1
 OR,West Slope,71.6,79.9
 OR,Westfir,65.1,117.9
 OR,Weston,138.3,90.3
-OR,Westport,66.7,63.9
+OR,Westport,66.9,63.9
 OR,Wheeler,56.3,71.0
 OR,White City,51.9,144.7
 OR,Willamina,58.4,85.6
 OR,Williams,43.4,147.1
 OR,Wilsonville,70.5,83.8
 OR,Wimer,47.8,140.7
-OR,Winchester Bay,38.9,112.2
+OR,Winchester Bay,39.1,112.3
 OR,Winston,47.0,127.4
 OR,Wood Village,77.1,80.5
 OR,Woodburn,68.2,86.9
-OR,Yachats,44.3,99.0
+OR,Yachats,44.7,99.2
 OR,Yamhill,64.6,81.4
 OR,Yoncalla,52.1,117.8
 PA,Aaronsburg,785.8,209.9
@@ -23422,7 +23422,7 @@ PA,Blossburg,788.6,191.8
 PA,Blue Ball,812.1,222.5
 PA,Blue Bell,824.8,218.9
 PA,Blue Knob,770.1,225.3
-PA,Blue Ridge Summit,790.6,235.6
+PA,Blue Ridge Summit,790.5,235.2
 PA,Boalsburg,781.1,213.7
 PA,Bobtown,748.8,242.5
 PA,Boiling Springs,794.1,225.1
@@ -23454,7 +23454,7 @@ PA,Bridgeport,823.8,220.1
 PA,Bridgeville,744.6,229.7
 PA,Bridgewater,740.1,222.7
 PA,Brisbin,771.4,214.1
-PA,Bristol,831.8,218.4
+PA,Bristol,831.6,218.2
 PA,Brittany Farms-The Highlands,825.1,216.1
 PA,Broad Top City,777.5,227.4
 PA,Brockton,808.9,208.6
@@ -23660,7 +23660,7 @@ PA,Defiance,776.2,228.6
 PA,Delano,808.5,206.7
 PA,Delaware Water Gap,823.0,200.6
 PA,Delmont,753.2,227.0
-PA,Delta,809.4,231.8
+PA,Delta,809.4,231.6
 PA,Denver,810.1,220.1
 PA,Derry,757.9,228.0
 PA,DeSales University,821.1,210.8
@@ -24279,7 +24279,7 @@ PA,Maryd,809.1,208.4
 PA,Marysville,796.7,220.5
 PA,Masontown,749.8,240.3
 PA,Masthope,822.1,188.4
-PA,Matamoras,828.0,190.4
+PA,Matamoras,827.8,190.6
 PA,Mather,746.7,238.9
 PA,Mattawana,783.0,219.6
 PA,Maxatawny,816.0,211.9
@@ -24376,11 +24376,11 @@ PA,Moores Mill,774.2,221.4
 PA,Moose Run,779.9,209.9
 PA,Moosic,811.9,194.2
 PA,Morea,807.0,208.2
-PA,Morgan Hill,823.3,207.4
+PA,Morgan Hill,823.1,207.4
 PA,Morgantown,814.7,221.1
 PA,Morris Run,789.4,191.7
 PA,Morrisdale,773.0,211.3
-PA,Morrisville,832.5,215.8
+PA,Morrisville,832.2,216.2
 PA,Morton,825.0,224.2
 PA,Moscow,814.8,193.9
 PA,Moshannon,776.2,208.8
@@ -24452,7 +24452,7 @@ PA,New Freedom,803.3,232.9
 PA,New Freeport,741.5,243.7
 PA,New Galilee,738.0,220.1
 PA,New Holland,811.6,222.8
-PA,New Hope,828.8,213.1
+PA,New Hope,828.5,213.6
 PA,New Jerusalem,815.4,214.3
 PA,New Kensington,749.6,224.0
 PA,New Kingstown,794.9,223.3
@@ -24572,7 +24572,7 @@ PA,Paxtang,798.7,221.9
 PA,Paxtonia,799.2,220.5
 PA,Paxtonville,792.4,211.5
 PA,Pen Argyl,821.5,203.2
-PA,Pen Mar,789.8,235.8
+PA,Pen Mar,789.7,235.4
 PA,Penbrook,798.4,221.6
 PA,Penfield,766.3,206.6
 PA,Penn,752.3,229.1
@@ -24671,7 +24671,7 @@ PA,Ramblewood,778.6,215.4
 PA,Ramey,770.8,215.1
 PA,Rankin,748.1,227.9
 PA,Ranshaw,801.5,209.4
-PA,Raubsville,823.5,208.3
+PA,Raubsville,823.2,208.3
 PA,Rauchtown,788.2,204.3
 PA,Ravine,804.5,213.7
 PA,Reading,813.1,217.1
@@ -24707,7 +24707,7 @@ PA,Richlandtown,822.4,212.1
 PA,Riddlesburg,775.9,228.7
 PA,Ridgway,762.9,202.3
 PA,Ridley Park,825.2,225.0
-PA,Riegelsville,823.8,208.9
+PA,Riegelsville,823.7,209.3
 PA,Rimersburg,751.9,213.1
 PA,Ringtown,805.7,206.9
 PA,Riverside,798.7,206.3
@@ -24917,7 +24917,7 @@ PA,Star Junction,751.3,235.3
 PA,Starbrick,753.4,194.8
 PA,Starrucca,813.5,181.7
 PA,State College,779.7,213.6
-PA,State Line,786.4,236.3
+PA,State Line,786.4,236.0
 PA,Steelton,799.0,222.6
 PA,Stevens,809.8,220.6
 PA,Stewartstown,804.9,232.1
@@ -25200,7 +25200,7 @@ PA,Wyndmoor,826.3,220.0
 PA,Wynnewood,825.5,222.2
 PA,Wyoming,810.0,195.8
 PA,Wyomissing,812.5,217.3
-PA,Yardley,831.3,215.3
+PA,Yardley,831.2,215.5
 PA,Yarnell,779.5,208.9
 PA,Yatesboro,755.6,217.9
 PA,Yatesville,810.9,195.6
@@ -25270,7 +25270,7 @@ SC,Arial,720.2,357.6
 SC,Arkwright,732.4,354.2
 SC,Arthurtown,752.4,372.5
 SC,Ashwood,764.5,367.0
-SC,Atlantic Beach,794.0,369.1
+SC,Atlantic Beach,793.8,368.9
 SC,Awendaw,780.4,390.3
 SC,Aynor,784.4,366.4
 SC,Bamberg,754.2,387.2
@@ -25298,7 +25298,7 @@ SC,Bowman,760.3,385.1
 SC,Boykin,759.3,367.9
 SC,Bradley,730.0,374.5
 SC,Branchville,758.3,387.6
-SC,Briarcliffe Acres,793.5,369.5
+SC,Briarcliffe Acres,793.3,369.3
 SC,Brookdale,756.9,381.8
 SC,Browntown,763.8,365.3
 SC,Brunson,752.7,395.9
@@ -25362,7 +25362,7 @@ SC,Dale,762.8,402.5
 SC,Dalzell,762.4,369.7
 SC,Danwood,774.0,366.1
 SC,Darlington,771.5,361.8
-SC,Daufuskie Island,761.6,412.7
+SC,Daufuskie Island,761.3,412.5
 SC,Daviston,781.9,369.4
 SC,DeBordieu Colony,787.5,380.0
 SC,Denmark,752.3,387.2
@@ -25382,7 +25382,7 @@ SC,East Sumter,765.3,371.3
 SC,Eastover,758.2,373.6
 SC,Edgefield,736.3,379.0
 SC,Edisto,756.0,382.9
-SC,Edisto Beach,770.1,402.6
+SC,Edisto Beach,769.8,402.3
 SC,Edmund,749.3,375.3
 SC,Ehrhardt,755.2,391.6
 SC,Elgin,754.9,356.4
@@ -25409,7 +25409,7 @@ SC,Foreston,770.5,377.0
 SC,Fort Lawn,751.6,356.1
 SC,Fort Mill,749.8,349.5
 SC,Fountain Inn,728.5,359.7
-SC,Fripp Island,767.6,407.0
+SC,Fripp Island,767.4,406.6
 SC,Furman,753.5,401.2
 SC,Gadsden,757.1,374.4
 SC,Gaffney,736.8,350.0
@@ -25440,7 +25440,7 @@ SC,Grover,762.8,390.1
 SC,Hamer,780.5,356.4
 SC,Hampton,754.3,396.9
 SC,Hanahan,774.2,392.2
-SC,Harbor Island,768.2,405.0
+SC,Harbor Island,767.8,405.0
 SC,Hardeeville,757.5,409.2
 SC,Harleyville,765.1,387.4
 SC,Hartsville,767.4,361.1
@@ -25464,7 +25464,7 @@ SC,Inman Mills,729.1,351.9
 SC,Irmo,748.4,370.1
 SC,Irwin,753.0,356.0
 SC,Islandton,757.3,395.5
-SC,Isle of Palms,779.2,394.2
+SC,Isle of Palms,778.8,393.8
 SC,Iva,721.5,369.5
 SC,Jackson,740.3,388.7
 SC,Jacksonboro,766.2,397.1
@@ -25480,7 +25480,7 @@ SC,Judson,724.0,357.3
 SC,Keowee Key,715.4,358.8
 SC,Kershaw,757.8,358.6
 SC,Ketchuptown,784.9,363.8
-SC,Kiawah Island,774.3,399.3
+SC,Kiawah Island,774.2,399.1
 SC,Kingstree,774.6,375.6
 SC,Kline,749.2,391.9
 SC,La France,718.6,362.9
@@ -25577,7 +25577,7 @@ SC,Parker,723.5,357.0
 SC,Parksville,731.1,379.8
 SC,Patrick,767.3,356.4
 SC,Pauline,734.0,355.8
-SC,Pawleys Island,788.2,378.6
+SC,Pawleys Island,787.8,378.5
 SC,Paxville,764.8,375.6
 SC,Peak,745.6,367.5
 SC,Pelion,748.4,377.2
@@ -25629,7 +25629,7 @@ SC,Saxon,731.7,353.3
 SC,Scotia,752.5,401.4
 SC,Scranton,775.1,369.9
 SC,Seabrook,761.9,403.1
-SC,Seabrook Island,772.3,400.5
+SC,Seabrook Island,772.1,400.0
 SC,Sellers,778.6,361.0
 SC,Seneca,714.9,362.0
 SC,Seven Oaks,749.6,371.1
@@ -25662,7 +25662,7 @@ SC,Starr,720.7,368.0
 SC,Startex,729.6,354.3
 SC,Stateburg,760.9,370.9
 SC,Stuckey,780.0,373.2
-SC,Sullivan's Island,777.9,395.2
+SC,Sullivan's Island,777.6,394.9
 SC,Summerton,765.4,378.6
 SC,Summerville,770.7,391.1
 SC,Summit,745.0,374.6
@@ -25838,7 +25838,7 @@ SD,Crocker,453.1,146.0
 SD,Crook City,360.6,156.4
 SD,Crooks,467.9,178.5
 SD,Custer,360.1,171.2
-SD,Dakota Dunes,472.9,204.3
+SD,Dakota Dunes,472.9,204.1
 SD,Dallas,424.4,186.7
 SD,Dante,445.6,191.7
 SD,Davis,464.8,187.2
@@ -25868,7 +25868,7 @@ SD,Eureka,424.8,130.7
 SD,Evergreen Colony,433.3,145.4
 SD,Fairburn,366.2,173.5
 SD,Fairfax,434.3,191.7
-SD,Fairview,472.9,188.1
+SD,Fairview,472.7,188.7
 SD,Faith,386.6,145.2
 SD,Farmer,453.9,176.7
 SD,Faulkton,431.9,147.3
@@ -25968,7 +25968,7 @@ SD,Langford,452.4,135.3
 SD,Lantry,396.0,146.0
 SD,Lead,358.5,158.1
 SD,Lebanon,422.0,146.1
-SD,Lemmon,386.0,125.1
+SD,Lemmon,386.0,125.3
 SD,Lennox,466.4,185.2
 SD,Leola,435.3,132.2
 SD,Lesterville,455.2,192.0
@@ -26011,7 +26011,7 @@ SD,Mobridge,412.1,135.3
 SD,Monroe,461.3,182.1
 SD,Montrose,461.9,177.4
 SD,Morningside,446.3,162.4
-SD,Morristown,392.8,125.5
+SD,Morristown,392.8,125.8
 SD,Mound City,417.9,131.5
 SD,Mount Vernon,444.8,176.8
 SD,Mountain Plains,357.2,155.4
@@ -26513,7 +26513,7 @@ TN,Millersville,644.2,331.9
 TN,Millington,589.7,360.0
 TN,Minor Hill,639.1,362.3
 TN,Miston,595.7,341.2
-TN,Mitchellville,646.6,326.3
+TN,Mitchellville,646.7,326.6
 TN,Monteagle,662.0,356.0
 TN,Monterey,670.1,334.8
 TN,Mooresburg,705.1,325.9
@@ -26753,7 +26753,7 @@ TX,Amaya,406.6,508.4
 TX,Ames,505.1,480.5
 TX,Amherst,364.5,388.8
 TX,Amistad,382.0,489.4
-TX,Anacua,422.9,560.1
+TX,Anacua,423.1,559.4
 TX,Anahuac,506.3,486.6
 TX,Anderson,481.2,470.9
 TX,Andrews,359.4,426.1
@@ -26769,7 +26769,7 @@ TX,Anthony,283.8,426.7
 TX,Anton,368.7,393.6
 TX,Appleby,507.0,443.5
 TX,Aquilla,458.2,440.5
-TX,Aransas Pass,459.4,527.4
+TX,Aransas Pass,458.6,527.0
 TX,Archer City,433.0,401.4
 TX,Arcola,491.2,492.5
 TX,Argyle,459.3,412.8
@@ -26803,7 +26803,7 @@ TX,Bangs,422.4,442.7
 TX,Banquete,445.8,529.7
 TX,Bardwell,468.0,431.4
 TX,Barksdale,403.7,485.8
-TX,Barrera,423.3,559.9
+TX,Barrera,423.4,559.5
 TX,Barrett,499.1,484.5
 TX,Barry,469.0,435.1
 TX,Barstow,342.3,443.9
@@ -26817,7 +26817,7 @@ TX,Bayou Vista,501.4,496.4
 TX,Bayside,457.4,523.4
 TX,Baytown,500.8,486.7
 TX,Bayview,453.1,566.3
-TX,Beach City,503.1,487.2
+TX,Beach City,502.8,486.7
 TX,Bear Creek,444.0,477.2
 TX,Bear Creek Ranch,466.8,425.0
 TX,Beasley,482.6,492.7
@@ -26869,7 +26869,7 @@ TX,Blossom,492.2,400.5
 TX,Blue Berry Hill,446.1,516.8
 TX,Blue Mound,456.3,418.3
 TX,Blue Ridge,473.6,408.6
-TX,Bluetown,444.7,567.5
+TX,Bluetown,444.7,567.1
 TX,Bluff Dale,443.4,429.3
 TX,Blum,455.0,434.1
 TX,Boerne,428.8,485.6
@@ -26953,7 +26953,7 @@ TX,Cameron Park,451.5,569.8
 TX,Camp Swift,456.3,477.3
 TX,Camp Wood,404.1,487.3
 TX,Campbell,481.8,412.0
-TX,Campo Verde,423.0,560.0
+TX,Campo Verde,423.2,559.4
 TX,Canadian,403.2,348.8
 TX,Caney City,480.2,432.8
 TX,Canton,483.5,425.1
@@ -27054,7 +27054,7 @@ TX,Coppell,462.7,416.0
 TX,Copper Canyon,460.8,413.0
 TX,Copperas Cove,444.9,456.5
 TX,Corinth,461.3,411.9
-TX,Corpus Christi,458.0,530.9
+TX,Corpus Christi,458.3,531.1
 TX,Corral City,458.3,412.9
 TX,Corrigan,503.1,459.4
 TX,Corsicana,472.3,435.6
@@ -27084,7 +27084,7 @@ TX,Crowell,413.2,392.1
 TX,Crowley,455.8,424.4
 TX,Crystal City,406.8,508.9
 TX,Cuero,456.2,501.2
-TX,Cuevitas,429.6,563.1
+TX,Cuevitas,430.0,562.4
 TX,Cumby,483.9,412.3
 TX,Cumings,484.9,490.8
 TX,Cuney,491.9,436.6
@@ -27172,7 +27172,7 @@ TX,Edmonson,374.2,383.5
 TX,Edna,468.5,504.1
 TX,Edom,488.2,429.1
 TX,Edroy,448.2,526.2
-TX,Eidson Road,394.0,508.8
+TX,Eidson Road,394.2,508.6
 TX,El Brazil,426.8,558.4
 TX,El Camino Angosto,448.2,566.7
 TX,El Campo,475.8,499.2
@@ -27183,7 +27183,7 @@ TX,El Indio,397.3,512.5
 TX,El Lago,499.3,491.0
 TX,El Mesquite,425.8,560.2
 TX,El Paso,286.6,430.1
-TX,El Quiote,423.1,560.1
+TX,El Quiote,423.3,559.5
 TX,El Rancho Vela,425.9,559.8
 TX,El Refugio,426.0,561.2
 TX,El Socio,428.5,561.2
@@ -27206,7 +27206,7 @@ TX,Enchanted Oaks,478.9,431.5
 TX,Encinal,415.4,523.6
 TX,Encino,439.2,548.5
 TX,Ennis,469.2,430.2
-TX,Escobares,422.1,559.5
+TX,Escobares,422.2,559.1
 TX,Estelline,400.8,379.0
 TX,Eugenio Saenz,428.6,560.8
 TX,Euless,461.0,418.5
@@ -27214,7 +27214,7 @@ TX,Eureka,475.9,437.3
 TX,Eustace,480.7,430.6
 TX,Evadale,518.1,474.0
 TX,Evant,440.6,448.5
-TX,Evergreen,420.8,559.2
+TX,Evergreen,420.9,558.8
 TX,Everman,457.2,423.3
 TX,Fabens,291.1,438.0
 TX,Fabrica,393.9,507.2
@@ -27242,7 +27242,7 @@ TX,Ferris,468.4,425.5
 TX,Fifth Street,489.6,490.5
 TX,Flat,450.4,452.4
 TX,Flatonia,459.8,488.3
-TX,Flor del Rio,423.2,559.7
+TX,Flor del Rio,423.3,559.5
 TX,Florence,447.1,462.7
 TX,Floresville,439.2,499.9
 TX,Flowella,440.3,542.3
@@ -27274,19 +27274,19 @@ TX,Friendswood,496.4,492.4
 TX,Friona,359.8,374.6
 TX,Frisco,465.8,411.7
 TX,Fritch,381.4,353.6
-TX,Fronton,419.8,559.1
-TX,Fronton Ranchettes,420.8,559.1
+TX,Fronton,420.0,558.5
+TX,Fronton Ranchettes,420.9,558.8
 TX,Frost,465.9,435.6
 TX,Fruitvale,484.6,422.3
 TX,Fulshear,483.2,488.4
-TX,Fulton,460.7,523.9
+TX,Fulton,460.3,523.8
 TX,Gail,380.3,417.5
 TX,Gainesville,460.0,401.0
 TX,Galena Park,495.7,487.2
 TX,Gallatin,496.8,439.6
-TX,Galveston,501.0,499.4
+TX,Galveston,500.8,499.1
 TX,Ganado,471.1,502.7
-TX,Garceno,422.5,559.5
+TX,Garceno,422.6,559.3
 TX,Garciasville,427.2,561.6
 TX,Garden City,378.6,437.2
 TX,Garden Ridge,437.0,489.1
@@ -27348,7 +27348,7 @@ TX,Groom,389.6,363.8
 TX,Groves,520.8,482.4
 TX,Groveton,497.5,458.2
 TX,Gruver,385.5,340.1
-TX,Guadalupe Guerra,419.7,559.4
+TX,Guadalupe Guerra,420.0,558.5
 TX,Guerra,423.7,549.2
 TX,Gun Barrel City,478.5,430.1
 TX,Gunter,465.9,406.0
@@ -27461,8 +27461,8 @@ TX,Indian Springs,504.7,466.3
 TX,Indio,419.5,556.4
 TX,Industry,471.5,482.3
 TX,Inez,465.7,506.3
-TX,Ingleside,457.4,528.3
-TX,Ingleside on the Bay,457.1,529.2
+TX,Ingleside,457.2,527.9
+TX,Ingleside on the Bay,457.0,528.0
 TX,Ingram,419.2,478.8
 TX,Iola,479.5,464.6
 TX,Iowa Colony,492.1,493.9
@@ -27473,7 +27473,7 @@ TX,Irving,463.1,418.3
 TX,Italy,464.5,433.2
 TX,Itasca,459.6,433.8
 TX,Ivanhoe,511.0,466.4
-TX,J.F. Villareal,421.7,559.3
+TX,J.F. Villareal,421.8,559.0
 TX,Jacinto City,495.5,486.7
 TX,Jacksboro,441.3,409.8
 TX,Jacksonville,494.6,438.3
@@ -27535,15 +27535,15 @@ TX,Kyle,445.0,481.4
 TX,La Blanca,440.6,562.3
 TX,La Carla,426.5,559.1
 TX,La Casita,426.5,561.3
-TX,La Chuparosa,422.7,559.7
+TX,La Chuparosa,422.8,559.3
 TX,La Coma,416.0,535.5
 TX,La Coma Heights,439.7,559.4
-TX,La Escondida,423.8,560.2
+TX,La Escondida,424.0,559.7
 TX,La Esperanza,423.4,559.1
 TX,La Feria,444.6,565.7
 TX,La Feria North,444.7,565.1
 TX,La Grange,464.2,483.5
-TX,La Grulla,428.2,562.7
+TX,La Grulla,428.2,562.4
 TX,La Homa,434.0,562.7
 TX,La Joya,431.6,563.1
 TX,La Loma de Falcon,419.5,556.7
@@ -27558,7 +27558,7 @@ TX,La Porte,499.2,488.9
 TX,La Presa,413.4,537.6
 TX,La Pryor,406.6,503.2
 TX,La Puerta,426.2,561.0
-TX,La Rosita,422.6,559.7
+TX,La Rosita,422.7,559.3
 TX,La Tina Ranch,451.5,564.8
 TX,La Vernia,440.1,495.4
 TX,La Victoria,428.6,561.1
@@ -27570,10 +27570,10 @@ TX,Lacy-Lakeview,460.3,445.4
 TX,Ladonia,481.9,405.8
 TX,Lago,448.8,567.2
 TX,Lago Vista,443.2,471.2
-TX,Laguna Heights,455.9,567.5
+TX,Laguna Heights,455.5,567.8
 TX,Laguna Park,455.1,440.2
 TX,Laguna Seca,442.6,562.9
-TX,Laguna Vista,455.2,566.9
+TX,Laguna Vista,454.9,567.1
 TX,Lake Bridgeport,447.3,410.3
 TX,Lake Brownwood,422.9,440.5
 TX,Lake Bryan,472.1,465.8
@@ -27597,7 +27597,7 @@ TX,Lakeside City,434.7,396.2
 TX,Lakeview,396.3,376.0
 TX,Lakeway,443.2,473.4
 TX,Lakewood Village,463.0,412.1
-TX,Lamar,461.7,522.4
+TX,Lamar,461.2,521.9
 TX,Lamesa,371.1,417.7
 TX,Lamkin,438.7,440.8
 TX,Lampasas,439.8,457.6
@@ -27662,7 +27662,7 @@ TX,Loma Grande,406.7,508.2
 TX,Loma Linda,451.7,525.2
 TX,Loma Linda East,438.0,530.2
 TX,Loma Linda West,422.7,559.3
-TX,Loma Vista,421.7,559.4
+TX,Loma Vista,421.8,559.0
 TX,Lometa,436.0,454.2
 TX,Lone Oak,482.0,415.3
 TX,Lone Star,504.7,416.4
@@ -27675,19 +27675,19 @@ TX,Loraine,393.6,426.2
 TX,Lorena,458.2,450.9
 TX,Lorenzo,380.0,397.4
 TX,Los Altos,414.4,535.6
-TX,Los Alvarez,423.3,560.1
+TX,Los Alvarez,423.5,559.5
 TX,Los Angeles,445.5,558.3
 TX,Los Arcos,418.0,533.0
 TX,Los Arrieros,419.7,557.1
-TX,Los Barreras,422.9,560.0
+TX,Los Barreras,423.1,559.4
 TX,Los Centenarios,417.9,533.0
 TX,Los Corralitos,411.2,532.2
-TX,Los Ebanos,430.1,563.5
+TX,Los Ebanos,430.5,562.8
 TX,Los Fresnos,451.3,567.6
 TX,Los Huisaches,413.0,526.4
-TX,Los Indios,446.4,568.0
+TX,Los Indios,446.5,567.5
 TX,Los Lobos,418.2,555.1
-TX,Los Minerales,410.0,531.8
+TX,Los Minerales,410.2,531.6
 TX,Los Nopalitos,418.1,532.9
 TX,Los Veteranos I,417.8,532.6
 TX,Los Veteranos II,413.5,529.4
@@ -27769,7 +27769,7 @@ TX,Mertens,464.3,436.0
 TX,Mertzon,390.3,451.4
 TX,Mesquite,470.2,420.6
 TX,Mexia,471.9,444.5
-TX,Mi Ranchito Estate,423.8,560.1
+TX,Mi Ranchito Estate,423.9,559.7
 TX,Miami,398.4,353.4
 TX,Midfield,476.9,505.0
 TX,Midland,367.1,433.2
@@ -27804,7 +27804,7 @@ TX,Montgomery,486.8,472.9
 TX,Moody,455.4,452.6
 TX,Moore,422.9,501.4
 TX,Moore Station,488.9,433.2
-TX,Moraida,421.7,559.4
+TX,Moraida,421.8,559.0
 TX,Morales-Sanchez,419.3,551.2
 TX,Moran,422.3,424.3
 TX,Morgan,451.0,436.8
@@ -27868,7 +27868,7 @@ TX,Newcastle,430.6,410.2
 TX,Newton,523.4,462.3
 TX,Neylandville,480.6,410.9
 TX,Niederwald,447.1,481.4
-TX,Nina,429.6,562.6
+TX,Nina,429.6,562.3
 TX,Nixon,447.0,497.4
 TX,Nocona,449.4,397.6
 TX,Nocona Hills,451.2,396.2
@@ -27876,7 +27876,7 @@ TX,Nolanville,450.7,457.7
 TX,Nome,511.2,480.7
 TX,Noonday,492.2,432.0
 TX,Nordheim,449.8,505.0
-TX,Normandy,392.1,503.4
+TX,Normandy,392.3,503.3
 TX,Normangee,478.8,458.9
 TX,Normanna,446.4,513.7
 TX,North Alamo,438.6,564.2
@@ -27930,7 +27930,7 @@ TX,Paducah,402.8,391.0
 TX,Paige,459.5,476.8
 TX,Paint Rock,407.4,446.7
 TX,Paisano Park,444.7,523.2
-TX,Palacios,476.6,510.0
+TX,Palacios,476.6,509.6
 TX,Palestine,487.6,442.8
 TX,Palisades,377.0,366.3
 TX,Palm Valley,446.0,564.6
@@ -27938,7 +27938,7 @@ TX,Palmer,468.6,428.0
 TX,Palmhurst,435.2,563.2
 TX,Palmview,433.5,563.7
 TX,Palmview South,433.6,564.3
-TX,Palo Blanco,423.2,560.0
+TX,Palo Blanco,423.4,559.5
 TX,Palo Pinto,438.5,419.7
 TX,Paloma Creek,463.7,410.2
 TX,Paloma Creek South,463.8,410.5
@@ -27963,7 +27963,7 @@ TX,Pecan Grove,486.2,489.9
 TX,Pecan Hill,466.5,426.5
 TX,Pecan Plantation,450.3,429.1
 TX,Pelican Bay,453.0,416.7
-TX,Pena,421.9,559.4
+TX,Pena,422.0,559.1
 TX,Pendleton,456.0,455.0
 TX,Penelope,463.6,440.5
 TX,Penitas,432.4,563.1
@@ -28006,13 +28006,13 @@ TX,Point Venture,443.0,472.7
 TX,Ponder,457.1,411.3
 TX,Port Aransas,459.7,529.4
 TX,Port Arthur,521.3,483.4
-TX,Port Isabel,456.1,567.9
+TX,Port Isabel,455.8,568.2
 TX,Port Lavaca,468.8,512.0
-TX,Port Mansfield,452.4,556.7
+TX,Port Mansfield,452.0,556.6
 TX,Port Neches,520.0,482.1
-TX,Port O'Connor,472.9,515.8
+TX,Port O'Connor,472.6,515.5
 TX,Porter Heights,493.9,478.3
-TX,Portland,455.0,527.9
+TX,Portland,454.9,527.7
 TX,Post,382.2,408.2
 TX,Post Oak Bend,475.0,423.2
 TX,Poteet,431.3,502.1
@@ -28026,14 +28026,14 @@ TX,Prado Verde,283.3,428.8
 TX,Praesel,461.5,467.6
 TX,Prairie View,481.4,479.8
 TX,Premont,439.2,539.2
-TX,Presidio,320.5,484.2
-TX,Preston,468.8,396.0
+TX,Presidio,320.7,483.9
+TX,Preston,469.0,396.5
 TX,Priddy,434.0,443.9
 TX,Primera,446.1,564.2
 TX,Princeton,471.4,410.8
 TX,Proctor,435.7,437.1
 TX,Progreso,441.9,566.9
-TX,Progreso Lakes,441.8,567.5
+TX,Progreso Lakes,441.8,567.1
 TX,Prosper,466.0,409.8
 TX,Providence Village,463.4,409.9
 TX,Pueblo East,418.4,531.7
@@ -28044,8 +28044,8 @@ TX,Quail,402.3,370.9
 TX,Quail Creek,460.0,508.4
 TX,Quanah,413.2,385.2
 TX,Queen City,514.8,411.6
-TX,Quemado,391.6,502.6
-TX,Quesada,429.5,562.6
+TX,Quemado,391.8,502.5
+TX,Quesada,429.5,562.3
 TX,Quinlan,478.5,417.3
 TX,Quintana,494.0,505.5
 TX,Quitaque,389.5,382.5
@@ -28055,7 +28055,7 @@ TX,Rafael Pena,428.4,562.1
 TX,Ralls,382.7,397.4
 TX,Ramireno,414.2,546.1
 TX,Ramirez-Perez,427.3,561.7
-TX,Ramos,420.8,559.1
+TX,Ramos,420.9,558.8
 TX,Ranchette Estates,444.8,558.5
 TX,Ranchitos del Norte,423.8,559.8
 TX,Ranchitos East,414.8,535.6
@@ -28078,7 +28078,7 @@ TX,Red Lick,514.5,404.2
 TX,Red Oak,466.4,426.1
 TX,Red Rock,453.4,482.3
 TX,Redfield,506.0,444.4
-TX,Redford,323.9,487.3
+TX,Redford,324.2,487.0
 TX,Redland,505.1,450.4
 TX,Redwater,512.9,407.0
 TX,Redwood,444.4,485.4
@@ -28123,14 +28123,14 @@ TX,Rochelle,420.6,453.6
 TX,Rochester,410.3,406.8
 TX,Rock Island,470.1,492.3
 TX,Rockdale,461.9,467.0
-TX,Rockport,460.5,524.5
+TX,Rockport,460.1,524.3
 TX,Rocksprings,400.6,479.4
 TX,Rockwall,472.9,417.1
 TX,Rockwell Place,375.1,366.7
 TX,Rocky Mound,499.0,414.7
 TX,Rogers,457.8,460.9
 TX,Rollingwood,447.0,475.2
-TX,Roma,421.2,559.4
+TX,Roma,421.4,558.9
 TX,Roman Forest,497.2,477.5
 TX,Ropesville,368.3,402.4
 TX,Rosanky,455.9,482.5
@@ -28180,7 +28180,7 @@ TX,San Fernando,424.6,559.7
 TX,San Isidro,432.4,553.2
 TX,San Juan,438.1,564.8
 TX,San Leanna,446.3,478.1
-TX,San Leon,501.4,492.7
+TX,San Leon,501.2,492.9
 TX,San Marcos,444.0,484.0
 TX,San Patricio,446.4,525.6
 TX,San Pedro,449.3,569.5
@@ -28191,7 +28191,7 @@ TX,Sanctuary,451.7,416.9
 TX,Sand Springs,381.7,428.4
 TX,Sanderson,358.9,474.1
 TX,Sandia,444.5,524.8
-TX,Sandoval,419.7,559.3
+TX,Sandoval,419.9,558.5
 TX,Sandy Hollow-Escondidas,445.8,526.9
 TX,Sandy Oaks,434.5,499.0
 TX,Sandy Point,491.0,494.8
@@ -28202,11 +28202,11 @@ TX,Santa Anna,418.8,442.1
 TX,Santa Clara,439.5,490.1
 TX,Santa Cruz,425.9,560.9
 TX,Santa Fe,498.3,495.0
-TX,Santa Maria,444.1,567.4
+TX,Santa Maria,444.1,567.1
 TX,Santa Monica,449.4,561.1
 TX,Santa Rita Ranch,446.3,466.6
 TX,Santa Rosa,444.6,563.5
-TX,Santel,423.6,560.3
+TX,Santel,423.8,559.6
 TX,Santo,440.0,423.5
 TX,Sargent,488.0,508.1
 TX,Sarita,445.6,542.3
@@ -28219,7 +28219,7 @@ TX,Scissors,440.1,566.1
 TX,Scotland,435.9,400.3
 TX,Scottsville,513.5,425.2
 TX,Scurry,473.8,426.1
-TX,Seabrook,500.4,490.5
+TX,Seabrook,500.0,490.6
 TX,Seadrift,467.1,516.5
 TX,Seagoville,470.9,422.9
 TX,Seagraves,360.1,412.3
@@ -28248,7 +28248,7 @@ TX,Shenandoah,491.4,477.5
 TX,Shepherd,499.8,470.8
 TX,Sheridan,468.1,492.3
 TX,Sherman,469.5,401.3
-TX,Sherwood Shores,466.1,396.4
+TX,Sherwood Shores,466.0,396.7
 TX,Shiner,458.4,493.9
 TX,Shiro,483.1,468.3
 TX,Shoreacres,499.8,489.9
@@ -28282,7 +28282,7 @@ TX,South Houston,495.8,489.0
 TX,South La Paloma,442.5,527.4
 TX,South Mountain,449.5,449.5
 TX,South Padre Island,457.7,566.6
-TX,South Point,453.4,572.0
+TX,South Point,452.7,572.0
 TX,South Toledo Bend,526.1,455.4
 TX,Southlake,459.8,416.1
 TX,Southmayd,468.0,401.4
@@ -28323,7 +28323,7 @@ TX,Streetman,474.8,440.0
 TX,Study Butte,335.9,490.5
 TX,Sudan,362.6,387.5
 TX,Sugar Land,488.0,490.6
-TX,Sullivan City,429.9,562.7
+TX,Sullivan City,430.0,562.5
 TX,Sulphur Springs,488.0,412.1
 TX,Summerfield,363.8,372.6
 TX,Sun Valley,491.3,400.4
@@ -28375,7 +28375,7 @@ TX,Three Rivers,438.7,514.9
 TX,Throckmorton,422.6,410.2
 TX,Thunderbird Bay,424.6,438.5
 TX,Tierra Bonita,444.6,563.1
-TX,Tierra Dorada,422.8,559.7
+TX,Tierra Dorada,422.9,559.3
 TX,Tierra Grande,450.2,531.9
 TX,Tierra Verde,447.4,530.5
 TX,Tiki Island,501.9,497.0
@@ -29016,7 +29016,7 @@ VA,Chesapeake,823.9,298.1
 VA,Chester,801.5,287.3
 VA,Chester Gap,783.3,256.9
 VA,Chilhowie,730.6,312.1
-VA,Chincoteague,834.0,267.0
+VA,Chincoteague,834.2,267.1
 VA,Christiansburg,751.5,301.2
 VA,Churchville,768.6,273.8
 VA,Claremont,810.0,288.5
@@ -29062,7 +29062,7 @@ VA,Danville,770.8,310.5
 VA,Dayton,771.5,268.9
 VA,Deep Creek,828.2,272.6
 VA,Deerfield,764.4,275.2
-VA,Deltaville,819.4,279.2
+VA,Deltaville,819.0,278.9
 VA,Dendron,811.6,292.5
 VA,Difficult Run,796.2,253.1
 VA,Dillwyn,783.2,286.6
@@ -29109,7 +29109,7 @@ VA,Fairlawn,749.1,301.5
 VA,Fairview,786.1,302.1
 VA,Fairview Beach,800.5,265.4
 VA,Falls Church,799.2,253.0
-VA,Falls Mills,735.5,300.6
+VA,Falls Mills,735.3,300.9
 VA,Falmouth,796.7,266.1
 VA,Fancy Gap,748.1,312.3
 VA,Farmville,785.2,291.7
@@ -29125,7 +29125,7 @@ VA,Forest,769.9,292.7
 VA,Forestville,774.0,261.7
 VA,Fort Belvoir,800.4,256.7
 VA,Fort Chiswell,742.7,307.0
-VA,Fort Hunt,801.8,255.9
+VA,Fort Hunt,801.3,255.8
 VA,Fort Lee,803.7,289.5
 VA,Franconia,800.0,255.5
 VA,Franklin,812.9,300.2
@@ -29148,7 +29148,7 @@ VA,Glen Lyn,742.8,297.3
 VA,Glen Wilton,759.2,286.0
 VA,Glenvar,755.8,297.4
 VA,Gloucester Courthouse,816.8,283.1
-VA,Gloucester Point,817.8,285.9
+VA,Gloucester Point,817.9,285.5
 VA,Goochland,792.2,281.3
 VA,Goose Creek Village,792.6,250.7
 VA,Gordonsville,785.4,272.7
@@ -29165,7 +29165,7 @@ VA,Gretna,770.1,302.3
 VA,Grottoes,774.0,271.7
 VA,Groveton,800.9,255.7
 VA,Grundy,722.0,302.9
-VA,Gwynn,820.4,280.2
+VA,Gwynn,820.4,280.6
 VA,Halifax,778.4,305.1
 VA,Hallwood,830.4,269.4
 VA,Hamilton,789.9,249.2
@@ -29205,7 +29205,7 @@ VA,Independent Hill,796.0,259.1
 VA,Innovation,793.9,257.0
 VA,Innsbrook,797.8,281.2
 VA,Iron Gate,759.5,285.0
-VA,Irvington,817.4,277.1
+VA,Irvington,817.4,276.9
 VA,Ivanhoe,742.8,309.3
 VA,Ivor,812.7,295.3
 VA,Ivy,778.7,275.6
@@ -29282,7 +29282,7 @@ VA,Mappsville,830.9,270.1
 VA,Marion,733.4,310.9
 VA,Marshall,788.2,255.6
 VA,Martinsville,762.5,309.6
-VA,Mason Neck,800.3,258.1
+VA,Mason Neck,799.9,258.4
 VA,Massanetta Springs,773.4,269.0
 VA,Massanutten,775.1,268.3
 VA,Mathews,819.9,281.5
@@ -29344,7 +29344,7 @@ VA,New Market,775.1,263.1
 VA,New River,748.2,301.6
 VA,Newington,799.4,256.4
 VA,Newington Forest,798.8,256.4
-VA,Newport News,818.3,290.2
+VA,Newport News,818.6,290.1
 VA,Newsoms,810.0,302.1
 VA,Nickelsville,718.1,315.1
 VA,Nokesville,793.3,258.5
@@ -29385,8 +29385,8 @@ VA,Phenix,780.2,297.5
 VA,Pimmit Hills,798.6,252.5
 VA,Piney Mountain,781.5,272.8
 VA,Plum Creek,749.8,301.7
-VA,Pocahontas,734.7,300.0
-VA,Poquoson,821.8,288.3
+VA,Pocahontas,734.5,300.4
+VA,Poquoson,820.9,289.5
 VA,Port Republic,774.2,271.4
 VA,Port Royal,801.9,268.8
 VA,Portsmouth,822.1,294.3
@@ -29399,7 +29399,7 @@ VA,Prince George,804.9,289.6
 VA,Pulaski,745.7,304.1
 VA,Pungoteague,827.7,275.6
 VA,Purcellville,789.1,249.3
-VA,Quantico,798.8,261.3
+VA,Quantico,798.4,261.3
 VA,Quantico Base,798.4,261.4
 VA,Quicksburg,774.8,262.1
 VA,Quinby,829.4,277.0
@@ -29428,7 +29428,7 @@ VA,Rose Hill,800.7,254.9
 VA,Round Hill,788.2,249.6
 VA,Ruckersville,781.8,271.3
 VA,Rural Retreat,737.3,308.7
-VA,Rushmere,815.8,290.8
+VA,Rushmere,815.6,290.8
 VA,Rustburg,773.4,294.4
 VA,Salem,756.9,297.0
 VA,Saltville,729.0,310.7
@@ -29453,7 +29453,7 @@ VA,Shawneeland,778.3,250.0
 VA,Shawsville,754.0,300.1
 VA,Shenandoah,776.7,266.3
 VA,Shenandoah Farms,784.2,253.9
-VA,Shenandoah Retreat,786.6,249.7
+VA,Shenandoah Retreat,786.5,249.9
 VA,Shenandoah Shores,782.7,254.5
 VA,Sherando,773.2,278.2
 VA,Shipman,776.0,283.6
@@ -29499,7 +29499,7 @@ VA,Sully Square,794.8,253.0
 VA,Surry,812.7,290.0
 VA,Sussex,806.2,296.3
 VA,Tacoma,715.5,311.3
-VA,Tangier,823.8,272.0
+VA,Tangier,822.8,269.7
 VA,Tappahannock,808.7,273.2
 VA,Tasley,829.4,273.4
 VA,Tazewell,732.6,304.4
@@ -29545,13 +29545,13 @@ VA,Wattsville,831.8,267.9
 VA,Waverly,808.7,293.1
 VA,Waynesboro,773.6,276.4
 VA,Weber City,715.9,318.2
-VA,Weems,816.8,277.4
+VA,Weems,816.9,276.8
 VA,West Falls Church,799.0,253.5
 VA,West Point,811.4,280.8
 VA,West Springfield,798.8,255.6
 VA,Westlake Corner,763.7,299.6
 VA,Weyers Cave,772.5,271.8
-VA,White Stone,817.9,277.3
+VA,White Stone,818.0,277.0
 VA,Whitesville,829.6,271.8
 VA,Williamsburg,814.2,286.6
 VA,Willis Wharf,828.4,278.0
@@ -29574,13 +29574,13 @@ VT,Albany,846.6,109.3
 VT,Alburgh,831.3,107.5
 VT,Algiers,854.0,151.1
 VT,Arlington,843.8,147.8
-VT,Ascutney,853.5,137.7
+VT,Ascutney,853.2,137.7
 VT,Bakersfield,839.9,109.8
 VT,Barnet,854.1,117.3
 VT,Barre,847.6,121.2
 VT,Barton,849.6,108.2
-VT,Beecher Falls,858.6,99.9
-VT,Bellows Falls,854.2,143.8
+VT,Beecher Falls,857.8,100.3
+VT,Bellows Falls,854.3,144.0
 VT,Bennington,844.3,152.3
 VT,Benson,838.0,134.7
 VT,Bethel,847.7,129.6
@@ -29588,12 +29588,12 @@ VT,Bolton,840.9,118.9
 VT,Bolton Valley,841.1,117.8
 VT,Bradford,854.6,124.0
 VT,Brandon,840.7,131.7
-VT,Brattleboro,854.1,150.1
+VT,Brattleboro,853.9,150.3
 VT,Bristol,839.0,124.7
 VT,Burlington,834.9,117.7
 VT,Cabot,849.4,116.0
 VT,Cambridge,839.5,113.2
-VT,Canaan,858.0,100.1
+VT,Canaan,857.7,100.2
 VT,Castleton,840.4,136.5
 VT,Castleton Four Corners,839.9,136.5
 VT,Cavendish,850.5,139.0
@@ -29683,7 +29683,7 @@ VT,Pawlet,842.0,142.2
 VT,Peacham,852.0,117.1
 VT,Pittsford,842.3,133.6
 VT,Plainfield,848.3,119.1
-VT,Poultney,840.0,138.6
+VT,Poultney,840.3,138.5
 VT,Pownal,844.1,154.8
 VT,Pownal Center,844.1,154.0
 VT,Proctor,842.2,134.4
@@ -29733,7 +29733,7 @@ VT,West Brattleboro,853.5,150.4
 VT,West Burke,853.2,109.6
 VT,West Charlotte,835.6,121.7
 VT,West Dummerston,852.9,148.8
-VT,West Pawlet,840.7,142.1
+VT,West Pawlet,841.0,142.0
 VT,West Rutland,842.6,136.1
 VT,West Woodstock,850.1,134.0
 VT,Westford,837.7,114.4
@@ -29744,7 +29744,7 @@ VT,Whitingham,849.4,152.9
 VT,Wilder,853.3,131.6
 VT,Williamstown,847.4,123.1
 VT,Wilmington,849.3,151.1
-VT,Windsor,853.3,136.2
+VT,Windsor,853.0,136.2
 VT,Winooski,835.7,117.4
 VT,Wolcott,846.3,113.5
 VT,Woodstock,850.7,133.5
@@ -29761,7 +29761,7 @@ WA,Alderton,89.9,46.7
 WA,Alderwood Manor,93.0,33.1
 WA,Alger,96.9,16.1
 WA,Algona,90.1,44.4
-WA,Allyn,82.2,39.7
+WA,Allyn,82.6,39.9
 WA,Almira,140.6,48.0
 WA,Altoona,63.9,59.9
 WA,Amanda Park,67.0,33.7
@@ -29772,12 +29772,12 @@ WA,Anatone,159.3,87.9
 WA,Anderson Island,83.1,45.4
 WA,Arlington,96.9,26.1
 WA,Arlington Heights,98.3,25.5
-WA,Artondale,84.4,42.2
+WA,Artondale,84.8,42.6
 WA,Ashford,90.4,56.4
 WA,Asotin,161.6,84.0
 WA,Auburn,90.8,44.1
 WA,Bainbridge Island,88.5,35.7
-WA,Bangor Base,86.1,33.2
+WA,Bangor Base,85.7,32.9
 WA,Banks Lake South,135.3,48.5
 WA,Barberton,75.4,76.0
 WA,Baring,104.1,37.2
@@ -29785,7 +29785,7 @@ WA,Barney's Junction,156.9,31.5
 WA,Barstow,157.7,28.2
 WA,Basin City,131.5,71.1
 WA,Battle Ground,76.8,74.9
-WA,Bay Center,61.3,51.0
+WA,Bay Center,62.3,51.3
 WA,Bay View,94.3,18.2
 WA,Beacon Hill,73.6,65.0
 WA,Beaux Arts Village,92.6,38.2
@@ -29801,7 +29801,7 @@ WA,Big Lake,96.8,21.0
 WA,Bingen,92.3,80.7
 WA,Birch Bay,92.9,7.9
 WA,Black Diamond,93.7,44.6
-WA,Blaine,93.2,6.5
+WA,Blaine,93.3,6.9
 WA,Blyn,84.0,26.0
 WA,Bonney Lake,90.9,46.5
 WA,Bothell,93.7,34.2
@@ -29816,7 +29816,7 @@ WA,Brewster,130.7,36.6
 WA,Bridgeport,131.5,39.1
 WA,Brier,92.8,33.5
 WA,Brinnon,82.8,33.5
-WA,Browns Point,87.5,43.1
+WA,Browns Point,87.2,42.6
 WA,Brush Prairie,76.4,76.0
 WA,Bryant,96.9,24.4
 WA,Bryn Mawr-Skyway,91.5,39.9
@@ -29865,7 +29865,7 @@ WA,Cliffdell,105.6,56.8
 WA,Clinton,92.7,29.6
 WA,Clover Creek,87.4,46.7
 WA,Clyde Hill,92.6,37.1
-WA,Cohassett Beach,60.6,45.2
+WA,Cohassett Beach,62.7,45.3
 WA,Colfax,159.9,70.8
 WA,College Place,140.0,85.5
 WA,Colton,161.4,78.7
@@ -29874,7 +29874,7 @@ WA,Conconully,133.3,27.1
 WA,Concrete,104.6,20.0
 WA,Connell,136.5,70.7
 WA,Conway,95.0,21.8
-WA,Copalis Beach,61.4,39.5
+WA,Copalis Beach,61.6,39.5
 WA,Cosmopolis,66.0,44.8
 WA,Cottage Lake,95.4,35.3
 WA,Cougar,81.9,70.2
@@ -29891,10 +29891,10 @@ WA,Curlew,151.4,24.4
 WA,Curlew Lake,149.8,27.3
 WA,Cusick,167.6,40.5
 WA,Custer,94.3,8.5
-WA,Dallesport,96.3,83.7
-WA,Danville,153.4,22.3
+WA,Dallesport,96.7,83.7
+WA,Danville,153.3,22.7
 WA,Darrington,105.1,26.4
-WA,Dash Point,87.9,43.0
+WA,Dash Point,88.4,43.5
 WA,Davenport,151.7,51.9
 WA,Dayton,147.6,81.1
 WA,Deep River,63.2,57.7
@@ -29907,17 +29907,17 @@ WA,Dixie,144.1,84.3
 WA,Dollars Corner,75.9,74.6
 WA,Donald,112.6,68.8
 WA,Duluth,75.3,74.3
-WA,DuPont,83.3,46.4
+WA,DuPont,83.7,46.8
 WA,Duvall,96.8,35.9
 WA,East Cathlamet,67.3,62.5
-WA,East Port Orchard,86.2,37.8
+WA,East Port Orchard,85.8,37.5
 WA,East Renton Highlands,93.6,41.0
 WA,East Wenatchee,119.4,49.3
 WA,Eastmont,94.8,31.7
 WA,Easton,105.7,49.8
 WA,Eatonville,87.4,53.0
 WA,Edgewood,89.3,45.3
-WA,Edison,95.1,16.6
+WA,Edison,95.0,16.8
 WA,Edmonds,91.8,32.7
 WA,Elbe,87.8,55.5
 WA,Electric City,140.1,43.3
@@ -29947,14 +29947,14 @@ WA,Ferndale,94.7,10.0
 WA,Fife,88.4,45.0
 WA,Fife Heights,88.6,44.4
 WA,Finley,130.9,80.4
-WA,Fircrest,85.9,44.3
+WA,Fircrest,85.4,44.3
 WA,Five Corners,75.8,76.7
 WA,Fobes Hill,95.7,31.0
 WA,Fords Prairie,75.9,52.4
 WA,Forks,63.5,21.2
 WA,Fort Lewis,84.4,47.0
 WA,Four Lakes,159.6,55.9
-WA,Fox Island,84.2,43.2
+WA,Fox Island,84.6,43.1
 WA,Frederickson,87.3,47.9
 WA,Freeland,90.3,27.4
 WA,Friday Harbor,86.6,14.9
@@ -29981,19 +29981,19 @@ WA,Grays River,65.1,58.0
 WA,Green Bluff,165.3,51.4
 WA,Greenwater,98.3,49.8
 WA,Hamilton,101.1,19.3
-WA,Hansville,89.2,29.8
+WA,Hansville,89.2,30.1
 WA,Harrah,110.0,69.7
 WA,Harrington,149.4,55.3
 WA,Hartline,138.0,47.8
-WA,Hat Island,93.5,28.7
+WA,Hat Island,93.0,29.0
 WA,Hatton,137.3,68.3
 WA,Hazel Dell,74.6,76.5
-WA,Herron Island,81.6,42.2
+WA,Herron Island,81.3,42.2
 WA,High Bridge,96.4,34.4
 WA,Hobart,94.4,42.6
 WA,Hockinson,77.4,76.2
-WA,Hogans Corner,60.9,41.3
-WA,Home,82.2,42.3
+WA,Hogans Corner,61.3,41.5
+WA,Home,82.6,42.6
 WA,Hoodsport,77.8,38.1
 WA,Hoquiam,64.2,43.7
 WA,Humptulips,64.8,38.0
@@ -30015,7 +30015,7 @@ WA,Kendall,101.5,10.5
 WA,Kenmore,92.9,34.5
 WA,Kennewick,129.1,79.3
 WA,Kent,91.3,42.3
-WA,Ketron Island,83.8,45.4
+WA,Ketron Island,83.5,44.9
 WA,Kettle Falls,157.8,32.1
 WA,Key Center,83.1,41.2
 WA,Keyport,87.2,34.0
@@ -30053,7 +30053,7 @@ WA,Lamont,153.1,62.5
 WA,Langley,92.4,27.8
 WA,Larch Way,93.4,32.5
 WA,Latah,164.5,63.3
-WA,Laurier,157.5,23.2
+WA,Laurier,157.4,23.7
 WA,Leavenworth,114.9,44.1
 WA,Lebam,66.8,54.0
 WA,Lewisville,77.5,74.2
@@ -30061,7 +30061,7 @@ WA,Lexington,73.8,64.6
 WA,Liberty Lake,167.1,55.2
 WA,Lind,141.5,64.9
 WA,Lochsloy,97.7,28.8
-WA,Lofall,87.5,31.6
+WA,Lofall,87.1,31.2
 WA,Long Beach,58.1,56.0
 WA,Longbranch,82.3,43.4
 WA,Longview,72.8,65.3
@@ -30080,7 +30080,7 @@ WA,Malo,150.9,26.1
 WA,Malone,73.1,46.2
 WA,Malott,132.7,32.9
 WA,Maltby,95.3,34.0
-WA,Manchester,87.5,37.6
+WA,Manchester,87.5,37.9
 WA,Mansfield,131.0,43.3
 WA,Manson,123.7,40.0
 WA,Maple Falls,102.1,10.6
@@ -30091,7 +30091,7 @@ WA,Marblemount,109.1,21.1
 WA,Marcus,158.1,30.8
 WA,Marietta-Alderwood,94.7,11.5
 WA,Marine View,130.6,62.4
-WA,Markham,62.6,44.7
+WA,Markham,62.6,45.3
 WA,Marrowstone,88.4,26.8
 WA,Martha Lake,93.7,32.6
 WA,Maryhill,102.1,83.8
@@ -30132,7 +30132,7 @@ WA,Mount Vernon,96.0,20.2
 WA,Mount Vista,75.2,75.4
 WA,Mountlake Terrace,92.4,33.4
 WA,Moxee,113.1,66.9
-WA,Mukilteo,93.1,30.9
+WA,Mukilteo,92.7,30.8
 WA,Naches,109.6,62.4
 WA,Napavine,76.4,56.3
 WA,Naselle,62.2,57.0
@@ -30146,10 +30146,10 @@ WA,Newport,170.3,44.5
 WA,Nile,106.5,59.1
 WA,Nisqually Indian Community,82.3,47.9
 WA,Nooksack,98.9,9.5
-WA,Normandy Park,89.6,40.8
+WA,Normandy Park,90.0,40.8
 WA,North Bend,98.3,42.0
 WA,North Bonneville,84.4,80.2
-WA,North Fort Lewis,84.1,46.3
+WA,North Fort Lewis,84.2,46.7
 WA,North Lynnwood,93.1,32.2
 WA,North Omak,137.1,30.6
 WA,North Puyallup,89.2,46.0
@@ -30160,10 +30160,10 @@ WA,Northwest Stanwood,94.5,23.3
 WA,Oak Harbor,90.7,21.5
 WA,Oakesdale,162.4,66.2
 WA,Oakville,73.1,49.5
-WA,Ocean City,61.3,40.4
+WA,Ocean City,61.7,40.4
 WA,Ocean Park,59.2,53.2
 WA,Ocean Shores,60.7,42.9
-WA,Ocosta,61.8,45.1
+WA,Ocosta,62.5,45.4
 WA,Odessa,142.3,56.9
 WA,Okanogan,134.8,31.8
 WA,Olympia,79.3,46.8
@@ -30177,14 +30177,14 @@ WA,Oso,100.8,24.6
 WA,Othello,132.6,66.1
 WA,Otis Orchards-East Farms,167.6,54.5
 WA,Outlook,116.3,73.1
-WA,Oyehut,60.8,41.7
+WA,Oyehut,61.2,41.9
 WA,Pacific,90.0,44.8
 WA,Pacific Beach,61.5,37.5
 WA,Packwood,94.6,60.9
 WA,Palouse,163.9,71.5
 WA,Parker,111.7,68.0
 WA,Parkland,86.5,46.5
-WA,Parkwood,86.4,37.8
+WA,Parkwood,86.4,38.4
 WA,Pasco,130.3,78.1
 WA,Pataha,154.8,79.3
 WA,Pateros,128.5,37.2
@@ -30194,9 +30194,9 @@ WA,Picnic Point,92.8,31.6
 WA,Pine Grove,149.1,29.0
 WA,Point Roberts,88.8,5.3
 WA,Pomeroy,154.0,79.1
-WA,Port Angeles,78.0,21.8
-WA,Port Angeles East,79.1,22.3
-WA,Port Gamble Tribal Community,89.1,31.2
+WA,Port Angeles,77.8,22.1
+WA,Port Angeles East,78.9,22.7
+WA,Port Gamble Tribal Community,89.4,31.2
 WA,Port Hadlock-Irondale,86.8,26.3
 WA,Port Ludlow,87.5,29.2
 WA,Port Orchard,86.1,37.4
@@ -30215,7 +30215,7 @@ WA,Queets,61.4,30.3
 WA,Qui-nai-elt Village,61.9,36.8
 WA,Quilcene,83.9,29.9
 WA,Quincy,124.7,54.8
-WA,Raft Island,84.3,41.7
+WA,Raft Island,84.0,41.4
 WA,Rainier,81.4,50.8
 WA,Ravensdale,94.5,43.8
 WA,Raymond,64.8,50.6
@@ -30230,7 +30230,7 @@ WA,River Road,82.2,24.2
 WA,Riverbend,98.4,42.5
 WA,Riverpoint,99.1,42.4
 WA,Riverside,136.5,28.9
-WA,Roche Harbor,85.5,12.9
+WA,Roche Harbor,85.5,13.4
 WA,Rochester,75.5,50.7
 WA,Rock Island,121.3,50.7
 WA,Rockford,165.7,59.7
@@ -30240,18 +30240,18 @@ WA,Ronald,107.5,50.3
 WA,Roosevelt,110.8,85.2
 WA,Rosalia,161.0,63.5
 WA,Rosburg,63.8,59.0
-WA,Rosedale,84.9,41.5
+WA,Rosedale,85.0,41.3
 WA,Roslyn,106.1,49.1
 WA,Roy,84.1,49.3
 WA,Royal City,126.3,62.7
-WA,Ruston,86.4,42.9
+WA,Ruston,86.4,43.6
 WA,Ryderwood,73.0,60.2
 WA,Salmon Creek,74.6,75.8
 WA,Sammamish,95.0,38.6
 WA,Santiago,61.6,35.6
 WA,Satsop,70.6,44.6
 WA,Schwana,121.4,63.3
-WA,Seabeck,84.1,34.4
+WA,Seabeck,86.3,33.6
 WA,SeaTac,90.4,40.8
 WA,Seattle,90.7,36.8
 WA,Sedro-Woolley,97.7,18.6
@@ -30272,7 +30272,7 @@ WA,Snohomish,96.2,31.4
 WA,Snoqualmie,97.2,40.4
 WA,Snoqualmie Pass,103.0,45.2
 WA,Soap Lake,130.9,52.8
-WA,South Bend,63.8,50.7
+WA,South Bend,64.1,50.5
 WA,South Cle Elum,108.4,51.6
 WA,South Creek,86.4,49.7
 WA,South Hill,88.6,47.6
@@ -30290,12 +30290,12 @@ WA,Stansberry Lake,84.0,40.3
 WA,Stanwood,94.5,23.7
 WA,Starbuck,146.4,76.2
 WA,Startup,100.8,33.9
-WA,Steilacoom,84.5,45.3
+WA,Steilacoom,85.1,45.9
 WA,Steptoe,160.3,68.5
 WA,Stevenson,85.9,79.4
 WA,Sudden Valley,97.3,13.7
 WA,Sultan,100.0,33.7
-WA,Sumas,100.0,8.3
+WA,Sumas,99.9,8.5
 WA,Summit,87.8,46.3
 WA,Summit View,87.8,47.0
 WA,Summitview,109.4,65.2
@@ -30331,11 +30331,11 @@ WA,Tukwila,90.9,40.2
 WA,Tumwater,78.7,47.7
 WA,Twin Lakes,151.8,38.3
 WA,Twisp,127.0,29.9
-WA,Union,78.3,39.5
+WA,Union,77.6,39.4
 WA,Union Gap,111.6,66.8
 WA,Union Hill-Novelty Hill,95.8,36.8
 WA,Uniontown,161.9,79.4
-WA,University Place,85.4,44.5
+WA,University Place,85.5,44.2
 WA,Upper Elochoman,68.1,61.8
 WA,Vader,74.5,59.9
 WA,Valley,160.5,42.4
@@ -30362,9 +30362,9 @@ WA,Wenatchee,118.9,48.7
 WA,West Clarkston-Highland,161.6,82.4
 WA,West Pasco,129.3,78.1
 WA,West Richland,126.6,76.1
-WA,Westport,60.6,44.6
+WA,Westport,62.1,46.1
 WA,Wheeler,134.1,59.4
-WA,Whidbey Island Station,90.7,20.3
+WA,Whidbey Island Station,90.9,20.5
 WA,White Center,90.0,39.2
 WA,White Salmon,92.2,80.4
 WA,White Swan,107.0,69.6
@@ -30380,7 +30380,7 @@ WA,Wollochet,85.4,43.0
 WA,Woodinville,94.4,34.8
 WA,Woodland,74.5,71.0
 WA,Woods Creek,98.6,33.2
-WA,Woodway,91.1,33.1
+WA,Woodway,91.7,33.1
 WA,Yacolt,79.3,73.6
 WA,Yakima,111.0,65.8
 WA,Yarrow Point,92.7,36.8
@@ -30418,7 +30418,7 @@ WI,Arkdale,577.3,167.3
 WI,Arlington,586.5,182.0
 WI,Arpin,574.3,156.1
 WI,Ashippun,600.4,183.6
-WI,Ashland,558.7,111.9
+WI,Ashland,558.8,112.1
 WI,Ashwaubenon,604.9,155.2
 WI,Athens,572.9,145.2
 WI,Auburndale,574.5,154.2
@@ -30438,7 +30438,7 @@ WI,Barronett,542.5,133.5
 WI,Batavia,607.2,174.7
 WI,Bay City,536.3,156.9
 WI,Bayfield,559.1,106.8
-WI,Bayfront,559.9,111.0
+WI,Bayfront,560.1,111.5
 WI,Bayside,610.3,183.5
 WI,Bear Creek,594.8,154.9
 WI,Beaver Dam,594.9,178.4
@@ -30602,7 +30602,7 @@ WI,Eden,601.9,172.9
 WI,Edgar,574.9,147.6
 WI,Edgerton,592.2,192.6
 WI,Edmund,572.8,191.1
-WI,Egg Harbor,616.0,141.6
+WI,Egg Harbor,616.2,141.7
 WI,Eland,586.7,148.0
 WI,Elcho,586.1,135.5
 WI,Elderon,586.1,149.8
@@ -30677,7 +30677,7 @@ WI,Grand View,555.4,116.8
 WI,Granton,567.5,155.4
 WI,Grantsburg,531.8,130.7
 WI,Gratiot,577.2,199.4
-WI,Green Bay,606.4,154.1
+WI,Green Bay,606.6,154.3
 WI,Green Lake,592.3,170.3
 WI,Green Valley,601.5,148.4
 WI,Greenbush,606.1,170.7
@@ -30722,7 +30722,7 @@ WI,Howard,605.0,153.2
 WI,Howards Grove,610.3,169.2
 WI,Hudson,531.7,148.8
 WI,Humbird,561.0,157.0
-WI,Hurley,568.9,114.4
+WI,Hurley,568.6,114.7
 WI,Hustisford,598.8,180.9
 WI,Hustler,571.6,170.9
 WI,Independence,552.8,162.4
@@ -30903,7 +30903,7 @@ WI,New Post,554.3,127.1
 WI,New Richmond,534.5,145.1
 WI,Newald,593.1,128.3
 WI,Newburg,607.5,178.2
-WI,Niagara,603.8,126.5
+WI,Niagara,603.7,127.2
 WI,Nichols,598.8,153.8
 WI,North Bay,613.0,192.6
 WI,North Fond du Lac,599.8,170.4
@@ -30965,7 +30965,7 @@ WI,Polonia,584.0,154.6
 WI,Poplar,544.8,112.6
 WI,Port Edwards,577.4,160.2
 WI,Port Washington,610.2,179.1
-WI,Port Wing,550.7,108.1
+WI,Port Wing,550.8,108.4
 WI,Portage,584.7,177.4
 WI,Post Lake,587.6,135.5
 WI,Potosi,566.1,197.7
@@ -31211,7 +31211,7 @@ WV,Bartley,727.9,300.5
 WV,Bartow,756.8,268.6
 WV,Bath (Berkeley Springs),778.5,240.3
 WV,Baxter,747.0,247.8
-WV,Bayard,761.0,251.4
+WV,Bayard,761.2,251.5
 WV,Beards Fork,734.1,283.1
 WV,Beaver,736.5,290.2
 WV,Beckley,736.3,289.4
@@ -31234,7 +31234,7 @@ WV,Blacksville,745.2,244.1
 WV,Blennerhassett,723.2,258.0
 WV,Bluefield,737.2,300.7
 WV,Bluewell,736.2,299.7
-WV,Boaz,725.2,255.1
+WV,Boaz,725.5,255.3
 WV,Bolivar,787.7,245.3
 WV,Bolt,731.9,290.3
 WV,Boomer,733.0,281.4
@@ -31261,7 +31261,7 @@ WV,Camden-on-Gauley,743.7,274.7
 WV,Cameron,738.9,242.6
 WV,Capon Bridge,776.4,247.9
 WV,Carolina,745.1,249.5
-WV,Carpendale,769.2,241.9
+WV,Carpendale,769.8,242.9
 WV,Cass,755.1,272.2
 WV,Cassville,747.8,244.5
 WV,Cedar Grove,730.0,280.2
@@ -31276,7 +31276,7 @@ WV,Chauncey,722.3,291.7
 WV,Cheat Lake,751.5,244.2
 WV,Chelyan,729.2,280.9
 WV,Chesapeake,728.3,280.4
-WV,Chester,736.2,225.4
+WV,Chester,736.3,225.6
 WV,Clarksburg,744.4,254.3
 WV,Clay,735.1,274.0
 WV,Clearview,735.8,236.1
@@ -31342,7 +31342,7 @@ WV,Fort Ashby,770.0,244.8
 WV,Fort Gay,710.7,285.3
 WV,Frank,756.4,268.6
 WV,Franklin,764.0,265.1
-WV,Friendly,731.8,250.8
+WV,Friendly,732.2,251.0
 WV,Gallipolis Ferry,715.2,270.0
 WV,Galloway,748.4,254.4
 WV,Garten,736.8,283.4
@@ -31377,7 +31377,7 @@ WV,Hansford,730.7,280.5
 WV,Harman,759.7,259.6
 WV,Harpers Ferry,787.8,245.3
 WV,Harrisville,733.1,257.4
-WV,Hartford City,718.1,264.6
+WV,Hartford City,718.0,264.8
 WV,Harts,718.8,285.8
 WV,Hedgesville,782.7,241.1
 WV,Helen,734.1,292.7
@@ -31443,7 +31443,7 @@ WV,Mannington,743.8,248.6
 WV,Marlinton,752.9,276.5
 WV,Marmet,727.6,280.0
 WV,Martinsburg,783.3,243.1
-WV,Mason,717.3,264.2
+WV,Mason,717.2,264.6
 WV,Masontown,752.7,246.6
 WV,Matewan,719.7,295.3
 WV,Matheny,729.2,292.9
@@ -31473,12 +31473,12 @@ WV,Mullens,733.1,294.1
 WV,Neibert,723.1,291.1
 WV,Nettie,742.5,278.3
 WV,New Cumberland,735.6,227.4
-WV,New Haven,718.5,264.7
+WV,New Haven,718.4,265.0
 WV,New Martinsville,734.7,247.4
 WV,New Richmond,731.4,294.6
 WV,Newark,727.8,260.3
 WV,Newburg,752.4,250.3
-WV,Newell,735.6,225.4
+WV,Newell,735.8,225.8
 WV,Nitro,723.1,277.0
 WV,North Hills,725.1,256.4
 WV,Northfork,732.9,297.8
@@ -31489,7 +31489,7 @@ WV,Oakvale,741.0,298.5
 WV,Oceana,728.5,292.3
 WV,Omar,722.0,291.9
 WV,Osage,748.9,244.8
-WV,Paden City,733.6,248.5
+WV,Paden City,733.7,248.8
 WV,Page,733.4,283.5
 WV,Pageton,732.5,299.2
 WV,Parcoal,747.2,272.1
@@ -31505,7 +31505,7 @@ WV,Petersburg,766.1,256.8
 WV,Peterstown,743.8,296.6
 WV,Philippi,750.1,256.1
 WV,Pickens,749.1,267.4
-WV,Piedmont,765.5,246.0
+WV,Piedmont,765.4,246.5
 WV,Pinch,728.7,276.3
 WV,Pine Grove,737.9,248.7
 WV,Pineville,730.5,294.5
@@ -31537,7 +31537,7 @@ WV,Reedy,727.9,265.3
 WV,Reynoldsville,743.0,254.0
 WV,Rhodell,734.4,293.3
 WV,Richwood,745.3,277.8
-WV,Ridgeley,769.4,241.6
+WV,Ridgeley,769.8,242.9
 WV,Ripley,723.4,267.7
 WV,Rivesville,747.4,247.9
 WV,Robinette,725.6,290.7
@@ -31560,7 +31560,7 @@ WV,Shepherdstown,786.3,243.1
 WV,Shinnston,745.0,251.4
 WV,Shrewsbury,729.5,280.6
 WV,Sissonville,725.7,274.6
-WV,Sistersville,732.7,249.7
+WV,Sistersville,732.9,249.8
 WV,Smithers,732.6,281.1
 WV,Smithfield,740.3,249.9
 WV,Sophia,734.9,291.0
@@ -31601,7 +31601,7 @@ WV,Wallace,741.7,251.6
 WV,War,729.0,300.9
 WV,Wardensville,774.7,253.3
 WV,Washington,722.8,258.3
-WV,Waverly,727.1,255.6
+WV,Waverly,727.3,255.9
 WV,Wayne,712.9,282.6
 WV,Weirton,736.9,229.9
 WV,Welch,730.1,298.1
@@ -31619,9 +31619,9 @@ WV,White Hall,746.8,250.5
 WV,White Sulphur Springs,750.8,286.4
 WV,Whitesville,729.2,285.8
 WV,Whitmer,759.8,262.0
-WV,Wiley Ford,769.7,242.1
+WV,Wiley Ford,769.7,242.9
 WV,Williamson,717.6,294.4
-WV,Williamstown,725.7,254.4
+WV,Williamstown,725.9,254.8
 WV,Windsor Heights,736.0,234.9
 WV,Winfield,721.4,274.7
 WV,Wolf Summit,742.7,254.3
