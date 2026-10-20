@@ -7,11 +7,36 @@ body {
   color: #222;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
+/* The header is a "grid": brand | nav | counter in one row on wide screens.
+   display: contents lets the brand and counter inside .header-top take part
+   in that grid as if the wrapper weren't there. */
+.site-header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
+  gap: 0.5rem 1.5rem;
   border-bottom: 1px solid #ddd;
+  padding: 0.5rem 0;
+}
+
+.header-top {
+  display: contents;
+}
+
+.site-nav {
+  grid-column: 2;
+  grid-row: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+}
+
+/* Form fields use 16px text everywhere: smaller text makes iPhone Safari zoom in. */
+input,
+select,
+textarea,
+button {
+  font-size: 16px;
 }
 
 .brand {
@@ -23,6 +48,9 @@ header {
 .progress {
   font-size: 1.25rem;
   font-weight: bold;
+  white-space: nowrap;
+  margin: 0;
+  grid-column: 3;
 }
 
 .states {
@@ -48,10 +76,6 @@ header {
   color: #2a7a2a;
 }
 
-nav a {
-  margin-right: 1rem;
-}
-
 .visit-form label {
   display: block;
   margin-bottom: 1rem;
@@ -61,7 +85,7 @@ nav a {
 .visit-form input {
   display: block;
   margin-top: 0.25rem;
-  font: inherit;
+  font-family: inherit;
 }
 
 .hint {
@@ -156,6 +180,7 @@ fieldset {
 }
 
 .legend {
+  flex-wrap: wrap;
   list-style: none;
   padding: 0;
   display: flex;
@@ -194,6 +219,8 @@ fieldset {
 
 /* flex: 1 0 13rem = share the free space, never shrink below 13rem. */
 .year {
+  /* border-box: the padding counts inside the width, so two 50% columns really fit. */
+  box-sizing: border-box;
   flex: 1 0 13rem;
   background: #f6f6f6;
   border-radius: 6px;
@@ -245,5 +272,102 @@ fieldset {
 
 .move-form select,
 .move-form button {
-  font: inherit;
+  font-family: inherit;
+}
+
+/* Hints that depend on the screen: see the phone rules below. */
+.touch-hint {
+  display: none;
+}
+
+/* ---- Tablet: 1024px wide or less (an iPad is 820px) ---- */
+@media (max-width: 1024px) {
+  /* Two year columns per row; more years wrap onto the next row. */
+  .years {
+    flex-wrap: wrap;
+    overflow-x: visible;
+  }
+
+  .year {
+    flex: 1 0 calc(50% - 0.5rem);
+  }
+}
+
+/* ---- Phone: 640px wide or less (an iPhone is about 390px) ---- */
+@media (max-width: 640px) {
+  /* Brand and counter on the top row, the nav on its own row below. */
+  .site-header {
+    grid-template-columns: 1fr auto;
+  }
+
+  .site-nav {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+
+  .progress {
+    grid-column: 2;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  /* Two columns of states instead of one long list. */
+  .states {
+    grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr));
+  }
+
+  /* Year columns stack on top of each other: no sideways swiping. */
+  .years {
+    flex-direction: column;
+  }
+
+  .year {
+    flex: none;
+  }
+
+  .state-checkboxes {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Form fields use the full width. */
+  .visit-form input[type="text"],
+  .visit-form input[type="date"],
+  .visit-form select {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .drag-hint {
+    display: none;
+  }
+
+  .touch-hint {
+    display: block;
+  }
+}
+
+/* ---- Touch screens (a finger, not a mouse) ---- */
+@media (pointer: coarse) {
+  /* At least 44px tall, so links and buttons are easy to hit with a finger. */
+  .site-nav a,
+  .states a,
+  .trip-actions a,
+  .year-filter a,
+  .visit-form .checkbox,
+  button,
+  select,
+  input[type="text"],
+  input[type="date"] {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .visit-form select,
+  .visit-form input[type="text"],
+  .visit-form input[type="date"] {
+    display: flex;
+  }
 }

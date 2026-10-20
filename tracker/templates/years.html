@@ -5,7 +5,9 @@
 
 {% block content %}
   <h1>Years</h1>
-  <p class="hint">Drag a trip to another year to move it there, or use its "Move to" menu.</p>
+  {# Both hints are here; style.css shows the drag hint on bigger screens and the tap hint on phones. #}
+  <p class="hint drag-hint">Drag a trip to another year to move it there, or use its “Move to” menu.</p>
+  <p class="hint touch-hint">Tap “Move to” on a trip to move it to another year.</p>
 
   {% if error %}
     <ul class="errors"><li>{{ error }}</li></ul>
