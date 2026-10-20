@@ -1,9 +1,11 @@
 <!doctype html>
 {# The shared layout. Other pages "extend" this file and fill in the blocks. #}
-<html lang="en">
+{# data-theme is only set when you picked a theme; otherwise the CSS follows the device. #}
+<html lang="en"{% if theme %} data-theme="{{ theme }}"{% endif %}>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
   <title>{% block title %}50 States{% endblock %}</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
@@ -14,6 +16,10 @@
     <div class="header-top">
       <a class="brand" href="{{ url_for('main.states') }}">50 States Tracker</a>
       <p class="progress">{{ visited_count }} of {{ total_states }}</p>
+      {# theme.js sets the right label as soon as the page loads. #}
+      <button type="button" class="theme-toggle" aria-label="Switch between light and dark mode">
+        {{ "☀ Light" if theme == "dark" else "☾ Dark" }}
+      </button>
     </div>
     <nav class="site-nav">
       <a href="{{ url_for('main.states') }}">States</a>
@@ -26,5 +32,6 @@
   <main>
     {% block content %}{% endblock %}
   </main>
+  <script src="{{ url_for('static', filename='theme.js') }}"></script>
 </body>
 </html>
