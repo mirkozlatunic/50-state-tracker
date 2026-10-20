@@ -33,12 +33,21 @@ bp = Blueprint("main", __name__)
 
 @bp.app_context_processor
 def inject_progress():
-    """Give every page the numbers for the "N of 50" counter.
+    """Give every page the numbers for the "N of 50" counter, and the saved theme.
 
     A "context processor" adds values to every template automatically, so
     base.html can show the counter without each page passing it in.
+
+    The theme comes from a cookie (a small note the browser keeps and sends
+    back with every request), saved by theme.js. Only "light" and "dark" are
+    accepted; anything else means "no choice saved, follow the device".
     """
-    return {"visited_count": count_visited_states(), "total_states": TOTAL_STATES}
+    saved_theme = request.cookies.get("theme")
+    return {
+        "visited_count": count_visited_states(),
+        "total_states": TOTAL_STATES,
+        "theme": saved_theme if saved_theme in ("light", "dark") else None,
+    }
 
 
 @bp.route("/")

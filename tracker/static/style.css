@@ -1,10 +1,78 @@
 /* A little plain styling. */
+
+/* ---- Colors ----
+   Every color is a "custom property" (a named color, written --name and used
+   with var(--name)). The light set is the default. The dark set is used when
+   you picked dark (data-theme="dark" on <html>), or when your device is in dark
+   mode and you haven't picked light. CSS can't share one block between those
+   two cases, so the dark colors are written twice: keep them the same. */
+:root {
+  color-scheme: light;
+  --bg: #ffffff;
+  --text: #222222;
+  --muted: #666666;
+  --faint: #888888;
+  --border: #dddddd;
+  --link: #0b57d0;
+  --error: #b00020;
+  --column-bg: #f6f6f6;
+  --card-bg: #ffffff;
+  --visited: #2e9e4f;
+  --visited-text: #2a7a2a;
+  --planned: #f28c28;
+  --unvisited: #d9d9d9;
+  --map-stroke: #ffffff;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #16181d;
+  --text: #e6e6e6;
+  --muted: #a3a8b0;
+  --faint: #8a8f98;
+  --border: #30343c;
+  --link: #8ab4f8;
+  --error: #ff7a8a;
+  --column-bg: #1f2229;
+  --card-bg: #282c34;
+  --visited: #3fb866;
+  --visited-text: #62d68a;
+  --planned: #f5a04a;
+  --unvisited: #4a4f58;
+  --map-stroke: #16181d;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #16181d;
+    --text: #e6e6e6;
+    --muted: #a3a8b0;
+    --faint: #8a8f98;
+    --border: #30343c;
+    --link: #8ab4f8;
+    --error: #ff7a8a;
+    --column-bg: #1f2229;
+    --card-bg: #282c34;
+    --visited: #3fb866;
+    --visited-text: #62d68a;
+    --planned: #f5a04a;
+    --unvisited: #4a4f58;
+    --map-stroke: #16181d;
+  }
+}
+
 body {
   font-family: system-ui, sans-serif;
   margin: 0 auto;
   max-width: 48rem;
   padding: 0 1rem 2rem;
-  color: #222;
+  color: var(--text);
+  background: var(--bg);
+}
+
+a {
+  color: var(--link);
 }
 
 /* The header is a "grid": brand | nav | counter in one row on wide screens.
@@ -12,15 +80,28 @@ body {
    in that grid as if the wrapper weren't there. */
 .site-header {
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: auto 1fr auto auto;
   align-items: center;
   gap: 0.5rem 1.5rem;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--border);
   padding: 0.5rem 0;
 }
 
 .header-top {
   display: contents;
+}
+
+/* Each header item gets a fixed spot: brand (1) | nav (2) | counter (3) | theme button (4). */
+.theme-toggle {
+  grid-column: 4;
+  grid-row: 1;
+  background: var(--card-bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.2rem 0.75rem;
+  cursor: pointer;
+  white-space: nowrap;
 }
 
 .site-nav {
@@ -40,6 +121,8 @@ button {
 }
 
 .brand {
+  grid-column: 1;
+  grid-row: 1;
   font-weight: bold;
   color: inherit;
   text-decoration: none;
@@ -51,6 +134,7 @@ button {
   white-space: nowrap;
   margin: 0;
   grid-column: 3;
+  grid-row: 1;
 }
 
 .states {
@@ -64,7 +148,7 @@ button {
 .code {
   display: inline-block;
   width: 2rem;
-  color: #888;
+  color: var(--faint);
 }
 
 .visited {
@@ -73,7 +157,7 @@ button {
 
 .badge {
   font-size: 0.75rem;
-  color: #2a7a2a;
+  color: var(--visited-text);
 }
 
 .visit-form label {
@@ -89,12 +173,12 @@ button {
 }
 
 .hint {
-  color: #666;
+  color: var(--muted);
   font-size: 0.9rem;
 }
 
 .errors {
-  color: #b00020;
+  color: var(--error);
 }
 
 .states a {
@@ -147,17 +231,10 @@ fieldset {
   background: none;
   border: none;
   padding: 0;
-  color: #b00020;
+  color: var(--error);
   text-decoration: underline;
   font: inherit;
   cursor: pointer;
-}
-
-/* The map. --visited, --planned and --unvisited are "custom properties": named colors we can reuse. */
-:root {
-  --visited: #2e9e4f;
-  --planned: #f28c28;
-  --unvisited: #d9d9d9;
 }
 
 .us-map {
@@ -166,7 +243,7 @@ fieldset {
 }
 
 .state {
-  stroke: #fff;
+  stroke: var(--map-stroke);
   stroke-width: 1;
   cursor: pointer;
 }
@@ -222,7 +299,7 @@ fieldset {
   /* border-box: the padding counts inside the width, so two 50% columns really fit. */
   box-sizing: border-box;
   flex: 1 0 13rem;
-  background: #f6f6f6;
+  background: var(--column-bg);
   border-radius: 6px;
   padding: 0 0.75rem 0.5rem;
 }
@@ -238,8 +315,8 @@ fieldset {
 }
 
 .trip-card {
-  background: #fff;
-  border: 1px solid #ddd;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
   border-left: 4px solid var(--planned);
   border-radius: 4px;
   padding: 0.5rem;
@@ -297,7 +374,7 @@ fieldset {
 @media (max-width: 640px) {
   /* Brand and counter on the top row, the nav on its own row below. */
   .site-header {
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr auto auto;
   }
 
   .site-nav {
@@ -305,8 +382,13 @@ fieldset {
     grid-row: 2;
   }
 
+  /* Top row: brand (1) | counter (2) | theme button (3). The nav gets row 2. */
   .progress {
     grid-column: 2;
+  }
+
+  .theme-toggle {
+    grid-column: 3;
   }
 
   h1 {
