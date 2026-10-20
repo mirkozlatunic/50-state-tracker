@@ -19,6 +19,23 @@ def get_states():
     ).fetchall()
 
 
+def add_visit(state_code, visit_date, note):
+    """Save one visit. Expects input that already passed validate_visit().
+
+    The ? marks are placeholders: SQLite fills in the values safely, so text
+    typed into the form can never be run as SQL.
+    """
+    db = get_db()
+    db.execute(
+        """
+        INSERT INTO visits (state_id, visit_date, note)
+        VALUES ((SELECT id FROM states WHERE code = ?), ?, ?)
+        """,
+        (state_code, visit_date, note),
+    )
+    db.commit()
+
+
 def count_visited_states():
     """Return how many different states have at least one visit.
 

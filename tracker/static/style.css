@@ -47,3 +47,28 @@ header {
   font-size: 0.75rem;
   color: #2a7a2a;
 }
+
+nav a {
+  margin-right: 1rem;
+}
+
+.visit-form label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.visit-form select,
+.visit-form input {
+  display: block;
+  margin-top: 0.25rem;
+  font: inherit;
+}
+
+.hint {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.errors {
+  color: #b00020;
+}
