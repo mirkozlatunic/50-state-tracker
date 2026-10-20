@@ -8,7 +8,7 @@
     {% for state in states %}
       <li class="{{ 'visited' if state.visited }}">
         <span class="code">{{ state.code }}</span>
-        {{ state.name }}
+        <a href="{{ url_for('main.state_detail', code=state.code) }}">{{ state.name }}</a>
         {% if state.visited %}<span class="badge">visited</span>{% endif %}
       </li>
     {% endfor %}

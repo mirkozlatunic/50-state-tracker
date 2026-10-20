@@ -19,6 +19,28 @@ def get_states():
     ).fetchall()
 
 
+def get_state(code):
+    """Return one state by its code (any upper/lower case), or None if there's no such state."""
+    return get_db().execute(
+        "SELECT id, code, name FROM states WHERE code = ?", (code.upper(),)
+    ).fetchone()
+
+
+def get_visits_for_state(state_id):
+    """Return one state's visits, newest first.
+
+    If two visits share a date, the one added later comes first (higher id).
+    """
+    return get_db().execute(
+        """
+        SELECT visit_date, note FROM visits
+        WHERE state_id = ?
+        ORDER BY visit_date DESC, id DESC
+        """,
+        (state_id,),
+    ).fetchall()
+
+
 def add_visit(state_code, visit_date, note):
     """Save one visit. Expects input that already passed validate_visit().
 

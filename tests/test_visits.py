@@ -103,9 +103,9 @@ def test_adding_a_visit_saves_it(app, client):
         "/visits/new",
         data={"state": "CA", "visit_date": "2024-07-04", "note": "Big Sur road trip"},
     )
-    # After saving, you're sent back to the states list.
+    # After saving, you land on that state's page to see the new visit.
     assert response.status_code == 302
-    assert response.headers["Location"].endswith("/states")
+    assert response.headers["Location"].endswith("/states/CA")
 
     with app.app_context():
         visit = get_db().execute(

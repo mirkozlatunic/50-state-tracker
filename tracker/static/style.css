@@ -72,3 +72,11 @@ nav a {
 .errors {
   color: #b00020;
 }
+
+.states a {
+  color: inherit;
+}
+
+.visits .date {
+  font-variant-numeric: tabular-nums;
+}
