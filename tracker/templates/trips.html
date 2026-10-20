@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Trips · 50 States{% endblock %}
+
+{% block content %}
+  <h1>Planned trips</h1>
+
+  <p><a href="{{ url_for('main.new_trip') }}">Plan a trip</a></p>
+
+  {% if trips %}
+    <ul class="trips">
+      {% for trip in trips %}
+        <li>
+          <strong>{{ trip.name }}</strong>
+          <span class="date">{{ trip.start_date }} to {{ trip.end_date }}</span>
+          <br>
+          {% for state in trip.states %}
+            <a href="{{ url_for('main.state_detail', code=state.code) }}">{{ state.name }}</a>{{ ", " if not loop.last }}
+          {% endfor %}
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No trips planned yet.</p>
+  {% endif %}
+{% endblock %}

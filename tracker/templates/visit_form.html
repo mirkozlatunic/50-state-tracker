@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}Add a visit · 50 States{% endblock %}
+
+{% block content %}
+  <h1>Add a visit</h1>
+
+  {% if errors %}
+    <ul class="errors">
+      {% for error in errors %}<li>{{ error }}</li>{% endfor %}
+    </ul>
+  {% endif %}
+
+  <form method="post" class="visit-form">
+    <label>
+      State
+      <select name="state" required>
+        {# "disabled" means it can't be submitted, so "required" makes you pick a real state. #}
+        <option value="" disabled {{ 'selected' if not form.state }}>Choose a state</option>
+        {% for state in states %}
+          <option value="{{ state.code }}" {{ 'selected' if form.state == state.code }}>{{ state.name }}</option>
+        {% endfor %}
+      </select>
+    </label>
+
+    <label>
+      Visit date
+      <input type="date" name="visit_date" value="{{ form.visit_date }}" max="{{ today.isoformat() }}" required>
+    </label>
+
+    <label>
+      Note <span class="hint">(optional)</span>
+      <input type="text" name="note" value="{{ form.note }}">
+    </label>
+
+    <p class="hint">Only count a state if you spent time there outside the airport. Layovers don't count.</p>
+
+    <button type="submit">Save visit</button>
+  </form>
+{% endblock %}

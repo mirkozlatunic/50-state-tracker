@@ -1,0 +1,108 @@
+/* A little plain styling. */
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0 auto;
+  max-width: 48rem;
+  padding: 0 1rem 2rem;
+  color: #222;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.brand {
+  font-weight: bold;
+  color: inherit;
+  text-decoration: none;
+}
+
+.progress {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.states {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+  gap: 0.25rem 1rem;
+}
+
+.code {
+  display: inline-block;
+  width: 2rem;
+  color: #888;
+}
+
+.visited {
+  font-weight: bold;
+}
+
+.badge {
+  font-size: 0.75rem;
+  color: #2a7a2a;
+}
+
+nav a {
+  margin-right: 1rem;
+}
+
+.visit-form label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.visit-form select,
+.visit-form input {
+  display: block;
+  margin-top: 0.25rem;
+  font: inherit;
+}
+
+.hint {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.errors {
+  color: #b00020;
+}
+
+.states a {
+  color: inherit;
+}
+
+.visits .date {
+  font-variant-numeric: tabular-nums;
+}
+
+.trips li {
+  margin-bottom: 0.75rem;
+}
+
+.state-checkboxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+  gap: 0.25rem 1rem;
+}
+
+.visit-form .checkbox {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  margin: 0;
+}
+
+.visit-form .checkbox input {
+  display: inline;
+  margin: 0;
+}
+
+fieldset {
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}{{ state.name }} · 50 States{% endblock %}
+
+{% block content %}
+  <h1>{{ state.name }} <span class="code">{{ state.code }}</span></h1>
+
+  <p><a href="{{ url_for('main.new_visit', state=state.code) }}">Add a visit</a></p>
+
+  <h2>Visits</h2>
+  {% if visits %}
+    <ul class="visits">
+      {% for visit in visits %}
+        <li>
+          <span class="date">{{ visit.visit_date }}</span>
+          {% if visit.note %}· {{ visit.note }}{% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No visits yet.</p>
+  {% endif %}
+
+  <h2>Planned trips</h2>
+  {% if trips %}
+    <ul class="trips">
+      {% for trip in trips %}
+        <li>{{ trip.name }} · {{ trip.start_date }} to {{ trip.end_date }}</li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No trips planned here.</p>
+  {% endif %}
+
+  <p><a href="{{ url_for('main.states') }}">← All states</a></p>
+{% endblock %}

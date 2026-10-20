@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}States · 50 States{% endblock %}
+
+{% block content %}
+  <h1>States</h1>
+  <ul class="states">
+    {% for state in states %}
+      <li class="{{ 'visited' if state.visited }}">
+        <span class="code">{{ state.code }}</span>
+        <a href="{{ url_for('main.state_detail', code=state.code) }}">{{ state.name }}</a>
+        {% if state.visited %}<span class="badge">visited</span>{% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}
