@@ -4,6 +4,7 @@ The outlines in map_data.py are SVG paths made only of straight lines, so each
 state is one or more polygons (lists of corner points). Used by the tests and
 by scripts/build_cities.py, which places the cities on the map.
 """
+import math
 import re
 from functools import lru_cache
 
@@ -114,3 +115,54 @@ def polygon_area_and_center(polygon):
     if area == 0:
         return 0.0, polygon[0]
     return abs(area), (cx / (6 * area), cy / (6 * area))
+
+
+def nearest_point_on_segment(px, py, ax, ay, bx, by):
+    """The point on the line from (ax, ay) to (bx, by) that's closest to (px, py)."""
+    dx, dy = bx - ax, by - ay
+    length_squared = dx * dx + dy * dy
+    if length_squared == 0:
+        return ax, ay
+    # t is how far along the line (0 = start, 1 = end) the closest point is.
+    t = max(0.0, min(1.0, ((px - ax) * dx + (py - ay) * dy) / length_squared))
+    return ax + t * dx, ay + t * dy
+
+
+def nearest_point_inside(x, y, code, decimals=1):
+    """Move a point that's just outside a state's outline to just inside it.
+
+    Finds the closest spot on the outline, then steps a little further, into
+    the state. Positions are rounded to `decimals` places (as they're saved),
+    and the rounded point is what has to be inside. Returns the rounded point
+    unchanged if it's already inside.
+    """
+    x, y = round(x, decimals), round(y, decimals)
+    if point_in_state(x, y, code):
+        return x, y
+
+    # The closest spot on the outline, and the piece (polygon) it belongs to.
+    best = None
+    for polygon in state_polygons(code):
+        for i in range(len(polygon)):
+            ax, ay = polygon[i]
+            bx, by = polygon[(i + 1) % len(polygon)]
+            nx, ny = nearest_point_on_segment(x, y, ax, ay, bx, by)
+            distance = (nx - x) ** 2 + (ny - y) ** 2
+            if best is None or distance < best[0]:
+                best = (distance, nx, ny, polygon)
+    distance, nx, ny, polygon = best
+
+    # First try straight on (away from where the point was), then 16 other
+    # directions, each with small to larger steps.
+    length = max(distance ** 0.5, 1e-9)
+    directions = [((nx - x) / length, (ny - y) / length)]
+    directions += [(math.cos(a * math.pi / 8), math.sin(a * math.pi / 8)) for a in range(16)]
+    for dx, dy in directions:
+        for step in (0.2, 0.4, 0.6, 1.0, 1.5, 2.0, 3.0):
+            cx, cy = round(nx + dx * step, decimals), round(ny + dy * step, decimals)
+            if point_in_state(cx, cy, code):
+                return cx, cy
+
+    # Last resort for a sliver of an island: the middle of that piece.
+    area, (cx, cy) = polygon_area_and_center(polygon)
+    return round(cx, decimals), round(cy, decimals)

@@ -16,7 +16,9 @@ How a city gets its spot on the map:
    state (worked out from its counties), and for the Alaska and Hawaii insets,
    a few islands and Alaska's northernmost point.
 3. Every city is then projected and moved the same way.
-Finally, each state's capital must land inside its own outline, or nothing is written.
+Coastal and border towns that land just outside their simplified outline are
+moved just inside it. Finally, each state's capital must land inside its own
+outline, or nothing is written.
 """
 import csv
 import io
@@ -29,7 +31,12 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from tracker.map_data import MAP_HEIGHT, MAP_WIDTH  # noqa: E402
-from tracker.map_shapes import point_in_state, polygon_area_and_center, state_polygons  # noqa: E402
+from tracker.map_shapes import (  # noqa: E402
+    nearest_point_inside,
+    point_in_state,
+    polygon_area_and_center,
+    state_polygons,
+)
 from tracker.states_data import STATES  # noqa: E402
 
 STATE_CODES = {code for code, name in STATES}
@@ -279,13 +286,17 @@ def build_rows(places, transforms):
         # A few far-off islands fall just outside the drawing: keep them at its edge.
         x = min(max(x, 0.0), MAP_WIDTH)
         y = min(max(y, 0.0), MAP_HEIGHT)
+        # The outlines are simplified, so coastal and border towns can land just
+        # outside their state (San Francisco in the ocean). Move them just inside.
+        # (It also rounds to 0.1 pixel, as saved, and checks the rounded point.)
+        x, y = nearest_point_inside(x, y, code)
         land = int(place["ALAND"])
         names = [name] + ([ALIASES[(code, name)]] if (code, name) in ALIASES else [])
         for each in names:
             key = (code, each.lower())
             # Two places with the same name in one state: keep the bigger one.
             if key not in best or land > best[key][0]:
-                best[key] = (land, code, each, round(x, 1), round(y, 1))
+                best[key] = (land, code, each, x, y)
     return sorted((row[1:] for row in best.values()), key=lambda r: (r[0], r[1].lower()))
 
 

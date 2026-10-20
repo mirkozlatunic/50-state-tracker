@@ -21,12 +21,21 @@
         <path id="state-{{ state.code }}" class="state {{ statuses[state.code] }}" d="{{ paths[state.code] }}"><title>{{ state.name }}</title></path>
       </a>
     {% endfor %}
+
+    {# The city dots come after the states: in an SVG, later shapes are drawn on top. #}
+    {% for dot in city_dots %}
+      <a href="{{ url_for('main.state_detail', code=dot.state) }}">
+        <circle class="city-dot {{ dot.kind }}" data-city="{{ dot.name }}, {{ dot.state }}" cx="{{ dot.x }}" cy="{{ dot.y }}" r="4"><title>{{ dot.name }}, {{ dot.state }}{% if dot.visit_dates %} · visited {{ dot.visit_dates | join(", ") }}{% endif %}{% for trip_name, start in dot.trips %}{{ " · upcoming: " if loop.first else "; " }}{{ trip_name }} ({{ start }}){% endfor %}</title></circle>
+      </a>
+    {% endfor %}
   </svg>
 
   <ul class="legend">
     <li><span class="swatch visited"></span> Visited</li>
     <li><span class="swatch planned"></span> Planned{% if year %} in {{ year }}{% endif %}</li>
     <li><span class="swatch unvisited"></span> Not visited yet</li>
+    <li><span class="swatch city-swatch visited"></span> Visited city</li>
+    <li><span class="swatch city-swatch upcoming"></span> Upcoming city{% if year %} in {{ year }}{% endif %}</li>
   </ul>
 
   <p class="hint">Tiny states like Rhode Island are easier to pick from the

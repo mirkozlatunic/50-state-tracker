@@ -124,3 +124,11 @@ def test_a_city_is_not_inside_a_neighbouring_state():
 
 def test_the_corner_of_the_map_is_in_no_state():
     assert not any(point_in_state(1, 1, code) for code in EXPECTED_STATES)
+
+
+def test_every_city_lands_inside_its_own_state():
+    """The map's outlines are simplified, so a coastal city (San Francisco, Miami)
+    can fall just outside its coast. The builder moves those dots just inside."""
+    outside = [f"{city.name}, {city.state}" for city in all_cities()
+               if not point_in_state(city.x, city.y, city.state)]
+    assert outside == []

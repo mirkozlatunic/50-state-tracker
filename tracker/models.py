@@ -1,6 +1,7 @@
 """Functions that read and write the tracker's data."""
 from datetime import date
 
+from tracker.cities import find_city
 from tracker.db import get_db
 
 TOTAL_STATES = 50
@@ -330,3 +331,64 @@ def set_trip_dates(trip_id, start_date, end_date):
         (start_date, end_date, trip_id),
     )
     db.commit()
+
+
+def get_city_dots(today, year=None):
+    """Return the cities to draw as dots on the map, one dictionary per city.
+
+    Each one looks like:
+    {"name": "Denver", "state": "CO", "x": 331.6, "y": 257.9, "kind": "upcoming",
+     "visit_dates": ["2024-07-04"], "trips": [("Four Corners weekend", "2026-10-30")]}
+
+    - Every city with a visit gets a dot (visit dates oldest first).
+    - Every city in a trip that hasn't ended gets one too. With `year`, only
+      trips that start in that year count.
+    - "kind" is "upcoming" if the city is in an upcoming trip (even if you've
+      been there before), otherwise "visited".
+    """
+    db = get_db()
+    found = {}
+
+    def info_for(code, name):
+        """The dictionary for one city, made the first time we see it."""
+        return found.setdefault((code, name), {"visit_dates": [], "trips": []})
+
+    for row in db.execute(
+        """
+        SELECT states.code, visits.city, visits.visit_date FROM visits
+        JOIN states ON states.id = visits.state_id
+        WHERE visits.city IS NOT NULL
+        ORDER BY visits.visit_date
+        """
+    ):
+        info_for(row["code"], row["city"])["visit_dates"].append(row["visit_date"])
+
+    query = """
+        SELECT states.code, trip_cities.city, trips.name, trips.start_date FROM trip_cities
+        JOIN trips ON trips.id = trip_cities.trip_id
+        JOIN states ON states.id = trip_cities.state_id
+        WHERE trips.end_date >= ?
+    """
+    params = [today.isoformat()]
+    if year is not None:
+        query += " AND substr(trips.start_date, 1, 4) = ?"
+        params.append(str(year))
+    query += " ORDER BY trips.start_date, trips.id"
+    for row in db.execute(query, params):
+        info_for(row["code"], row["city"])["trips"].append((row["name"], row["start_date"]))
+
+    dots = []
+    for (code, name), info in sorted(found.items()):
+        city = find_city(name, code)
+        if city is None:
+            continue  # not in the city list (e.g. the list was rebuilt without it)
+        dots.append({
+            "name": city.name,
+            "state": code,
+            "x": city.x,
+            "y": city.y,
+            "kind": "upcoming" if info["trips"] else "visited",
+            "visit_dates": info["visit_dates"],
+            "trips": info["trips"],
+        })
+    return dots
