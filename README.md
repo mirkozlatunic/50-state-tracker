@@ -26,7 +26,8 @@ Private learning project, built with Python, Flask and SQLite.
 - **States list:** all 50 states A to Z, with visited ones marked in bold.
 - **Progress counter:** "7 of 50" in the header of every page.
 - **Add visits:** state, date, an optional city (with suggestions from about
-  32,000 US places) and an optional note.
+  32,000 US places) and an optional note. Visits can be edited and deleted
+  from their state's page; the counter, map and region cards follow.
 - **State pages:** each state's visits (newest first) and the planned trips that include it.
 - **Planned trips:** a name, start and end date, one or more states, so nearby
   states can be combined into one weekend, and optional cities ("Denver, CO").

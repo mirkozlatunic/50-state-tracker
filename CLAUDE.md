@@ -38,6 +38,8 @@ Python 3, Flask, SQLite, pytest. No other packages without asking me first.
   `scripts/build_cities.py` from the public-domain US Census Gazetteer files.
   The app reads it into memory; cities are stored as name + state.
 - Trips can be edited, deleted, or moved to another year.
+- Visits can be edited (state, date, city, note) and deleted, from the state
+  page. Editing follows the same rules as adding a visit.
 - The map outlines in `tracker/map_data.py` come from a CC0 (public domain)
   Wikimedia Commons SVG; the source is noted at the top of that file.
 

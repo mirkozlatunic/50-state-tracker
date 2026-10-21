@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 
-{% block title %}Add a visit · 50 States{% endblock %}
+{% block title %}{{ heading }} · 50 States{% endblock %}
 
 {% block content %}
-  <h1>Add a visit</h1>
+  <h1>{{ heading }}</h1>
 
   {% if errors %}
     <ul class="errors">
@@ -44,7 +44,7 @@
 
     <p class="hint">Only count a state if you spent time there outside the airport. Layovers don't count.</p>
 
-    <button type="submit">Save visit</button>
+    <button type="submit">{{ button_label }}</button>
   </form>
 {% endblock %}
 

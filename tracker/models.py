@@ -32,13 +32,13 @@ def get_state(code):
 
 
 def get_visits_for_state(state_id):
-    """Return one state's visits (date, note and city), newest first.
+    """Return one state's visits (id, date, note and city), newest first.
 
     If two visits share a date, the one added later comes first (higher id).
     """
     return get_db().execute(
         """
-        SELECT visit_date, note, city FROM visits
+        SELECT id, visit_date, note, city FROM visits
         WHERE state_id = ?
         ORDER BY visit_date DESC, id DESC
         """,
@@ -47,20 +47,64 @@ def get_visits_for_state(state_id):
 
 
 def add_visit(state_code, visit_date, note, city=None):
-    """Save one visit. Expects input that already passed validate_visit().
+    """Save one visit and return its id. Expects input that already passed validate_visit().
 
     `city` is the official city name, or None for a visit without a city.
     The ? marks are placeholders: SQLite fills in the values safely, so text
     typed into the form can never be run as SQL.
     """
     db = get_db()
-    db.execute(
+    cursor = db.execute(
         """
         INSERT INTO visits (state_id, visit_date, note, city)
         VALUES ((SELECT id FROM states WHERE code = ?), ?, ?, ?)
         """,
         (state_code, visit_date, note, city),
     )
+    db.commit()
+    return cursor.lastrowid
+
+
+def get_visit(visit_id):
+    """Return one visit as a dictionary shaped like the visit form, or None if it doesn't exist.
+
+    {"id": 3, "state": "CO", "visit_date": "2024-07-04", "note": "...", "city": "Denver"}
+    A visit without a city gets "" so the form shows an empty field.
+    """
+    row = get_db().execute(
+        """
+        SELECT visits.id, states.code AS state, visit_date, note, city FROM visits
+        JOIN states ON states.id = visits.state_id
+        WHERE visits.id = ?
+        """,
+        (visit_id,),
+    ).fetchone()
+    if row is None:
+        return None
+    visit = dict(row)
+    visit["city"] = visit["city"] or ""
+    return visit
+
+
+def update_visit(visit_id, state_code, visit_date, note, city=None):
+    """Change a visit. Expects input that already passed validate_visit()."""
+    db = get_db()
+    db.execute(
+        """
+        UPDATE visits
+        SET state_id = (SELECT id FROM states WHERE code = ?), visit_date = ?, note = ?, city = ?
+        WHERE id = ?
+        """,
+        (state_code, visit_date, note, city, visit_id),
+    )
+    db.commit()
+
+
+def delete_visit(visit_id):
+    """Delete one visit. The counter, map and region cards follow by themselves,
+    because they're all worked out from the visits table."""
+    db = get_db()
+    db.execute("DELETE FROM visits WHERE id = ?", (visit_id,))
     db.commit()
 
 

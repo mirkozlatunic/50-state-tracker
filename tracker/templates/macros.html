@@ -23,3 +23,14 @@
     {% endfor %}
   </p>
 {% endmacro %}
+
+{# Edit and Delete for one visit, on the state page. #}
+{% macro visit_actions(visit) %}
+  <div class="trip-actions">
+    <a href="{{ url_for('main.edit_visit', visit_id=visit.id) }}">Edit</a>
+    <form method="post" action="{{ url_for('main.remove_visit', visit_id=visit.id) }}"
+          onsubmit="return confirm('Delete this visit? This can\'t be undone.');">
+      <button type="submit" class="link-button">Delete</button>
+    </form>
+  </div>
+{% endmacro %}
