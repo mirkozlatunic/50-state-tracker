@@ -84,7 +84,9 @@ Python 3, Flask, SQLite, pytest. No other packages without asking me first.
   editing and deleting trips, a clickable US map, a year page where trips
   can be dragged between years, cities with dots on the map, a light/dark
   switch, and layouts for phones and tablets.
-- Later, not now: trip costs, logins, putting it online.
+- Also done: one login for the whole app, and running online on PythonAnywhere
+  (see "Going online" in the README).
+- Later, not now: trip costs, an offline mode.
 
 ## How to check it works
 

@@ -136,6 +136,77 @@ Anyone on the same Wi-Fi can reach the login page while the app runs with
 `--host 0.0.0.0`, but not your data without the password. Plain `flask run`
 (without `--host`) stays reachable from your Mac only.
 
+## Going online (PythonAnywhere)
+
+The app can run online at `https://yourname.pythonanywhere.com`, on
+PythonAnywhere's free plan. Replace `yourname` with your PythonAnywhere
+username everywhere below.
+
+### 1. Get the code onto the server
+
+Create a free account at [pythonanywhere.com](https://www.pythonanywhere.com),
+open a **Bash console** (Consoles tab), and run:
+
+```bash
+git clone https://github.com/mirkozlatunic/50-state-tracker.git
+cd 50-state-tracker
+python3.11 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+pytest
+flask set-password
+echo "SESSION_COOKIE_SECURE = True" >> instance/config.py
+```
+
+`pytest` should pass on the server too. `flask set-password` asks for the
+password twice (nothing shows while you type). The last line makes the login
+cookie https-only.
+
+### 2. Set up the web app
+
+On the **Web** tab:
+
+1. **Add a new web app** → **Manual configuration** → **Python 3.11**.
+2. **Virtualenv:** `/home/yourname/50-state-tracker/.venv`
+3. **WSGI configuration file:** open it, replace everything with the contents of
+   [`deploy/pythonanywhere_wsgi.py`](deploy/pythonanywhere_wsgi.py), and change
+   `yourname` to your username. Save.
+4. **Static files:** URL `/static/`, directory
+   `/home/yourname/50-state-tracker/tracker/static`
+5. **Security:** switch on **Force HTTPS**.
+6. Press **Reload** at the top.
+
+### 3. Move your data
+
+1. In the app on your Mac, click **Download backup** at the bottom of any page.
+2. On PythonAnywhere's **Files** tab, open `50-state-tracker/instance/` and
+   upload the file. Rename it to `tracker.sqlite` (replace the empty one).
+3. Press **Reload** on the Web tab.
+
+Open `https://yourname.pythonanywhere.com`, log in, and your visits and trips
+are there. From now on the online copy is the real one.
+
+### 4. On your iPhone
+
+Delete the old "50 States" icon, open the https address in Safari, log in,
+then Share → **Add to Home Screen**.
+
+### Updating later
+
+After new changes are on GitHub, in a PythonAnywhere Bash console:
+
+```bash
+cd ~/50-state-tracker && git pull && source .venv/bin/activate && pip install -r requirements.txt
+```
+
+Then press **Reload** on the Web tab.
+
+### Keeping it running
+
+On the free plan, PythonAnywhere asks you to click **"Run until 3 months from
+today"** on the Web tab every 3 months (it emails you first). Download a
+backup now and then, for example after each trip.
+
 ## Running the tests
 
 ```bash
@@ -171,6 +242,7 @@ tracker/
   static/icons/         # app icons (home screen, browser tab)
   auth.py               # the login, form protection, `flask set-password`
 scripts/build_cities.py # one-time builder for data/us_cities.csv (see below)
+deploy/pythonanywhere_wsgi.py  # the WSGI file to paste on PythonAnywhere
 tests/                  # pytest tests, one file per feature
 docs/screenshots/       # images for this README
 ```
@@ -214,4 +286,4 @@ The city list is built from the US Census Bureau's
 
 ## Not yet
 
-Trip costs, logins, and putting the app online.
+Trip costs, and an offline mode for the phone.
