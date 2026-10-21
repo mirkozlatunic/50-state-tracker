@@ -646,3 +646,30 @@ fieldset {
   font-size: 0.8rem;
   text-align: center;
 }
+
+/* Footer: download a backup, log out. */
+.site-footer {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-top: 2rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.9rem;
+}
+
+.site-footer form {
+  margin: 0;
+}
+
+.site-footer .link-button {
+  color: var(--link);
+}
+
+.login-form input[type="password"] {
+  display: block;
+  margin-top: 0.25rem;
+  width: 100%;
+  max-width: 20rem;
+  box-sizing: border-box;
+}

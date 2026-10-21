@@ -12,6 +12,7 @@
   {% endif %}
 
   <form method="post" class="visit-form">
+    {{ csrf_field() }}
     {# A hidden field is sent with the form but not shown: it remembers where to go back to. #}
     {% if return_to %}<input type="hidden" name="return_to" value="{{ return_to }}">{% endif %}
     <label>

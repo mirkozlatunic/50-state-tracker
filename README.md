@@ -32,6 +32,9 @@ Private learning project, built with Python, Flask and SQLite.
 - **Planned trips:** a name, start and end date, one or more states, so nearby
   states can be combined into one weekend, and optional cities ("Denver, CO").
   Trips can be edited and deleted. Trips that have ended are hidden.
+- **One login:** a single password for the whole app; log in once and every
+  page opens. Forms are protected, and **Download backup** at the bottom saves
+  a copy of your database.
 - **Phones and tablets:** every page fits an iPhone and an iPad. On a phone the
   year columns stack, and the "Move to" menu replaces dragging.
 - **Region cards on phones:** a whole US map is too small to tap on a phone, so
@@ -97,7 +100,15 @@ pip install -r requirements.txt
 flask run
 ```
 
-Then open http://127.0.0.1:5000. On a Mac, port 5000 is often taken by AirPlay
+The app needs a password before it opens. Set it once (it's saved as a hash,
+never as the password itself, in `instance/config.py`):
+
+```bash
+flask set-password
+```
+
+Then open http://127.0.0.1:5000 and log in. You stay logged in on that device
+for 30 days. On a Mac, port 5000 is often taken by AirPlay
 Receiver; use `flask run --port 5001` and open http://127.0.0.1:5001 instead.
 
 The database is created automatically at `instance/tracker.sqlite` on the first
@@ -121,8 +132,8 @@ on with the app running, and the iPhone on the same Wi-Fi.
    (find the name with `scutil --get LocalHostName`).
 3. Tap Share → **Add to Home Screen** → Add.
 
-There's no login yet, so while the app runs with `--host 0.0.0.0`, anyone on
-the same Wi-Fi could open it. Use it on your home Wi-Fi only. Plain `flask run`
+Anyone on the same Wi-Fi can reach the login page while the app runs with
+`--host 0.0.0.0`, but not your data without the password. Plain `flask run`
 (without `--host`) stays reachable from your Mac only.
 
 ## Running the tests
@@ -158,6 +169,7 @@ tracker/
   static/map.js         # city dot details on touch screens
   static/manifest.webmanifest  # name, icon and full-screen mode for the home screen
   static/icons/         # app icons (home screen, browser tab)
+  auth.py               # the login, form protection, `flask set-password`
 scripts/build_cities.py # one-time builder for data/us_cities.csv (see below)
 tests/                  # pytest tests, one file per feature
 docs/screenshots/       # images for this README

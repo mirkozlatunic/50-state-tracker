@@ -18,6 +18,8 @@ Python 3, Flask, SQLite, pytest. No other packages without asking me first.
 ## Setup and commands
 
 - Activate the virtual environment on my Mac: `source .venv/bin/activate`
+- Set (or change) the app's password once: `flask set-password`. It saves only a
+  hash and a secret key in `instance/config.py`; restart the app afterwards.
 - Run the app: `flask run`, then open http://127.0.0.1:5000
   (if port 5000 is taken by macOS AirPlay Receiver: `flask run --port 5001`)
 - For the iPhone home screen app: `flask run --host 0.0.0.0 --port 5001`, then open
@@ -66,6 +68,12 @@ Python 3, Flask, SQLite, pytest. No other packages without asking me first.
 - City dots: dark green = visited city, blue = city in a trip that hasn't
   ended. A city that's both shows blue. One dot per city, however many visits.
 - Every city in the city list must land inside its own state's outline.
+- One password for the whole app: log in once and every page opens; a device
+  stays logged in for 30 days. Logged out, every page goes to /login, except
+  the styles, icons and manifest. Without a password set, the app shows how
+  to set one instead of opening.
+- Every form that changes something sends a hidden code (CSRF token), and
+  forms without it are refused.
 - On phones (640px wide or less), `/map` shows the next trip and the four
   Census regions as cards instead of the map. The cards use the same colors
   and rules as the map (including the year filter). Bigger screens keep the map.
@@ -95,7 +103,8 @@ Python 3, Flask, SQLite, pytest. No other packages without asking me first.
 
 ## Folder rules
 
-- `instance/` holds the SQLite database file. Never commit it.
+- `instance/` holds the SQLite database file and `config.py` (secret key and
+  password hash). Never commit either.
 - Tests use their own temporary database, never my real one.
 
 ## How we work

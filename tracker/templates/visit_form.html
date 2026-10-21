@@ -12,6 +12,7 @@
   {% endif %}
 
   <form method="post" class="visit-form">
+    {{ csrf_field() }}
     <label>
       State
       <select name="state" required>

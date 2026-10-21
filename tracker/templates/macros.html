@@ -7,6 +7,7 @@
     {# confirm() is a built-in browser pop-up; returning false stops the form. #}
     <form method="post" action="{{ url_for('main.remove_trip', trip_id=trip.id) }}"
           onsubmit="return confirm('Delete this trip? This can\'t be undone.');">
+      {{ csrf_field() }}
       {% if return_to %}<input type="hidden" name="return_to" value="{{ return_to }}">{% endif %}
       <button type="submit" class="link-button">Delete</button>
     </form>
@@ -30,6 +31,7 @@
     <a href="{{ url_for('main.edit_visit', visit_id=visit.id) }}">Edit</a>
     <form method="post" action="{{ url_for('main.remove_visit', visit_id=visit.id) }}"
           onsubmit="return confirm('Delete this visit? This can\'t be undone.');">
+      {{ csrf_field() }}
       <button type="submit" class="link-button">Delete</button>
     </form>
   </div>
