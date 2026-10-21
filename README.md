@@ -103,6 +103,27 @@ The database is created automatically at `instance/tracker.sqlite` on the first
 start. It's kept out of git. `flask init-db` sets it up by hand; running it
 again keeps your data.
 
+## On your iPhone's home screen
+
+The app can live on your iPhone's home screen like an app: its own icon,
+full screen, no Safari bars. It still runs on your Mac, so the Mac has to be
+on with the app running, and the iPhone on the same Wi-Fi.
+
+1. On the Mac, start the app so your Wi-Fi can reach it:
+
+   ```bash
+   flask run --host 0.0.0.0 --port 5001
+   ```
+
+   The first time, macOS may ask whether Python may accept incoming connections: choose Allow.
+2. On the iPhone, open Safari and go to `http://<your-mac-name>.local:5001`
+   (find the name with `scutil --get LocalHostName`).
+3. Tap Share → **Add to Home Screen** → Add.
+
+There's no login yet, so while the app runs with `--host 0.0.0.0`, anyone on
+the same Wi-Fi could open it. Use it on your home Wi-Fi only. Plain `flask run`
+(without `--host`) stays reachable from your Mac only.
+
 ## Running the tests
 
 ```bash
@@ -134,6 +155,8 @@ tracker/
   static/theme.js       # the light/dark button
   static/cities.js      # city suggestions on the visit and trip forms
   static/map.js         # city dot details on touch screens
+  static/manifest.webmanifest  # name, icon and full-screen mode for the home screen
+  static/icons/         # app icons (home screen, browser tab)
 scripts/build_cities.py # one-time builder for data/us_cities.csv (see below)
 tests/                  # pytest tests, one file per feature
 docs/screenshots/       # images for this README

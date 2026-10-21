@@ -5,7 +5,17 @@ group into the app inside create_app().
 """
 from datetime import date, timedelta
 
-from flask import Blueprint, abort, jsonify, redirect, render_template, request, url_for
+from flask import (
+    Blueprint,
+    abort,
+    current_app,
+    jsonify,
+    redirect,
+    render_template,
+    request,
+    send_from_directory,
+    url_for,
+)
 
 from tracker.cities import cities_in_state, find_city
 
@@ -60,6 +70,26 @@ def inject_progress():
         "total_states": TOTAL_STATES,
         "theme": saved_theme if saved_theme in ("light", "dark") else None,
     }
+
+
+@bp.route("/manifest.webmanifest")
+def web_app_manifest():
+    """The "web app manifest": what a phone reads when you add the app to its home screen.
+
+    send_from_directory() sends a file from a folder. The manifest needs its own
+    type (application/manifest+json), or some phones ignore it.
+    """
+    return send_from_directory(
+        current_app.static_folder, "manifest.webmanifest", mimetype="application/manifest+json"
+    )
+
+
+@bp.route("/favicon.ico")
+def favicon():
+    """The browser tab icon. Browsers ask for /favicon.ico by themselves."""
+    return send_from_directory(
+        current_app.static_folder + "/icons", "favicon-32.png", mimetype="image/png"
+    )
 
 
 @bp.route("/")
