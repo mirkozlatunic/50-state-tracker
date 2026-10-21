@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Log in · 50 States{% endblock %}
+
+{% block content %}
+  <h1>Log in</h1>
+
+  {% if error %}
+    <ul class="errors"><li>{{ error }}</li></ul>
+  {% endif %}
+
+  {# action keeps ?next=... so you land on the page you wanted. #}
+  <form method="post" action="{{ url_for('auth.login', next=next_url or None) }}" class="visit-form login-form">
+    {{ csrf_field() }}
+    <label>
+      Password
+      {# autocomplete="current-password" lets the iPhone offer a saved password. #}
+      <input type="password" name="password" autocomplete="current-password" required autofocus>
+    </label>
+    <button type="submit">Log in</button>
+  </form>
+
+  <p class="hint">You stay logged in on this device for 30 days.</p>
+{% endblock %}

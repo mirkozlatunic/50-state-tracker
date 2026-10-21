@@ -1,0 +1,20 @@
+<!doctype html>
+{# Shown on every page until a password is set. It doesn't use base.html, because
+   that needs a working login session, which needs the secret key. #}
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Set a password · 50 States</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <main>
+    <h1>Set a password first</h1>
+    <p>This app doesn't have a password yet, so it stays closed.</p>
+    <p>On the computer it runs on, open a terminal in the project folder and run:</p>
+    <pre><code>flask set-password</code></pre>
+    <p>Then restart the app.</p>
+  </main>
+</body>
+</html>

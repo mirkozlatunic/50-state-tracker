@@ -25,23 +25,34 @@
   <header class="site-header">
     <div class="header-top">
       <a class="brand" href="{{ url_for('main.states') }}">50 States Tracker</a>
-      <p class="progress">{{ visited_count }} of {{ total_states }}</p>
+      {% if logged_in %}<p class="progress">{{ visited_count }} of {{ total_states }}</p>{% endif %}
       {# theme.js sets the right label as soon as the page loads. #}
       <button type="button" class="theme-toggle" aria-label="Switch between light and dark mode">
         {{ "☀ Light" if theme == "dark" else "☾ Dark" }}
       </button>
     </div>
-    <nav class="site-nav">
-      <a href="{{ url_for('main.states') }}">States</a>
-      <a href="{{ url_for('main.us_map') }}">Map</a>
-      <a href="{{ url_for('main.new_visit') }}">Add visit</a>
-      <a href="{{ url_for('main.trips') }}">Trips</a>
-      <a href="{{ url_for('main.years') }}">Years</a>
-    </nav>
+    {% if logged_in %}
+      <nav class="site-nav">
+        <a href="{{ url_for('main.states') }}">States</a>
+        <a href="{{ url_for('main.us_map') }}">Map</a>
+        <a href="{{ url_for('main.new_visit') }}">Add visit</a>
+        <a href="{{ url_for('main.trips') }}">Trips</a>
+        <a href="{{ url_for('main.years') }}">Years</a>
+      </nav>
+    {% endif %}
   </header>
   <main>
     {% block content %}{% endblock %}
   </main>
+  {% if logged_in %}
+    <footer class="site-footer">
+      <a href="{{ url_for('main.backup') }}">Download backup</a>
+      <form method="post" action="{{ url_for('auth.logout') }}">
+        {{ csrf_field() }}
+        <button type="submit" class="link-button">Log out</button>
+      </form>
+    </footer>
+  {% endif %}
   <script src="{{ url_for('static', filename='theme.js') }}"></script>
   {# Pages that need more JavaScript add it here. #}
   {% block scripts %}{% endblock %}

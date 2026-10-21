@@ -3,6 +3,10 @@
 A "blueprint" is a group of related routes. We define them here and plug the
 group into the app inside create_app().
 """
+import io
+import os
+import sqlite3
+import tempfile
 from datetime import date, timedelta
 
 from flask import (
@@ -13,11 +17,14 @@ from flask import (
     redirect,
     render_template,
     request,
+    send_file,
     send_from_directory,
     url_for,
 )
 
+from tracker.auth import is_logged_in
 from tracker.cities import cities_in_state, find_city
+from tracker.db import get_db
 
 from tracker.models import (
     TOTAL_STATES,
@@ -58,7 +65,7 @@ bp = Blueprint("main", __name__)
 
 @bp.app_context_processor
 def inject_progress():
-    """Give every page the numbers for the "N of 50" counter, and the saved theme.
+    """Give every page the numbers for the "N of 50" counter, the login state and the saved theme.
 
     A "context processor" adds values to every template automatically, so
     base.html can show the counter without each page passing it in.
@@ -68,8 +75,11 @@ def inject_progress():
     accepted; anything else means "no choice saved, follow the device".
     """
     saved_theme = request.cookies.get("theme")
+    logged_in = is_logged_in()
     return {
-        "visited_count": count_visited_states(),
+        "logged_in": logged_in,
+        # Only logged-in visitors see your progress.
+        "visited_count": count_visited_states() if logged_in else None,
         "total_states": TOTAL_STATES,
         "theme": saved_theme if saved_theme in ("light", "dark") else None,
     }
@@ -92,6 +102,29 @@ def favicon():
     """The browser tab icon. Browsers ask for /favicon.ico by themselves."""
     return send_from_directory(
         current_app.static_folder + "/icons", "favicon-32.png", mimetype="image/png"
+    )
+
+
+@bp.route("/backup")
+def backup():
+    """Download a copy of the whole database, e.g. tracker-2026-10-21.sqlite.
+
+    SQLite's own backup() copies the database safely even while it's in use.
+    The copy is made in a temporary file, read into memory, and sent as a
+    download ("attachment").
+    """
+    with tempfile.TemporaryDirectory() as folder:
+        copy_path = os.path.join(folder, "backup.sqlite")
+        copy = sqlite3.connect(copy_path)
+        get_db().backup(copy)
+        copy.close()
+        with open(copy_path, "rb") as f:
+            data = io.BytesIO(f.read())
+    return send_file(
+        data,
+        mimetype="application/vnd.sqlite3",
+        as_attachment=True,
+        download_name=f"tracker-{date.today().isoformat()}.sqlite",
     )
 
 

@@ -35,6 +35,7 @@
               {% endif %}
               {{ trip_actions(trip, return_to="years") }}
               <form method="post" action="{{ url_for('main.move_trip', trip_id=trip.id) }}" class="move-form">
+                {{ csrf_field() }}
                 <label>Move to
                   <select name="year">
                     {% for other in plan if other.year != trip.year %}
