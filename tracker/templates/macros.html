@@ -12,3 +12,14 @@
     </form>
   </div>
 {% endmacro %}
+
+{# The "Planned trips: All upcoming trips 2026 2027" links on the map page. #}
+{% macro year_filter(year, trip_years) %}
+  <p class="year-filter">
+    Planned trips:
+    <a href="{{ url_for('main.us_map') }}" class="{{ 'current' if year is none }}">All upcoming trips</a>
+    {% for trip_year in trip_years %}
+      <a href="{{ url_for('main.us_map', year=trip_year) }}" class="{{ 'current' if year == trip_year }}">{{ trip_year }}</a>
+    {% endfor %}
+  </p>
+{% endmacro %}

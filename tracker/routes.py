@@ -16,6 +16,8 @@ from tracker.models import (
     count_visited_states,
     delete_trip,
     get_city_dots,
+    get_next_trip,
+    get_regions,
     get_state,
     get_state_statuses,
     get_states,
@@ -92,6 +94,9 @@ def us_map():
         statuses=get_state_statuses(today, year=year),
         city_dots=get_city_dots(today, year=year),
         state_names=STATE_NAMES,
+        # For phones: region cards and the next trip instead of the map.
+        regions=get_regions(today, year=year),
+        next_trip=get_next_trip(today),
         paths=STATE_PATHS,
         width=MAP_WIDTH,
         height=MAP_HEIGHT,

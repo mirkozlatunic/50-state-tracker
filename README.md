@@ -33,15 +33,20 @@ Private learning project, built with Python, Flask and SQLite.
   Trips can be edited and deleted. Trips that have ended are hidden.
 - **Phones and tablets:** every page fits an iPhone and an iPad. On a phone the
   year columns stack, and the "Move to" menu replaces dragging.
+- **Region cards on phones:** a whole US map is too small to tap on a phone, so
+  there `/map` shows your next trip and the four Census regions instead
+  (Northeast, Midwest, South, West). Each region has a progress bar and its
+  states as big tappable chips in the map's colors, with the number of cities
+  you've visited there. Tablets and computers keep the map.
 
 Every page reads the same database, so a change made on one page shows up on
 all the others.
 
 ![The year planner with trips and their cities](docs/screenshots/years.png)
 
-| Dark mode | Phone: map | Phone: years (dark) |
+| Dark mode | Phone: region cards | Phone: years (dark) |
 |---|---|---|
-| ![The map with city dots in dark mode](docs/screenshots/map-dark.png) | ![The map on an iPhone](docs/screenshots/phone-map.png) | ![The year page on an iPhone in dark mode](docs/screenshots/phone-years-dark.png) |
+| ![The map with city dots in dark mode](docs/screenshots/map-dark.png) | ![The next trip and region cards on an iPhone](docs/screenshots/phone-regions.png) | ![The year page on an iPhone in dark mode](docs/screenshots/phone-years-dark.png) |
 
 | States list | State page |
 |---|---|
@@ -118,6 +123,7 @@ tracker/
   map_data.py           # the 50 state outlines for the map
   map_shapes.py         # "is this point inside that state?" for the outlines
   cities.py             # the city list: find_city(), cities_in_state()
+  regions_data.py       # the four Census regions, for the region cards
   data/us_cities.csv    # ~32,000 places with their spot on the map
   models.py             # reading and saving states, visits, trips and city dots
   validation.py         # the visit and trip rules
@@ -127,6 +133,7 @@ tracker/
   static/years.js       # drag and drop on the year page
   static/theme.js       # the light/dark button
   static/cities.js      # city suggestions on the visit and trip forms
+  static/map.js         # city dot details on touch screens
 scripts/build_cities.py # one-time builder for data/us_cities.csv (see below)
 tests/                  # pytest tests, one file per feature
 docs/screenshots/       # images for this README

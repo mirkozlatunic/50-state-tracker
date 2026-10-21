@@ -1,17 +1,53 @@
 {% extends "base.html" %}
+{% from "macros.html" import year_filter %}
 
 {% block title %}Map · 50 States{% endblock %}
 
 {% block content %}
   <h1>Map</h1>
 
-  <p class="year-filter">
-    Planned trips:
-    <a href="{{ url_for('main.us_map') }}" class="{{ 'current' if year is none }}">All upcoming trips</a>
-    {% for trip_year in trip_years %}
-      <a href="{{ url_for('main.us_map', year=trip_year) }}" class="{{ 'current' if year == trip_year }}">{{ trip_year }}</a>
+  {# Two views of the same data. style.css shows the region cards on phones
+     (640px wide or less) and the map on bigger screens. #}
+  <section class="region-view">
+    <section class="next-trip">
+      {% if next_trip %}
+        <p class="next-trip-when">Next trip · {{ next_trip.when }}</p>
+        <a class="next-trip-name" href="{{ url_for('main.trips') }}">{{ next_trip.name }}</a>
+        <div class="date">{{ next_trip.start_date }} to {{ next_trip.end_date }}</div>
+        <div>
+          {% for state in next_trip.states %}{{ state.name }}{{ ", " if not loop.last }}{% endfor %}
+          {% if next_trip.cities %}· {% for city in next_trip.cities %}{{ city.city }}{{ ", " if not loop.last }}{% endfor %}{% endif %}
+        </div>
+      {% else %}
+        <p>No trips planned yet.</p>
+        <a href="{{ url_for('main.new_trip') }}">Plan a trip</a>
+      {% endif %}
+    </section>
+
+    {{ year_filter(year, trip_years) }}
+
+    {% for region in regions %}
+      <article class="region-card" data-region="{{ region.name }}">
+        <div class="region-title">
+          <h2>{{ region.name }}</h2>
+          <span class="region-count">{{ region.visited }} of {{ region.total }}</span>
+        </div>
+        {# The bar: green for visited, orange for planned, the rest grey. #}
+        <div class="region-bar" aria-hidden="true">
+          <span class="bar-visited" style="width: {{ region.visited_percent }}%"></span>
+          <span class="bar-planned" style="width: {{ region.planned_percent }}%"></span>
+        </div>
+        <div class="region-chips">
+          {% for state in region.states %}
+            <a class="state-chip {{ state.status }}" href="{{ url_for('main.state_detail', code=state.code) }}">{{ state.name }}{% if state.city_count %} <span class="chip-count">{{ state.city_count }}</span>{% endif %}</a>
+          {% endfor %}
+        </div>
+      </article>
     {% endfor %}
-  </p>
+  </section>
+
+  <div class="map-view">
+  {{ year_filter(year, trip_years) }}
 
   {# An SVG is a drawing made of shapes. Each state is a <path> wrapped in a link,
      and its class (visited / planned / unvisited) picks the color in style.css. #}
@@ -47,6 +83,7 @@
 
   <p class="hint">Tiny states like Rhode Island are easier to pick from the
     <a href="{{ url_for('main.states') }}">States list</a>.</p>
+  </div>
 {% endblock %}
 
 {% block scripts %}
