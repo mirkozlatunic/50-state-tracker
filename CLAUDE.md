@@ -20,6 +20,11 @@ Python 3, Flask, SQLite, pytest. No other packages without asking me first.
 - Activate the virtual environment on my Mac: `source .venv/bin/activate`
 - Run the app: `flask run`, then open http://127.0.0.1:5000
   (if port 5000 is taken by macOS AirPlay Receiver: `flask run --port 5001`)
+- For the iPhone home screen app: `flask run --host 0.0.0.0 --port 5001`, then open
+  http://<mac-name>.local:5001 in Safari on the iPhone (same Wi-Fi; the name comes
+  from `scutil --get LocalHostName`) and
+  Share → Add to Home Screen. Only on home Wi-Fi: there's no login, so anyone on
+  the same network could open it while it runs this way.
 - Run all tests: `pytest`
 
 ## The data
@@ -83,6 +88,8 @@ Python 3, Flask, SQLite, pytest. No other packages without asking me first.
 - The light/dark button switches the theme, and it stays after a reload.
 - Pages fit an iPhone (390px) and an iPad (820px) without sideways scrolling.
 - On an iPhone, `/map` shows the region cards; on a computer, the map.
+- The app can be added to the iPhone home screen: it opens full screen on
+  `/map` with its own icon and the name "50 States".
 
 ## Folder rules
 
