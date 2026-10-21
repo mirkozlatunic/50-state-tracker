@@ -25,6 +25,7 @@ from tracker.models import (
     add_visit,
     count_visited_states,
     delete_trip,
+    delete_visit,
     get_city_dots,
     get_next_trip,
     get_regions,
@@ -33,12 +34,14 @@ from tracker.models import (
     get_states,
     get_trip,
     get_trip_years,
+    get_visit,
     get_upcoming_trips,
     get_visits_for_state,
     get_year_plan,
     set_trip_dates,
     shift_to_year,
     update_trip,
+    update_visit,
 )
 from tracker.map_data import MAP_HEIGHT, MAP_WIDTH, STATE_PATHS
 from tracker.validation import (
@@ -169,30 +172,79 @@ def new_visit():
     errors = []
 
     if request.method == "POST":
-        form = {
-            "state": request.form.get("state", ""),
-            "visit_date": request.form.get("visit_date", ""),
-            "note": request.form.get("note", "").strip(),
-            "city": request.form.get("city", "").strip(),
-        }
+        form = read_visit_form()
         errors = validate_visit(form["state"], form["visit_date"], today, city=form["city"])
         if not errors:
-            # Store the date in one standard format, "YYYY-MM-DD", and the
-            # city with its official spelling ("denver" -> "Denver").
-            visit_date = parse_date(form["visit_date"]).isoformat()
-            city = find_city(form["city"], form["state"]).name if form["city"] else None
-            add_visit(form["state"], visit_date, form["note"], city)
+            add_visit(form["state"], *clean_visit_values(form))
             return redirect(url_for("main.state_detail", code=form["state"]))
 
-    # Show the form: empty on GET, or again with errors after a bad POST.
-    # 400 ("Bad Request") tells the browser the submitted form had problems.
+    return render_visit_form(form, errors, today, heading="Add a visit", button_label="Save visit")
+
+
+def read_visit_form():
+    """Collect the fields of a submitted visit form into a dictionary."""
+    return {
+        "state": request.form.get("state", ""),
+        "visit_date": request.form.get("visit_date", ""),
+        "note": request.form.get("note", "").strip(),
+        "city": request.form.get("city", "").strip(),
+    }
+
+
+def clean_visit_values(form):
+    """The checked form values as they're saved: (date, note, city).
+
+    The date in one standard format, "YYYY-MM-DD", and the city with its
+    official spelling ("denver" -> "Denver"), or None without a city.
+    """
+    visit_date = parse_date(form["visit_date"]).isoformat()
+    city = find_city(form["city"], form["state"]).name if form["city"] else None
+    return visit_date, form["note"], city
+
+
+def render_visit_form(form, errors, today, heading, button_label):
+    """Show the visit form: empty, filled in for editing, or again with errors.
+
+    400 ("Bad Request") tells the browser the submitted form had problems.
+    The city suggestions start with the chosen state's cities (if a state is chosen).
+    """
     status = 400 if errors else 200
-    # The city suggestions start with the chosen state's cities (if a state is chosen).
     city_options = cities_in_state(form["state"]) if form["state"] in STATE_CODES else ()
     return render_template(
         "visit_form.html", states=get_states(), form=form, errors=errors, today=today,
-        city_options=city_options,
+        city_options=city_options, heading=heading, button_label=button_label,
     ), status
+
+
+@bp.route("/visits/<int:visit_id>/edit", methods=["GET", "POST"])
+def edit_visit(visit_id):
+    """Show a visit's edit form (GET) or save the changes (POST). Same rules as a new visit."""
+    visit = get_visit(visit_id)
+    if visit is None:
+        abort(404)
+
+    today = date.today()
+    form = visit
+    errors = []
+    if request.method == "POST":
+        form = read_visit_form()
+        errors = validate_visit(form["state"], form["visit_date"], today, city=form["city"])
+        if not errors:
+            update_visit(visit_id, form["state"], *clean_visit_values(form))
+            # Back to the visit's state page (the new state, if it changed).
+            return redirect(url_for("main.state_detail", code=form["state"]))
+
+    return render_visit_form(form, errors, today, heading="Edit visit", button_label="Save changes")
+
+
+@bp.route("/visits/<int:visit_id>/delete", methods=["POST"])
+def remove_visit(visit_id):
+    """Delete a visit. Only a submitted form (POST) can do this; just opening the address gives 405."""
+    visit = get_visit(visit_id)
+    if visit is None:
+        abort(404)
+    delete_visit(visit_id)
+    return redirect(url_for("main.state_detail", code=visit["state"]))
 
 
 @bp.route("/cities/<code>")
